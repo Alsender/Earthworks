@@ -1,16 +1,16 @@
 #blocks
 
-tile.Earthworks.block_adobe.name=Adobe
-tile.Earthworks.block_cob.name=Cob
-tile.Earthworks.block_dry_stone.name=Dry Fitted Stone
-tile.Earthworks.block_mud.name=Mud
-tile.Earthworks.block_rammed_earth.name=Rammed Earth
-tile.Earthworks.block_reed.name=Reed
-tile.Earthworks.block_slate.name=Slate
-tile.Earthworks.block_thatch.name=Thatch
-tile.Earthworks.block_wattle.name=Wattle and Daub
-tile.Earthworks.block_wicker.name=Wicker
+earthworks.block_adobe.name=Adobe
+earthworks.block_cob.name=Cob
+earthworks.block_dry_stone.name=Dry Fitted Stone
+earthworks.block_mud.name=Mud
+earthworks.block_rammed_earth.name=Rammed Earth
+earthworks.block_reed.name=Reed
+earthworks.block_slate.name=Slate
+earthworks.block_thatch.name=Thatch
+earthworks.block_wattle.name=Wattle and Daub
+earthworks.block_wicker.name=Wicker
 
 #Items
 
-item.Earthworks.item_cob.name=Cob
+eearthworks.item_cob.name=Cob

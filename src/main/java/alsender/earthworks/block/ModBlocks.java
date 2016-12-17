@@ -1,7 +1,7 @@
 package alsender.earthworks.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemBlock;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Created by alsender on 12/12/16.
@@ -39,5 +39,10 @@ public class ModBlocks {
        // block_concrete = new Block_Concrete();
        // block_gold_leaf = new Block_Gold_Leaf ();
        // block_lapis_inlay = new Block_Lapis_Inlay();
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void initModels() {
+        Block_Adobe.initModel();
     }
 }
