@@ -19,7 +19,7 @@ public class Earthworks {
 
     public static final String mod_id = "Earthworks";
     public static final String name = "Earthworks";
-    public static final String version = "0.0.1";
+    public static final String version = "0.0.3";
 
     @Mod.Instance
     public static Earthworks instance;
@@ -31,10 +31,13 @@ public class Earthworks {
         proxy.preInit(event);
     }
 
+    @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
+        ModRecipes.init();
     }
 
+    @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
     }
