@@ -33,7 +33,6 @@ public class Earthworks {
 
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
-        ModRecipes.init();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
