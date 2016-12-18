@@ -7,7 +7,7 @@
   },
   "variants": {
     "normal": {
-      "model": "glass_pane"
+      "model": "cube_all"
     },
     "inventory": {
       "model": "cube_all"

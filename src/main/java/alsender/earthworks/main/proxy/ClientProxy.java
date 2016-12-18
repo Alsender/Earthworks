@@ -1,6 +1,7 @@
 package alsender.earthworks.main.proxy;
 
-import net.minecraftforge.fml.common.Mod;
+import alsender.earthworks.block.ModBlocks;
+import alsender.earthworks.item.ModItems;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
@@ -8,8 +9,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  */
 public class ClientProxy extends CommonProxy {
 
-    @Mod.EventHandler
+    @Override
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
+        ModItems.initModels();
+        ModBlocks.initModels();
     }
 }

@@ -12,11 +12,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 /**
  * Created by alsender on 12/12/16.
  */
-public class Item_Wattle extends Item {
-    public Item_Wattle () {
+public class Item_Cob extends Item {
+    public Item_Cob() {
         setCreativeTab(CreativeTabs.MATERIALS);
-        setRegistryName("item_wattle");
-        setUnlocalizedName(Earthworks.mod_id + ".item_wattle");
+        setRegistryName("item_cob");
+        setUnlocalizedName(Earthworks.mod_id + ".item_cob");
         GameRegistry.register(this);
     }
 
