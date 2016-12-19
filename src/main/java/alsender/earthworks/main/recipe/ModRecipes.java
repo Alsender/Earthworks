@@ -43,7 +43,7 @@ public class ModRecipes {
                 "CCC",
                 "C C",
                 "CCC",
-                'C', Blocks.COBBLESTONE);
+                'C', Blocks.STONE);
 
         GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.block_mud, 8),
                 "DDD",
