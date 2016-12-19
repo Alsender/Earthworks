@@ -17,8 +17,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Block_Cob extends Block {
     public Block_Cob() {
-        super(Material.ROCK);
+        super(Material.GROUND);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(1.0F);
+        setResistance(5);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_cob");
         setRegistryName("block_cob");
         GameRegistry.register(this);

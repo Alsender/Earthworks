@@ -19,6 +19,10 @@ public class Block_Reed extends Block {
     public Block_Reed() {
         super(Material.GOURD);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(0.8F);
+        setResistance(3F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_reed");
         setRegistryName("block_reed");
         GameRegistry.register(this);

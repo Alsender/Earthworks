@@ -19,6 +19,10 @@ public class Block_Wicker extends Block {
     public Block_Wicker() {
         super(Material.WOOD);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(0.8F);
+        setResistance(3F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_wicker");
         setRegistryName("block_wicker");
         GameRegistry.register(this);

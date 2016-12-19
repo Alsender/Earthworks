@@ -19,6 +19,10 @@ public class Block_Thatch extends Block {
     public Block_Thatch() {
         super(Material.CLOTH);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(0.8F);
+        setResistance(3F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_thatch");
         setRegistryName("block_thatch");
         GameRegistry.register(this);

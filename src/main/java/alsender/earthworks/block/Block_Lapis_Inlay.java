@@ -17,7 +17,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Block_Lapis_Inlay extends Block {
     public Block_Lapis_Inlay() {
-        super(Material.ROCK);
+        super(Material.IRON);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         setUnlocalizedName(Earthworks.mod_id + ".block_lapis_inlay");
         setRegistryName("block_lapis_inlay");

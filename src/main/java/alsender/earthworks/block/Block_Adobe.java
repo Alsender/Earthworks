@@ -19,6 +19,10 @@ public class Block_Adobe extends Block {
     public Block_Adobe() {
         super(Material.ROCK);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(2.0F);
+        setResistance(10.0F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_adobe");
         setRegistryName("block_adobe");
         GameRegistry.register(this);

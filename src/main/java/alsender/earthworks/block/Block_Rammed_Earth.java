@@ -19,6 +19,10 @@ public class Block_Rammed_Earth extends Block {
     public Block_Rammed_Earth() {
         super(Material.ROCK);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(1.5F);
+        setResistance(30F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_rammed_earth");
         setRegistryName("block_rammed_earth");
         GameRegistry.register(this);

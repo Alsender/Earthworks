@@ -33,6 +33,10 @@ public class Block_Cinder extends BlockRotatedPillar {
     public Block_Cinder() {
         super(Material.ROCK);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(1.5F);
+        setResistance(17.5F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_cinder");
         setRegistryName("block_cinder");
         GameRegistry.register(this);

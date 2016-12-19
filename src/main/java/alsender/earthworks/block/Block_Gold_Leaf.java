@@ -17,7 +17,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Block_Gold_Leaf extends Block {
     public Block_Gold_Leaf() {
-        super(Material.ROCK);
+        super(Material.IRON);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         setUnlocalizedName(Earthworks.mod_id + ".block_gold_leaf");
         setRegistryName("block_gold_leaf");

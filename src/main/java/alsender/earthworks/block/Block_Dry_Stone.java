@@ -17,8 +17,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Block_Dry_Stone extends Block {
     public Block_Dry_Stone() {
-        super(Material.IRON);
+        super(Material.ROCK);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(2.0F);
+        setResistance(4000F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_dry_stone");
         setRegistryName("block_dry_stone");
         GameRegistry.register(this);

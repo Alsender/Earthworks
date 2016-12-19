@@ -27,6 +27,10 @@ public class Block_Mud extends Block {
     public Block_Mud() {
         super(Material.CLAY);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(0.6F);
+        setResistance(3F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_mud");
         setRegistryName("block_mud");
         GameRegistry.register(this);

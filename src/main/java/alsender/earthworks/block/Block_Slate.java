@@ -17,8 +17,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Block_Slate extends Block {
     public Block_Slate() {
-        super(Material.ROCK);
+        super(Material.IRON);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+        setHardness(1.5F);
+        setResistance(30F);
+
         setUnlocalizedName(Earthworks.mod_id + ".block_slate");
         setRegistryName("block_slate");
         GameRegistry.register(this);
