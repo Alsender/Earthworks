@@ -13,4 +13,6 @@ tile.Earthworks.block_wicker.name=Wicker
 
 #Items
 
-item.Earthworks.item_cob.name=Cob
+item.Earthworks.item_cob.name=Cob Ball
+item.Earthworks.item_dirt.name=Dirt Ball
+item.Earthworks.item_mud.name=Mud Ball
