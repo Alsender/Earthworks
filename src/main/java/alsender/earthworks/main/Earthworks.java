@@ -19,7 +19,7 @@ public class Earthworks {
 
     public static final String mod_id = "Earthworks";
     public static final String name = "Earthworks";
-    public static final String version = "0.0.3";
+    public static final String version = "0.0.5";
 
     @Mod.Instance
     public static Earthworks instance;
