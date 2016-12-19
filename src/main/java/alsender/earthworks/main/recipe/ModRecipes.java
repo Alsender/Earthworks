@@ -64,8 +64,8 @@ public class ModRecipes {
                 'D', ModItems.item_dirt,
                 'W', Items.WATER_BUCKET);
 
-        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.block_rammed_earth),
-                "DDD",
+        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.block_rammed_earth, 3),
+                "   ",
                 "DDD",
                 "DDD",
                 'D', Blocks.DIRT);
