@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "Earthworks",
+  "name": "Earthworks",
+  "description": "Adds a small variety of earthen based building blocks.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Alsender"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
