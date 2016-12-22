@@ -2,6 +2,7 @@ package alsender.earthworks.block;
 
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,9 +16,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 /**
  * Created by alsender on 12/12/16.
  */
-public class Block_Reed extends Block {
+public class Block_Reed extends BlockRotatedPillar {
     public Block_Reed() {
-        super(Material.GOURD);
+        super(Material.GRASS);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 
         setHardness(0.8F);

@@ -1,16 +1,7 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "all": "earthworks:blocks/block_reed"
-    }
-  },
   "variants": {
-    "normal": {
-      "model": "cube_all"
-    },
-    "inventory": {
-      "model": "cube_all"
-    }
+    "axis=y": { "model": "earthworks:block_reed" },
+    "axis=z": { "model": "earthworks:block_reed", "x": 90 },
+    "axis=x": { "model": "earthworks:block_reed", "x": 90, "y": 90 }
   }
 }

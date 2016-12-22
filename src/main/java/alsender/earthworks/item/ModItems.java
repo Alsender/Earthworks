@@ -1,6 +1,9 @@
 package alsender.earthworks.item;
 
 
+import alsender.earthworks.block.ModBlock;
+import net.minecraft.item.ItemBlock;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 

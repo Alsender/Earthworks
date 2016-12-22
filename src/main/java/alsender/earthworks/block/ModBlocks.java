@@ -1,6 +1,11 @@
 package alsender.earthworks.block;
 
 
+import alsender.earthworks.block.slab.ModBlock_Slab;
+import alsender.earthworks.block.slab.Slab_Adobe;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -8,6 +13,21 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  * Created by alsender on 12/12/16.
  */
 public class ModBlocks {
+
+/** public static Block block_adobe,
+                        block_cinder,
+                        block_cob,
+                        block_concrete,
+                        block_dry_stone,
+                        block_mud,
+                        block_mud_bottom,
+                        block_rammed_earth,
+                        block_reed,
+                        block_slate,
+                        block_thatch,
+                        block_wattle,
+                        block_wicker;
+*/
     public static Block_Adobe block_adobe;
 //  public static Block_Cinder block_cinder;
     public static Block_Cob block_cob;
@@ -24,7 +44,18 @@ public class ModBlocks {
     public static Block_Wattle block_wattle;
     public static Block_Wicker block_wicker;
 
+    public static Slab_Adobe slab_adobe;
+
     public static void init() {
+
+/**     GameRegistry.register(block_adobe = new ModBlock("block_adobe", Material.ROCK, 2.0F, 10.0F));
+        GameRegistry.register(block_cob = new ModBlock("block_cob", Material.GROUND, 1.0F, 5.0F));
+        GameRegistry.register(block_concrete = new ModBlock("block_concrete", Material.CLAY, 0.0F, 0.0F));
+        GameRegistry.register(block_dry_stone = new ModBlock("block_dry_stone", Material.ROCK, 2.0F, 4000.0F));
+        GameRegistry.register(block_mud = new Block_Mud());
+        GameRegistry.register(block_rammed_earth = new ModBlock("block_rammed_earth", Material.ROCK, 1.5F, 30.0F));
+        GameRegistry.register(block_reed = new ModBlock("block_reed", Material.CLOTH))
+*/
         block_adobe = new Block_Adobe();
 //      block_cinder = new Block_Cinder();
         block_cob = new Block_Cob();
@@ -40,6 +71,8 @@ public class ModBlocks {
         block_thatch = new Block_Thatch();
         block_wattle = new Block_Wattle();
         block_wicker = new Block_Wicker();
+
+        slab_adobe = new Slab_Adobe();
     }
 
     @SideOnly(Side.CLIENT)
@@ -54,5 +87,7 @@ public class ModBlocks {
         block_thatch.initModel();
         block_wattle.initModel();
         block_wicker.initModel();
+
+        slab_adobe.initModel();
     }
 }
