@@ -1,0 +1,9 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "earthworks:blocks/block_wicker",
+        "top": "earthworks:blocks/block_wicker",
+        "side": "earthworks:blocks/block_wicker",
+        "particle": "earthworks:blocks/block_wicker"
+    }
+}

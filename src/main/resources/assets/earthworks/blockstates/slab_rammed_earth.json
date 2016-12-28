@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom": { "model": "earthworks:slab_rammed_earth_bottom" },
+    "half=top": { "model": "earthworks:slab_rammed_earth_top" }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "bottom": "earthworks:blocks/block_slate",
+      "top": "earthworks:blocks/block_slate",
+      "side": "earthworks:blocks/block_slate"
+    }
+  },
+
+  "variants": {
+    "normal": { "model":"minecraft:stairs" },
+    "inventory": { "model":"minecraft:stairs" },
+    "facing=east,half=bottom,shape=straight":  { "model": "earthworks:stair_slate" },
+    "facing=west,half=bottom,shape=straight":  { "model": "earthworks:stair_slate", "y": 180, "uvlock": true },
+    "facing=south,half=bottom,shape=straight": { "model": "earthworks:stair_slate", "y": 90, "uvlock": true },
+    "facing=north,half=bottom,shape=straight": { "model": "earthworks:stair_slate", "y": 270, "uvlock": true },
+    "facing=east,half=bottom,shape=outer_right":  { "model": "earthworks:stair_slate_outer" },
+    "facing=west,half=bottom,shape=outer_right":  { "model": "earthworks:stair_slate_outer", "y": 180, "uvlock": true },
+    "facing=south,half=bottom,shape=outer_right": { "model": "earthworks:stair_slate_outer", "y": 90, "uvlock": true },
+    "facing=north,half=bottom,shape=outer_right": { "model": "earthworks:stair_slate_outer", "y": 270, "uvlock": true },
+    "facing=east,half=bottom,shape=outer_left":  { "model": "earthworks:stair_slate_outer", "y": 270, "uvlock": true },
+    "facing=west,half=bottom,shape=outer_left":  { "model": "earthworks:stair_slate_outer", "y": 90, "uvlock": true },
+    "facing=south,half=bottom,shape=outer_left": { "model": "earthworks:stair_slate_outer" },
+    "facing=north,half=bottom,shape=outer_left": { "model": "earthworks:stair_slate_outer", "y": 180, "uvlock": true },
+    "facing=east,half=bottom,shape=inner_right":  { "model": "earthworks:stair_slate_inner" },
+    "facing=west,half=bottom,shape=inner_right":  { "model": "earthworks:stair_slate_inner", "y": 180, "uvlock": true },
+    "facing=south,half=bottom,shape=inner_right": { "model": "earthworks:stair_slate_inner", "y": 90, "uvlock": true },
+    "facing=north,half=bottom,shape=inner_right": { "model": "earthworks:stair_slate_inner", "y": 270, "uvlock": true },
+    "facing=east,half=bottom,shape=inner_left":  { "model": "earthworks:stair_slate_inner", "y": 270, "uvlock": true },
+    "facing=west,half=bottom,shape=inner_left":  { "model": "earthworks:stair_slate_inner", "y": 90, "uvlock": true },
+    "facing=south,half=bottom,shape=inner_left": { "model": "earthworks:stair_slate_inner" },
+    "facing=north,half=bottom,shape=inner_left": { "model": "earthworks:stair_slate_inner", "y": 180, "uvlock": true },
+    "facing=east,half=top,shape=straight":  { "model": "earthworks:stair_slate", "x": 180, "uvlock": true },
+    "facing=west,half=top,shape=straight":  { "model": "earthworks:stair_slate", "x": 180, "y": 180, "uvlock": true },
+    "facing=south,half=top,shape=straight": { "model": "earthworks:stair_slate", "x": 180, "y": 90, "uvlock": true },
+    "facing=north,half=top,shape=straight": { "model": "earthworks:stair_slate", "x": 180, "y": 270, "uvlock": true },
+    "facing=east,half=top,shape=outer_right":  { "model": "earthworks:stair_slate_outer", "x": 180, "y": 90, "uvlock": true },
+    "facing=west,half=top,shape=outer_right":  { "model": "earthworks:stair_slate_outer", "x": 180, "y": 270, "uvlock": true },
+    "facing=south,half=top,shape=outer_right": { "model": "earthworks:stair_slate_outer", "x": 180, "y": 180, "uvlock": true },
+    "facing=north,half=top,shape=outer_right": { "model": "earthworks:stair_slate_outer", "x": 180, "uvlock": true },
+    "facing=east,half=top,shape=outer_left":  { "model": "earthworks:stair_slate_outer", "x": 180, "uvlock": true },
+    "facing=west,half=top,shape=outer_left":  { "model": "earthworks:stair_slate_outer", "x": 180, "y": 180, "uvlock": true },
+    "facing=south,half=top,shape=outer_left": { "model": "earthworks:stair_slate_outer", "x": 180, "y": 90, "uvlock": true },
+    "facing=north,half=top,shape=outer_left": { "model": "earthworks:stair_slate_outer", "x": 180, "y": 270, "uvlock": true },
+    "facing=east,half=top,shape=inner_right":  { "model": "earthworks:stair_slate_inner", "x": 180, "y": 90, "uvlock": true },
+    "facing=west,half=top,shape=inner_right":  { "model": "earthworks:stair_slate_inner", "x": 180, "y": 270, "uvlock": true },
+    "facing=south,half=top,shape=inner_right": { "model": "earthworks:stair_slate_inner", "x": 180, "y": 180, "uvlock": true },
+    "facing=north,half=top,shape=inner_right": { "model": "earthworks:stair_slate_inner", "x": 180, "uvlock": true },
+    "facing=east,half=top,shape=inner_left":  { "model": "earthworks:stair_slate_inner", "x": 180, "uvlock": true },
+    "facing=west,half=top,shape=inner_left":  { "model": "earthworks:stair_slate_inner", "x": 180, "y": 180, "uvlock": true },
+    "facing=south,half=top,shape=inner_left": { "model": "earthworks:stair_slate_inner", "x": 180, "y": 90, "uvlock": true },
+    "facing=north,half=top,shape=inner_left": { "model": "earthworks:stair_slate_inner", "x": 180, "y": 270, "uvlock": true }
+  }
+}

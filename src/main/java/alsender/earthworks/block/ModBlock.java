@@ -16,11 +16,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ModBlock extends Block {
     public ModBlock(String name, Material mat, float hardness, float resistance) {
         super(mat);
-        setUnlocalizedName(name);
-        setRegistryName(Earthworks.mod_id + ":" + name);
+        setUnlocalizedName(Earthworks.mod_id + "." + name);
+        setRegistryName(name);
         setHardness(hardness);
         setResistance(resistance);
-        this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+        this.setCreativeTab(Earthworks.creativeTab);
     }
 
     @SideOnly(Side.CLIENT)

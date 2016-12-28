@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "earthworks:blocks/block_wattle",
+    "top": "earthworks:blocks/block_wattle",
+    "side": "earthworks:blocks/block_wattle",
+    "particle": "earthworks:blocks/block_wattle"
+  }
+}

@@ -20,21 +20,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 /**
  * Created by alsender on 12/12/16.
  */
-public class Block_Mud extends Block {
+public class Block_Mud extends ModBlock {
 
     protected static final AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.897D, 1.0D);
 
-    public Block_Mud() {
-        super(Material.CLAY);
-        this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-
-        setHardness(0.6F);
-        setResistance(3F);
-
-        setUnlocalizedName(Earthworks.mod_id + ".block_mud");
-        setRegistryName("block_mud");
-        GameRegistry.register(this);
-        GameRegistry.register(new ItemBlock(this), getRegistryName());
+    public Block_Mud(String name) {
+        super(name, Material.CLAY, 0.6F, 3.0F);
+        this.setCreativeTab(Earthworks.creativeTab);
     }
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess world, BlockPos pos) {

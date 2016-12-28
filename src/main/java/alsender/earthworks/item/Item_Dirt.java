@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Item_Dirt extends Item {
     public Item_Dirt() {
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Earthworks.creativeTab);
         setRegistryName("item_dirt");
         setUnlocalizedName(Earthworks.mod_id + ".item_dirt");
         GameRegistry.register(this);

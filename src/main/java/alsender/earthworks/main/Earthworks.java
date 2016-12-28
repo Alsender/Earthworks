@@ -19,7 +19,9 @@ public class Earthworks {
 
     public static final String mod_id = "Earthworks";
     public static final String name = "Earthworks";
-    public static final String version = "0.0.6";
+    public static final String version = "0.0.8";
+
+    public static final EarthworksTab creativeTab = new EarthworksTab();
 
     @Mod.Instance
     public static Earthworks instance;

@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "earthworks:blocks/block_thatch_top",
+    "top": "earthworks:blocks/block_thatch",
+    "side": "earthworks:blocks/block_thatch",
+    "particle": "earthworks:blocks/block_thatch"
+  }
+}

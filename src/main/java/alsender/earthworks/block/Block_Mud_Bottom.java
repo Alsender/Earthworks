@@ -16,18 +16,10 @@ import java.util.Random;
 /**
  * Created by alsender on 12/14/16.
  */
-public class Block_Mud_Bottom extends Block {
+public class Block_Mud_Bottom extends ModBlock {
 
-    public Block_Mud_Bottom() {
-        super(Material.CLAY);
-
-        setHardness(0.6F);
-        setResistance(3F);
-
-        setUnlocalizedName(Earthworks.mod_id + ".block_mud_bottom");
-        setRegistryName("block_mud_bottom");
-        GameRegistry.register(this);
-        GameRegistry.register(new ItemBlock(this), getRegistryName());
+    public Block_Mud_Bottom(String name) {
+        super(name, Material.CLAY, 0.6F, 3.0F);
     }
 
     public void neighborChanged(IBlockState state, World world, BlockPos pos, Block block) {

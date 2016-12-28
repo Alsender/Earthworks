@@ -2,8 +2,5 @@
   "variants": {
     "half=bottom": { "model": "earthworks:slab_adobe_bottom" },
     "half=top": { "model": "earthworks:slab_adobe_top" }
-  },
-  "inventory": {
-    "model": "earthworks:slab_adobe_bottom"
   }
 }

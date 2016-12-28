@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "earthworks:blocks/block_reed_top",
-    "side": "earthworks:blocks/block_reed"
-  }
-}

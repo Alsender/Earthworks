@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "earthworks:blocks/block_dry_stone",
+    "top": "earthworks:blocks/block_dry_stone",
+    "side": "earthworks:blocks/block_dry_stone",
+    "particle": "earthworks:blocks/block_dry_stone"
+  }
+}

@@ -1,7 +1,17 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_bottom_top",
+    "textures": {
+      "bottom": "earthworks:blocks/block_reed_top",
+      "top": "earthworks:blocks/block_reed_top",
+      "side": "earthworks:blocks/block_reed"
+    }
+  },
   "variants": {
-    "axis=y": { "model": "earthworks:block_reed" },
-    "axis=z": { "model": "earthworks:block_reed", "x": 90 },
-    "axis=x": { "model": "earthworks:block_reed", "x": 90, "y": 90 }
+    "axis=x": [{ "x": 90, "y": 90 }],
+    "axis=y": [{}],
+    "axis=z": [{ "x": 90 }],
+    "inventory": [{}]
   }
 }

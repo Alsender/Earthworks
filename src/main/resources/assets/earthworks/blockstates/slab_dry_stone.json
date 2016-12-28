@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom": { "model": "earthworks:slab_dry_stone_bottom" },
+    "half=top": { "model": "earthworks:slab_dry_stone_top" }
+  }
+}

@@ -1,7 +1,17 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_bottom_top",
+    "textures": {
+      "bottom": "earthworks:blocks/block_thatch_top",
+      "top": "earthworks:blocks/block_thatch_top",
+      "side": "earthworks:blocks/block_thatch"
+    }
+  },
   "variants": {
-    "axis=y": { "model": "earthworks:block_thatch" },
-    "axis=z": { "model": "earthworks:block_thatch", "x": 90 },
-    "axis=x": { "model": "earthworks:block_thatch", "x": 90, "y": 90 }
+    "axis=x": [{ "x": 90, "y": 90 }],
+    "axis=y": [{}],
+    "axis=z": [{ "x": 90 }],
+    "inventory": [{}]
   }
 }

@@ -15,7 +15,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class Item_Mud extends Item {
 
     public Item_Mud() {
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Earthworks.creativeTab);
         setRegistryName("item_mud");
         setUnlocalizedName(Earthworks.mod_id + ".item_mud");
         GameRegistry.register(this);

@@ -1,0 +1,9 @@
+{
+  "parent": "block/upper_slab",
+  "textures": {
+    "top": "earthworks:blocks/block_wicker",
+    "bottom": "earthworks:blocks/block_wicker",
+    "side": "earthworks:blocks/block_wicker",
+    "particle": "earthworks:blocks/block_wicker"
+  }
+}

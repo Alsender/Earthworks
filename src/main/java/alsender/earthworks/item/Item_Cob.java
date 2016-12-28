@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Item_Cob extends Item {
     public Item_Cob() {
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Earthworks.creativeTab);
         setRegistryName("item_cob");
         setUnlocalizedName(Earthworks.mod_id + ".item_cob");
         GameRegistry.register(this);
