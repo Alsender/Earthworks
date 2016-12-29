@@ -1,6 +1,19 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:half_slab",
+    "textures": {
+      "bottom": "earthworks:blocks/block_wicker",
+      "top": "earthworks:blocks/block_wicker",
+      "side": "earthworks:blocks/block_wicker"
+    },
+    "transform": "forge:default-block"
+  },
   "variants": {
-    "half=bottom": { "model": "earthworks:slab_wicker_bottom" },
-    "half=top": { "model": "earthworks:slab_wicker_top" }
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
   }
 }

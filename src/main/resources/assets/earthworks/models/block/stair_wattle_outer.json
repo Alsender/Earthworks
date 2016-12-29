@@ -1,9 +1,9 @@
 {
     "parent": "block/outer_stairs",
     "textures": {
-        "bottom": "earthworks:blocks/block_wattle",
-        "top": "earthworks:blocks/block_wattle",
-        "side": "earthworks:blocks/block_wattle",
-        "particle": "earthworks:blocks/block_wattle"
+        "bottom": "earthworks:blocks/block_wattle_cob",
+        "top": "earthworks:blocks/block_wattle_cob",
+        "side": "earthworks:blocks/block_wattle_cob",
+        "particle": "earthworks:blocks/block_wattle_cob"
     }
 }

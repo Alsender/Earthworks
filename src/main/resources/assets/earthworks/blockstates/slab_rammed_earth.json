@@ -1,6 +1,19 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:half_slab",
+    "textures": {
+      "bottom": "earthworks:blocks/block_rammed_earth",
+      "top": "earthworks:blocks/block_rammed_earth",
+      "side": "earthworks:blocks/block_rammed_earth"
+    },
+    "transform": "forge:default-block"
+  },
   "variants": {
-    "half=bottom": { "model": "earthworks:slab_rammed_earth_bottom" },
-    "half=top": { "model": "earthworks:slab_rammed_earth_top" }
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
   }
 }

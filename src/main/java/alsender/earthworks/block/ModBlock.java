@@ -6,7 +6,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -14,13 +16,18 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  * Created by alsender on 12/22/16.
  */
 public class ModBlock extends Block {
+
     public ModBlock(String name, Material mat, float hardness, float resistance) {
         super(mat);
-        setUnlocalizedName(Earthworks.mod_id + "." + name);
-        setRegistryName(name);
         setHardness(hardness);
         setResistance(resistance);
-        this.setCreativeTab(Earthworks.creativeTab);
+
+        setUnlocalizedName(Earthworks.mod_id + "." + name);
+        setRegistryName(name);
+        setCreativeTab(Earthworks.creativeTab);
+
+        GameRegistry.register(this);
+        GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     @SideOnly(Side.CLIENT)

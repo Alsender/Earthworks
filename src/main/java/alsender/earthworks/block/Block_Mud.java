@@ -26,7 +26,7 @@ public class Block_Mud extends ModBlock {
 
     public Block_Mud(String name) {
         super(name, Material.CLAY, 0.6F, 3.0F);
-        this.setCreativeTab(Earthworks.creativeTab);
+        setCreativeTab(Earthworks.creativeTab);
     }
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess world, BlockPos pos) {

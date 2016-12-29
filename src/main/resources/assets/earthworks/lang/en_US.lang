@@ -1,3 +1,5 @@
+itemGroup.earthworks=Earthworks
+
 #blocks
 
 tile.Earthworks.block_adobe.name=Adobe
@@ -10,6 +12,39 @@ tile.Earthworks.block_slate.name=Slate
 tile.Earthworks.block_thatch.name=Thatch
 tile.Earthworks.block_wattle.name=Wattle and Daub
 tile.Earthworks.block_wicker.name=Wicker
+
+tile.Earthworks.slab_adobe.name=Adobe Slab
+tile.Earthworks.slab_cob.name=Cob Slab
+tile.Earthworks.slab_dry_stone.name=Dry Fitted Stone Slab
+tile.Earthworks.slab_mud.name=Mud Slab
+tile.Earthworks.slab_rammed_earth.name=Rammed Earth Slab
+tile.Earthworks.slab_reed.name=Reed Slab
+tile.Earthworks.slab_slate.name=Slate Slab
+tile.Earthworks.slab_thatch.name=Thatch Slab
+tile.Earthworks.slab_wattle.name=Wattle and Daub Slab
+tile.Earthworks.slab_wicker.name=Wicker Slab
+
+tile.Earthworks.stair_adobe.name=Adobe Stairs
+tile.Earthworks.stair_cob.name=Cob Stairs
+tile.Earthworks.stair_dry_stone.name=Dry Fitted Stone Stairs
+tile.Earthworks.stair_mud.name=Mud Stairs
+tile.Earthworks.stair_rammed_earth.name=Rammed Earth Stairs
+tile.Earthworks.stair_reed.name=Reed Stairs
+tile.Earthworks.stair_slate.name=Slate Stairs
+tile.Earthworks.stair_thatch.name=Thatch Stairs
+tile.Earthworks.stair_wattle.name=Wattle and Daub Stairs
+tile.Earthworks.stair_wicker.name=Wicker Stairs
+
+tile.Earthworks.wall_adobe.name=Adobe Wall
+tile.Earthworks.wall_cob.name=Cob Wall
+tile.Earthworks.wall_dry_stone.name=Dry Fitted Stone Wall
+tile.Earthworks.wall_mud.name=Mud Wall
+tile.Earthworks.wall_rammed_earth.name=Rammed Earth Wall
+tile.Earthworks.wall_reed.name=Reed Wall
+tile.Earthworks.wall_slate.name=Slate Wall
+tile.Earthworks.wall_thatch.name=Thatch Wall
+tile.Earthworks.wall_wattle.name=Wattle and Daub Wall
+tile.Earthworks.wall_wicker.name=Wicker Wall
 
 #Items
 

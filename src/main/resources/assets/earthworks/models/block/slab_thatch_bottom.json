@@ -1,9 +1,0 @@
-{
-  "parent": "block/half_slab",
-  "textures": {
-    "top": "earthworks:blocks/block_thatch",
-    "bottom": "earthworks:blocks/block_thatch",
-    "side": "earthworks:blocks/block_thatch",
-    "particle": "earthworks:blocks/block_thatch"
-  }
-}

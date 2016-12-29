@@ -1,6 +1,19 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:half_slab",
+    "textures": {
+      "bottom": "earthworks:blocks/block_mud",
+      "top": "earthworks:blocks/block_mud",
+      "side": "earthworks:blocks/block_mud"
+    },
+    "transform": "forge:default-block"
+  },
   "variants": {
-    "half=bottom": { "model": "earthworks:slab_mud_bottom" },
-    "half=top": { "model": "earthworks:slab_mud_top" }
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
   }
 }

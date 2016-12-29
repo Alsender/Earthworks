@@ -1,9 +1,0 @@
-{
-  "parent": "block/upper_slab",
-  "textures": {
-    "top": "earthworks:blocks/block_dry_stone",
-    "bottom": "earthworks:blocks/block_dry_stone",
-    "side": "earthworks:blocks/block_dry_stone",
-    "particle": "earthworks:blocks/block_dry_stone"
-  }
-}

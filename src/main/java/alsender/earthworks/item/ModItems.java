@@ -2,6 +2,8 @@ package alsender.earthworks.item;
 
 
 import alsender.earthworks.block.ModBlock;
+import alsender.earthworks.block.ModBlocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
@@ -16,10 +18,14 @@ public class ModItems {
     public static Item_Dirt item_dirt;
     public static Item_Mud item_mud;
 
+    public static Item
+        item_slab_adobe;
+
     public static void init() {
         item_cob = new Item_Cob();
         item_dirt = new Item_Dirt();
         item_mud = new Item_Mud();
+
     }
 
     @SideOnly(Side.CLIENT)

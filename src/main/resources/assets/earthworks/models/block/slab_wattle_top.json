@@ -1,9 +1,0 @@
-{
-  "parent": "block/upper_slab",
-  "textures": {
-    "top": "earthworks:blocks/block_wattle",
-    "bottom": "earthworks:blocks/block_wattle",
-    "side": "earthworks:blocks/block_wattle",
-    "particle": "earthworks:blocks/block_wattle"
-  }
-}

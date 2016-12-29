@@ -1,9 +1,0 @@
-{
-  "parent": "block/upper_slab",
-  "textures": {
-    "top": "earthworks:blocks/block_rammed_earth",
-    "bottom": "earthworks:blocks/block_rammed_earth",
-    "side": "earthworks:blocks/block_rammed_earth",
-    "particle": "earthworks:blocks/block_rammed_earth"
-  }
-}

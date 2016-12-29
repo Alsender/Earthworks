@@ -1,14 +1,16 @@
 package alsender.earthworks.main;
 
+import alsender.earthworks.block.ModBlocks;
 import alsender.earthworks.main.proxy.CommonProxy;
 import alsender.earthworks.main.recipe.ModRecipes;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
-
 
 /**
  * Created by alsender on 12/12/16.
@@ -21,7 +23,16 @@ public class Earthworks {
     public static final String name = "Earthworks";
     public static final String version = "0.0.8";
 
-    public static final EarthworksTab creativeTab = new EarthworksTab();
+    public static final CreativeTabs creativeTab = new CreativeTabs("earthworks") {
+
+        public String getTabLabel() {
+            return "earthworks";
+        }
+        @Override
+        public Item getTabIconItem() {
+            return Item.getItemFromBlock(ModBlocks.block_wattle);
+        }
+    };
 
     @Mod.Instance
     public static Earthworks instance;

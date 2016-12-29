@@ -1,6 +1,19 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:half_slab",
+    "textures": {
+      "bottom": "earthworks:blocks/block_dry_stone",
+      "top": "earthworks:blocks/block_dry_stone",
+      "side": "earthworks:blocks/block_dry_stone"
+    },
+    "transform": "forge:default-block"
+  },
   "variants": {
-    "half=bottom": { "model": "earthworks:slab_dry_stone_bottom" },
-    "half=top": { "model": "earthworks:slab_dry_stone_top" }
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
   }
 }

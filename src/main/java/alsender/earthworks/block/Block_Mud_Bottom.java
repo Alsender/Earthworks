@@ -20,6 +20,7 @@ public class Block_Mud_Bottom extends ModBlock {
 
     public Block_Mud_Bottom(String name) {
         super(name, Material.CLAY, 0.6F, 3.0F);
+        setCreativeTab(null);
     }
 
     public void neighborChanged(IBlockState state, World world, BlockPos pos, Block block) {

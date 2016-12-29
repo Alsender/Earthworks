@@ -8,7 +8,9 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -16,14 +18,20 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  * Created by alsender on 12/22/16.
  */
 public class ModStair extends BlockStairs {
+
     public ModStair(String name, Block block) {
         super(block.getDefaultState());
+        setHardness(blockHardness);
+        setResistance(blockResistance);
+
         setUnlocalizedName(Earthworks.mod_id + "." + name);
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
-        setHardness(blockHardness);
-        setResistance(blockResistance);
+
         useNeighborBrightness = true;
+
+        GameRegistry.register(this);
+        GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     @SideOnly(Side.CLIENT)
