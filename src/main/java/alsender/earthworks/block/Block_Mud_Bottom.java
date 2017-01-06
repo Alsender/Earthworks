@@ -20,8 +20,8 @@ public class Block_Mud_Bottom extends ModBlock {
         setCreativeTab(null);
     }
 
-    public void neighborChanged(IBlockState state, World world, BlockPos pos, Block block) {
-        super.neighborChanged(state, world, pos, block);
+    public void neighborChanged(IBlockState state, World world, BlockPos pos, Block block, BlockPos fromPos) {
+        super.neighborChanged(state, world, pos, block, fromPos);
         if (world.getBlockState(pos.up()).getMaterial().isSolid() == false) {
             world.setBlockState(pos, BlockRegistry.block_mud.getDefaultState());
         }

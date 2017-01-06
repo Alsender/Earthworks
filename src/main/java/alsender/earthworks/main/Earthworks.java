@@ -6,6 +6,7 @@ import alsender.earthworks.main.registry.RecipeRegistry;
 import alsender.earthworks.main.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -23,7 +24,7 @@ public class Earthworks {
 
     public static final String mod_id = "earthworks";
     public static final String name = "Earthworks";
-    public static final String version = "0.1.1";
+    public static final String version = "0.2.0";
 
     public static final CreativeTabs creativeTab = new CreativeTabs("earthworks") {
 
@@ -31,8 +32,8 @@ public class Earthworks {
             return "earthworks";
         }
         @Override
-        public Item getTabIconItem() {
-            return Item.getItemFromBlock(BlockRegistry.block_wattle);
+        public ItemStack getTabIconItem() {
+            return new ItemStack(BlockRegistry.block_wattle);
         }
     };
 
