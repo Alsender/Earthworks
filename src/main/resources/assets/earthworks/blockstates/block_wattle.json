@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "all": "earthworks:blocks/block_wattle_cob"
+      "all": "earthworks:blocks/daub_cob"
     }
   },
   "variants": {

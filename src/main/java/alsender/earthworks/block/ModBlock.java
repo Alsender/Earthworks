@@ -17,6 +17,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class ModBlock extends Block {
 
+    public final String blockName;
+
     public ModBlock(String name, Material mat, float hardness, float resistance) {
         super(mat);
         setHardness(hardness);
@@ -28,6 +30,8 @@ public class ModBlock extends Block {
 
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
+        this.blockName = name;
     }
 
     @SideOnly(Side.CLIENT)

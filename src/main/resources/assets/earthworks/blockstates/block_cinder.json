@@ -1,8 +1,16 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "earthworks:blocks/cinder"
+    }
+  },
   "variants": {
-    "axis=y":    { "model": "oak_log" },
-    "axis=z":     { "model": "oak_log", "x": 90 },
-    "axis=x":     { "model": "oak_log", "x": 90, "y": 90 },
-    "axis=none":   { "model": "oak_bark" }
+    "normal": {
+      "model": "cube_all"
+    },
+    "inventory": {
+      "model": "cube_all"
+    }
   }
 }

@@ -1,9 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "earthworks:blocks/block_cob",
-    "top": "earthworks:blocks/block_cob",
-    "side": "earthworks:blocks/block_cob",
-    "particle": "earthworks:blocks/block_cob"
-  }
-}

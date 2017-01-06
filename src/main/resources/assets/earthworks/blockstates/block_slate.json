@@ -6,9 +6,12 @@
     }
   },
   "variants": {
-    "normal": {
-      "model": "cube_all"
-    },
+    "normal":[
+      {"model": "cube_all"},
+      {"model": "cube_all", "y": 90},
+      {"model": "cube_all", "y": 180},
+      {"model": "cube_all", "y": 270}
+    ],
     "inventory": {
       "model": "cube_all"
     }

@@ -1,7 +1,7 @@
 package alsender.earthworks.main.proxy;
 
-import alsender.earthworks.block.ModBlocks;
-import alsender.earthworks.item.ModItems;
+import alsender.earthworks.main.registry.BlockRegistry;
+import alsender.earthworks.main.registry.ItemRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -12,8 +12,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
-        ModItems.init();
-        ModBlocks.init();
+        ItemRegistry.init();
+        BlockRegistry.init();
     }
 
     public void init(FMLInitializationEvent event) {

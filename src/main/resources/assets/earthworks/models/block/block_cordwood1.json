@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "earthworks:blocks/cordwood1",
+    "down": "earthworks:blocks/concrete",
+    "up": "earthworks:blocks/cordwood1_top",
+    "north": "earthworks:blocks/cordwood1_back",
+    "east": "earthworks:blocks/cordwood_side",
+    "south": "earthworks:blocks/cordwood1",
+    "west": "earthworks:blocks/cordwood_side"
+  }
+}

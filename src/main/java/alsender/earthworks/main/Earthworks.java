@@ -1,8 +1,9 @@
 package alsender.earthworks.main;
 
-import alsender.earthworks.block.ModBlocks;
 import alsender.earthworks.main.proxy.CommonProxy;
-import alsender.earthworks.main.recipe.ModRecipes;
+import alsender.earthworks.main.registry.BlockRegistry;
+import alsender.earthworks.main.registry.RecipeRegistry;
+import alsender.earthworks.main.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
@@ -10,6 +11,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 
 /**
@@ -19,7 +21,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Earthworks {
 
-    public static final String mod_id = "Earthworks";
+    public static final String mod_id = "earthworks";
     public static final String name = "Earthworks";
     public static final String version = "0.1.1";
 
@@ -30,7 +32,7 @@ public class Earthworks {
         }
         @Override
         public Item getTabIconItem() {
-            return Item.getItemFromBlock(ModBlocks.block_wattle);
+            return Item.getItemFromBlock(BlockRegistry.block_wattle);
         }
     };
 
@@ -42,12 +44,13 @@ public class Earthworks {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event);
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
-        ModRecipes.init();
+        RecipeRegistry.init();
     }
 
     @Mod.EventHandler

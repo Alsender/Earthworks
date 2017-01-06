@@ -1,9 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "earthworks:blocks/block_reed",
-        "top": "earthworks:blocks/block_reed",
-        "side": "earthworks:blocks/block_reed",
-        "particle": "earthworks:blocks/block_reed"
-    }
-}

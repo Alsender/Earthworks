@@ -1,9 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "earthworks:blocks/block_slate",
-        "top": "earthworks:blocks/block_slate",
-        "side": "earthworks:blocks/block_slate",
-        "particle": "earthworks:blocks/block_slate"
-    }
-}

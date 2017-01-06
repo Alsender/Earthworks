@@ -1,9 +1,0 @@
-{
-    "parent": "block/inner_stairs",
-    "textures": {
-        "bottom": "earthworks:blocks/block_rammed_earth",
-        "top": "earthworks:blocks/block_rammed_earth",
-        "side": "earthworks:blocks/block_rammed_earth",
-        "particle": "earthworks:blocks/block_rammed_earth"
-    }
-}
