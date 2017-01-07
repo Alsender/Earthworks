@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Earthworks",
+  "name": "Earthworks",
+  "description": "Adds a small variety of earthen based building blocks.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Alsender"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:half_slab",
+    "textures": {
+      "bottom": "earthworks:blocks/cordwood1_top",
+      "top": "earthworks:blocks/cordwood1",
+      "side": "earthworks:blocks/cordwood_side"
+    },
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
+  }
+}
