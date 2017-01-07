@@ -1,0 +1,37 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+
+  },
+
+  "variants": {
+    "facing=up": [
+      { "model": "earthworks:block_cordwood0" },
+      { "model": "earthworks:block_cordwood1" },
+      { "model": "earthworks:block_cordwood2" }
+    ],
+    "facing=south": [
+      { "model": "earthworks:block_cordwood0" },
+      { "model": "earthworks:block_cordwood1" },
+      { "model": "earthworks:block_cordwood2" }
+    ],
+    "facing=east": [
+      { "model": "earthworks:block_cordwood0", "y": 270 },
+      { "model": "earthworks:block_cordwood1", "y": 270 },
+      { "model": "earthworks:block_cordwood2", "y": 270 }
+    ],
+    "facing=west": [
+      { "model": "earthworks:block_cordwood0", "y": 90 },
+      { "model": "earthworks:block_cordwood1", "y": 90 },
+      { "model": "earthworks:block_cordwood2", "y": 90 }
+    ],
+    "facing=north": [
+      { "model": "earthworks:block_cordwood0", "y": 180 },
+      { "model": "earthworks:block_cordwood1", "y": 180 },
+      { "model": "earthworks:block_cordwood2", "y": 180 }
+    ],
+    "inventory": {
+      "model": "earthworks:block_cordwood0"
+    }
+  }
+}

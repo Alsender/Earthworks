@@ -19,11 +19,14 @@ tile.earthworks.block_wattle.name=Wattle and Daub
 tile.earthworks.block_wicker.name=Wicker
 
 tile.earthworks.slab_adobe.name=Adobe Slab
+tile.earthworks.slab_chalk.name=Chalk Slab
 tile.earthworks.slab_cinder.name=Cinder Block Slab
 tile.earthworks.slab_cob.name=Cob Slab
 tile.earthworks.slab_concrete.name=Concrete Slab
+tile.earthworks.slab_cordwood.name=Cordwood Slab
 tile.earthworks.slab_dry_stone.name=Dry Fitted Stone Slab
 tile.earthworks.slab_mud.name=Mud Slab
+tile.earthworks.slab_plaster.name=Lath and Plaster Slab
 tile.earthworks.slab_rammed_earth.name=Rammed Earth Slab
 tile.earthworks.slab_reed.name=Reed Slab
 tile.earthworks.slab_slate.name=Slate Slab
@@ -32,9 +35,14 @@ tile.earthworks.slab_wattle.name=Wattle and Daub Slab
 tile.earthworks.slab_wicker.name=Wicker Slab
 
 tile.earthworks.stair_adobe.name=Adobe Stairs
+tile.earthworks.stair_chalk.name=Chalk Stairs
+tile.earthworks.stair_cinder.name=Cinder Block Stairs
 tile.earthworks.stair_cob.name=Cob Stairs
+tile.earthworks.stair_concrete.name=Concrete Stairs
+tile.earthworks.stair_cordwood.name=Cordwood Stairs
 tile.earthworks.stair_dry_stone.name=Dry Fitted Stone Stairs
 tile.earthworks.stair_mud.name=Mud Stairs
+tile.earthworks.stair_plaster.name=Lath and Plaster Stairs
 tile.earthworks.stair_rammed_earth.name=Rammed Earth Stairs
 tile.earthworks.stair_reed.name=Reed Stairs
 tile.earthworks.stair_slate.name=Slate Stairs
@@ -43,9 +51,14 @@ tile.earthworks.stair_wattle.name=Wattle and Daub Stairs
 tile.earthworks.stair_wicker.name=Wicker Stairs
 
 tile.earthworks.wall_adobe.name=Adobe Wall
+tile.earthworks.wall_chalk.name=Chalk Wall
+tile.earthworks.wall_cinder.name=Cinder Block Wall
 tile.earthworks.wall_cob.name=Cob Wall
+tile.earthworks.wall_concrete.name=Concrete Wall
+tile.earthworks.wall_cordwood.name=Cordwood Wall
 tile.earthworks.wall_dry_stone.name=Dry Fitted Stone Wall
 tile.earthworks.wall_mud.name=Mud Wall
+tile.earthworks.wall_plaster.name=Lath and Plaster Wall
 tile.earthworks.wall_rammed_earth.name=Rammed Earth Wall
 tile.earthworks.wall_reed.name=Reed Wall
 tile.earthworks.wall_slate.name=Slate Wall
@@ -55,6 +68,12 @@ tile.earthworks.wall_wicker.name=Wicker Wall
 
 #Items
 
+item.earthworks.item_adobe.name=Adobe Brick
+item.earthworks.item_chalk.name=Chalk Dust
 item.earthworks.item_cob.name=Cob Ball
 item.earthworks.item_dirt.name=Dirt Ball
+item.earthworks.item_lime_plaster=Lime Plaster
 item.earthworks.item_mud.name=Mud Ball
+item.earthworks.item_quicklime.name=Quicklime
+item.earthworks.item_sand.name=Sand
+item.earthworks.item_slaked_lime.name=Slaked Lime
