@@ -3,9 +3,9 @@
   "defaults": {
     "model": "minecraft:half_slab",
     "textures": {
-      "bottom": "earthworks:blocks/block_wattle_cob",
-      "top": "earthworks:blocks/block_wattle_cob",
-      "side": "earthworks:blocks/block_wattle_cob"
+      "bottom": "earthworks:blocks/daub_cob",
+      "top": "earthworks:blocks/daub_cob",
+      "side": "earthworks:blocks/daub_cob"
     },
     "transform": "forge:default-block"
   },
