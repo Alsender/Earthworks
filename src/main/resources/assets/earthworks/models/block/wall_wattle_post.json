@@ -1,6 +1,6 @@
 {
   "parent": "block/wall_post",
   "textures": {
-    "wall": "earthworks:blocks/block_wattle_cob"
+    "wall": "earthworks:blocks/daub_cob"
   }
 }
