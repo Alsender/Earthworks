@@ -48,10 +48,10 @@ public class TimberRegistry {
         daub_cob_arrow1 = new Daub_Cob("arrow1","Top Left Framed Arrow");
         daub_cob_arrow2 = new Daub_Cob("arrow2","Bottom Right Framed Arrow");
         daub_cob_arrow3 = new Daub_Cob("arrow3","Top Right Framed Arrow");
-        daub_cob_barndoor0 = new Daub_Cob("barndoor0","Upper Left Barndoor");
+        daub_cob_barndoor0 = new Daub_Cob("barndoor0","Lower Left Barndoor");
         daub_cob_barndoor1 = new Daub_Cob("barndoor1","Left Sideways Barndoor");
         daub_cob_barndoor2 = new Daub_Cob("barndoor2","Right Sideways Barndoor");
-        daub_cob_barndoor3 = new Daub_Cob("barndoor3","Lower Left Barndoor");
+        daub_cob_barndoor3 = new Daub_Cob("barndoor3","Upper Left Barndoor");
         daub_cob_barndoor4 = new Daub_Cob("barndoor4","Lower Right Barndoor");
         daub_cob_barndoor5 = new Daub_Cob("barndoor5","Left Sideways Barndoor");
         daub_cob_barndoor6 = new Daub_Cob("barndoor6","Right Sideways Barndoor");
@@ -88,10 +88,10 @@ public class TimberRegistry {
         plaster_arrow1 = new Plaster("arrow1","Top Left Framed Arrow");
         plaster_arrow2 = new Plaster("arrow2","Bottom Right Framed Arrow");
         plaster_arrow3 = new Plaster("arrow3","Top Right Framed Arrow");
-        plaster_barndoor0 = new Plaster("barndoor0","Upper Left Barndoor");
+        plaster_barndoor0 = new Plaster("barndoor0","Lower Left Barndoor");
         plaster_barndoor1 = new Plaster("barndoor1","Left Sideways Barndoor");
         plaster_barndoor2 = new Plaster("barndoor2","Right Sideways Barndoor");
-        plaster_barndoor3 = new Plaster("barndoor3","Lower Left Barndoor");
+        plaster_barndoor3 = new Plaster("barndoor3","Upper Left Barndoor");
         plaster_barndoor4 = new Plaster("barndoor4","Lower Right Barndoor");
         plaster_barndoor5 = new Plaster("barndoor5","Left Sideways Barndoor");
         plaster_barndoor6 = new Plaster("barndoor6","Right Sideways Barndoor");
