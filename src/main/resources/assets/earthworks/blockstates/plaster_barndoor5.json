@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "facing=up": { "model": "earthworks:plaster/plaster_barndoor5" },
+    "facing=south": { "model": "earthworks:plaster/plaster_barndoor5" },
+    "facing=east": { "model": "earthworks:plaster/plaster_barndoor5", "y": 270 },
+    "facing=west": { "model": "earthworks:plaster/plaster_barndoor5", "y": 90 },
+    "facing=north": { "model": "earthworks:plaster/plaster_barndoor5", "y": 180 },
+    "inventory": {
+      "model": "earthworks:plaster/plaster_barndoor2"
+    }
+  }
+}

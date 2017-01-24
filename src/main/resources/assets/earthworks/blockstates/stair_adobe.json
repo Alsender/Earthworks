@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "bottom": "earthworks:blocks/block_adobe",
-      "top": "earthworks:blocks/block_adobe",
-      "side": "earthworks:blocks/block_adobe",
-      "particle": "earthworks:blocks/block_adobe"
+      "bottom": "earthworks:blocks/adobe0",
+      "top": "earthworks:blocks/adobe0",
+      "side": "earthworks:blocks/adobe0",
+      "particle": "earthworks:blocks/adobe0"
     }
   },
 

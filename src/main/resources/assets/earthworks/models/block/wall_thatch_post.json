@@ -1,6 +1,6 @@
 {
   "parent": "block/wall_post",
   "textures": {
-    "wall": "earthworks:blocks/block_thatch"
+    "wall": "earthworks:blocks/thatch0"
   }
 }

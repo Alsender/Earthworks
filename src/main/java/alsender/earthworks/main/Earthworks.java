@@ -3,16 +3,23 @@ package alsender.earthworks.main;
 import alsender.earthworks.main.proxy.CommonProxy;
 import alsender.earthworks.main.registry.BlockRegistry;
 import alsender.earthworks.main.registry.RecipeRegistry;
+import alsender.earthworks.main.registry.TimberRegistry;
 import alsender.earthworks.main.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by alsender on 12/12/16.
@@ -25,7 +32,7 @@ public class Earthworks {
     public static final String name = "Earthworks";
     public static final String version = "0.2.1";
 
-    public static final CreativeTabs creativeTab = new CreativeTabs("earthworks") {
+    public static final CreativeTabs creativeTab = (new CreativeTabs("earthworks") {
 
         public String getTabLabel() {
             return "earthworks";
@@ -34,7 +41,12 @@ public class Earthworks {
         public Item getTabIconItem() {
             return Item.getItemFromBlock(BlockRegistry.block_wattle);
         }
-    };
+
+        @Override
+        public boolean hasSearchBar() {
+            return true;
+        }
+    }).setBackgroundImageName("item_search.png");
 
     @Mod.Instance
     public static Earthworks instance;
@@ -51,6 +63,7 @@ public class Earthworks {
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
         RecipeRegistry.init();
+        TimberRegistry.initRecipes();
     }
 
     @Mod.EventHandler

@@ -1,16 +1,18 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "textures": {
-      "all": "earthworks:blocks/daub_cob"
-    }
   },
   "variants": {
-    "normal": {
-      "model": "cube_all"
-    },
+    "normal": [
+      {
+        "model": "earthworks:daub_cob0"
+      },
+      {
+        "model": "earthworks:daub_cob1"
+      }
+    ],
     "inventory": {
-      "model": "cube_all"
+      "model": "earthworks:daub_cob0"
     }
   }
 }
