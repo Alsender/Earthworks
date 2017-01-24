@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "earthworks:blocks/plaster/plaster_triangle1",
+    "down": "earthworks:blocks/plaster/plaster_triangle0",
+    "up": "earthworks:blocks/plaster/plaster_triangle1",
+    "north": "earthworks:blocks/plaster/plaster_triangle3",
+    "east": "earthworks:blocks/plaster/plaster_triangle3",
+    "south": "earthworks:blocks/plaster/plaster_triangle1",
+    "west": "earthworks:blocks/plaster/plaster_triangle1"
+  }
+}

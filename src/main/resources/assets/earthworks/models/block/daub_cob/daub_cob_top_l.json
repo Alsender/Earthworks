@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "earthworks:blocks/daub_cob/daub_cob_top_l",
+    "down": "earthworks:blocks/daub_cob/daub_cob_bottom_l",
+    "up": "earthworks:blocks/daub_cob/daub_cob_top_l",
+    "north": "earthworks:blocks/daub_cob/daub_cob_top_r",
+    "east": "earthworks:blocks/daub_cob/daub_cob_top_r",
+    "south": "earthworks:blocks/daub_cob/daub_cob_top_l",
+    "west": "earthworks:blocks/daub_cob/daub_cob_top_l"
+  }
+}

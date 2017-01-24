@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "facing=up": { "model": "earthworks:plaster/plaster_slash" },
+    "facing=south": { "model": "earthworks:plaster/plaster_slash" },
+    "facing=east": { "model": "earthworks:plaster/plaster_slash", "y": 270 },
+    "facing=west": { "model": "earthworks:plaster/plaster_slash", "y": 90 },
+    "facing=north": { "model": "earthworks:plaster/plaster_slash", "y": 180 },
+    "inventory": {
+      "model": "earthworks:plaster/plaster_slash_back"
+    }
+  }
+}

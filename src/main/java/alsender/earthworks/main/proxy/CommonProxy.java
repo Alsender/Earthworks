@@ -2,6 +2,7 @@ package alsender.earthworks.main.proxy;
 
 import alsender.earthworks.main.registry.BlockRegistry;
 import alsender.earthworks.main.registry.ItemRegistry;
+import alsender.earthworks.main.registry.TimberRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -12,8 +13,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
-        ItemRegistry.init();
         BlockRegistry.init();
+        TimberRegistry.init();
+        ItemRegistry.init();
     }
 
     public void init(FMLInitializationEvent event) {

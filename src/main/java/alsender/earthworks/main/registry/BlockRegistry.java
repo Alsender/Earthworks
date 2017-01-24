@@ -27,6 +27,7 @@ public class BlockRegistry {
             block_reed,
             block_slate,
             block_thatch,
+            block_timber,
             block_wattle,
             block_wicker;
 
@@ -44,6 +45,7 @@ public class BlockRegistry {
             slab_reed,
             slab_slate,
             slab_thatch,
+            slab_timber,
             slab_wattle,
             slab_wicker;
 
@@ -61,6 +63,7 @@ public class BlockRegistry {
             stair_reed,
             stair_slate,
             stair_thatch,
+            stair_timber,
             stair_wattle,
             stair_wicker;
 
@@ -78,6 +81,7 @@ public class BlockRegistry {
             wall_reed,
             wall_slate,
             wall_thatch,
+            wall_timber,
             wall_wattle,
             wall_wicker;
 
@@ -88,7 +92,7 @@ public class BlockRegistry {
         block_cinder = new ModBlock("block_cinder", Material.ROCK, 1.5F, 17.5F);
         block_cob = new ModBlock("block_cob", Material.GROUND, 1.0F, 5.0F);
         block_concrete = new ModBlock("block_concrete", Material.ROCK, 2.0F, 10.0F);
-        block_cordwood = new Block_Cordwood("block_cordwood", Material.ROCK, 1.5F, 8.5F);
+        block_cordwood = new ModBlockFacing("block_cordwood", Material.ROCK, 1.5F, 8.5F);
         block_dry_stone = new ModBlock("block_dry_stone", Material.ROCK, 2.0F, 4000.0F);
         block_mud = new Block_Mud("block_mud");
         block_mud_bottom = new Block_Mud_Bottom("block_mud_bottom");
@@ -97,6 +101,7 @@ public class BlockRegistry {
         block_reed = new ModRotatedPillar("block_reed", Material.GRASS, 0.8F, 3.0F);
         block_slate = new ModBlock("block_slate", Material.ROCK, 1.5F, 30.0F);
         block_thatch = new ModRotatedPillar("block_thatch", Material.GRASS,0.8F, 3.0F);
+        block_timber = new ModRotatedPillar("block_timber", Material.WOOD, 2.0F, 10.0F);
         block_wattle = new ModBlock("block_wattle", Material.ROCK, 1.5F, 30.0F);
         block_wicker = new ModBlock("block_wicker", Material.WOOD, 0.8F, 3.0F);
 
@@ -113,6 +118,7 @@ public class BlockRegistry {
         slab_reed = new ModSlab("slab_reed", block_reed);
         slab_slate = new ModSlab("slab_slate", block_slate);
         slab_thatch = new ModSlab("slab_thatch", block_thatch);
+        slab_timber = new ModSlab("slab_timber", block_timber);
         slab_wattle = new ModSlab("slab_wattle", block_wattle);
         slab_wicker = new ModSlab("slab_wicker", block_wicker);
 
@@ -129,6 +135,7 @@ public class BlockRegistry {
         stair_reed = new ModStair("stair_reed", block_reed);
         stair_slate = new ModStair("stair_slate", block_slate);
         stair_thatch = new ModStair("stair_thatch", block_thatch);
+        stair_timber = new ModStair("stair_timber", block_timber);
         stair_wattle = new ModStair("stair_wattle", block_wattle);
         stair_wicker = new ModStair("stair_wicker", block_wicker);
 
@@ -145,6 +152,7 @@ public class BlockRegistry {
         wall_reed = new ModWall("wall_reed", block_reed);
         wall_slate = new ModWall("wall_slate", block_slate);
         wall_thatch = new ModWall("wall_thatch", block_thatch);
+        wall_timber = new ModWall("wall_timber", block_timber);
         wall_wattle = new ModWall("wall_wattle", block_wattle);
         wall_wicker = new ModWall("wall_wicker", block_wicker);
     }
@@ -157,7 +165,7 @@ public class BlockRegistry {
         ((ModBlock)block_cinder).initModel();
         ((ModBlock)block_cob).initModel();
         ((ModBlock)block_concrete).initModel();
-        ((Block_Cordwood)block_cordwood).initModel();
+        ((ModBlockFacing)block_cordwood).initModel();
         ((ModBlock)block_dry_stone).initModel();
         ((Block_Mud)block_mud).initModel();
         ((ModBlock)block_plaster).initModel();
@@ -165,6 +173,7 @@ public class BlockRegistry {
         ((ModRotatedPillar)block_reed).initModel();
         ((ModBlock)block_slate).initModel();
         ((ModRotatedPillar)block_thatch).initModel();
+        ((ModRotatedPillar)block_timber).initModel();
         ((ModBlock)block_wattle).initModel();
         ((ModBlock)block_wicker).initModel();
 
@@ -181,6 +190,7 @@ public class BlockRegistry {
         ((ModSlab)slab_reed).initModel();
         ((ModSlab)slab_slate).initModel();
         ((ModSlab)slab_thatch).initModel();
+        ((ModSlab)slab_timber).initModel();
         ((ModSlab)slab_wattle).initModel();
         ((ModSlab)slab_wicker).initModel();
 
@@ -197,6 +207,7 @@ public class BlockRegistry {
         ((ModStair)stair_reed).initModel();
         ((ModStair)stair_slate).initModel();
         ((ModStair)stair_thatch).initModel();
+        ((ModStair)stair_timber).initModel();
         ((ModStair)stair_wattle).initModel();
         ((ModStair)stair_wicker).initModel();
 
@@ -213,6 +224,7 @@ public class BlockRegistry {
         ((ModWall)wall_reed).initModel();
         ((ModWall)wall_slate).initModel();
         ((ModWall)wall_thatch).initModel();
+        ((ModWall)wall_timber).initModel();
         ((ModWall)wall_wattle).initModel();
         ((ModWall)wall_wicker).initModel();
     }
