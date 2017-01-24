@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/pane_post",
-  "textures": {
-    "edge": "earthworks:blocks/block_wicker",
-    "pane": "earthworks:blocks/block_wicker"
-  }
-}

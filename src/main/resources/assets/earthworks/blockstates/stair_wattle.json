@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "bottom": "earthworks:blocks/daub_cob",
-      "top": "earthworks:blocks/daub_cob",
-      "side": "earthworks:blocks/daub_cob",
-      "particle": "earthworks:blocks/daub_cob"
+      "bottom": "earthworks:blocks/daub_cob/daub_cob0",
+      "top": "earthworks:blocks/daub_cob/daub_cob0",
+      "side": "earthworks:blocks/daub_cob/daub_cob0",
+      "particle": "earthworks:blocks/daub_cob/daub_cob0"
     }
   },
 

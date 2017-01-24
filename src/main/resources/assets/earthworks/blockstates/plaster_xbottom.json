@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "facing=up": { "model": "earthworks:plaster/plaster_xbottom" },
+    "facing=south": { "model": "earthworks:plaster/plaster_xbottom" },
+    "facing=east": { "model": "earthworks:plaster/plaster_xbottom", "y": 270 },
+    "facing=west": { "model": "earthworks:plaster/plaster_xbottom", "y": 90 },
+    "facing=north": { "model": "earthworks:plaster/plaster_xbottom", "y": 180 },
+    "inventory": {
+      "model": "earthworks:plaster/plaster_xbottom"
+    }
+  }
+}

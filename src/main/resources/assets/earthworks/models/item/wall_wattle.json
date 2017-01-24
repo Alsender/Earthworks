@@ -1,6 +1,6 @@
 {
   "parent": "block/wall_inventory",
   "textures": {
-    "wall": "earthworks:blocks/daub_cob"
+    "wall": "earthworks:blocks/daub_cob/daub_cob0"
   }
 }
