@@ -3,9 +3,9 @@
   "defaults": {
     "model": "minecraft:half_slab",
     "textures": {
-      "bottom": "earthworks:blocks/block_thatch",
-      "top": "earthworks:blocks/block_thatch",
-      "side": "earthworks:blocks/block_thatch"
+      "bottom": "earthworks:blocks/thatch_top",
+      "top": "earthworks:blocks/thatch_top",
+      "side": "earthworks:blocks/thatch1"
     },
     "transform": "forge:default-block"
   },

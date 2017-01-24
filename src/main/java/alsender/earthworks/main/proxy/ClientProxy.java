@@ -2,6 +2,7 @@ package alsender.earthworks.main.proxy;
 
 import alsender.earthworks.main.registry.BlockRegistry;
 import alsender.earthworks.main.registry.ItemRegistry;
+import alsender.earthworks.main.registry.TimberRegistry;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
@@ -14,5 +15,6 @@ public class ClientProxy extends CommonProxy {
         super.preInit(event);
         ItemRegistry.initModels();
         BlockRegistry.initModels();
+        TimberRegistry.initModels();
     }
 }

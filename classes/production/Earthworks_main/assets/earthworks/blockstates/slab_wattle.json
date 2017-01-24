@@ -3,9 +3,9 @@
   "defaults": {
     "model": "minecraft:half_slab",
     "textures": {
-      "bottom": "earthworks:blocks/daub_cob",
-      "top": "earthworks:blocks/daub_cob",
-      "side": "earthworks:blocks/daub_cob"
+      "bottom": "earthworks:blocks/daub_cob/daub_cob0",
+      "top": "earthworks:blocks/daub_cob/daub_cob0",
+      "side": "earthworks:blocks/daub_cob/daub_cob0"
     },
     "transform": "forge:default-block"
   },

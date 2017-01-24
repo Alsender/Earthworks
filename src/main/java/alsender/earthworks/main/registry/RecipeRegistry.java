@@ -183,6 +183,7 @@ public class RecipeRegistry {
         stair_slab_wall(BlockRegistry.block_reed, BlockRegistry.stair_reed, BlockRegistry.slab_reed, BlockRegistry.wall_reed);
         stair_slab_wall(BlockRegistry.block_slate, BlockRegistry.stair_slate, BlockRegistry.slab_slate, BlockRegistry.wall_slate);
         stair_slab_wall(BlockRegistry.block_thatch, BlockRegistry.stair_thatch, BlockRegistry.slab_thatch, BlockRegistry.wall_thatch);
+        stair_slab_wall(BlockRegistry.block_timber, BlockRegistry.stair_timber, BlockRegistry.slab_timber, BlockRegistry.wall_timber);
         stair_slab_wall(BlockRegistry.block_wattle, BlockRegistry.stair_wattle, BlockRegistry.slab_wattle, BlockRegistry.wall_wattle);
         stair_slab_wall(BlockRegistry.block_wicker, BlockRegistry.stair_wicker, BlockRegistry.slab_wicker, BlockRegistry.wall_wicker);
     }

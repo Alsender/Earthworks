@@ -1,16 +1,16 @@
 {
   "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "all": "earthworks:blocks/block_dry_stone"
-    }
-  },
+  "defaults": {  },
   "variants": {
-    "normal": {
-      "model": "cube_all"
-    },
+    "normal": [
+      { "model": "earthworks:dry_stone0" },
+      { "model": "earthworks:dry_stone1" }
+//    { "model": "earthworks:dry_stone2" },
+//    { "model": "earthworks:dry_stone3" },
+//  { "model": "earthworks:dry_stone4" }
+    ],
     "inventory": {
-      "model": "cube_all"
+      "model": "earthworks:dry_stone0"
     }
   }
 }
