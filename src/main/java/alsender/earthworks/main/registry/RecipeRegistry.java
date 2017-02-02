@@ -1,5 +1,6 @@
 package alsender.earthworks.main.registry;
 
+import alsender.earthworks.main.Config;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -99,9 +100,11 @@ public class RecipeRegistry {
                 "   ","DDD","DDD",
                 'D', Blocks.DIRT);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_reed),
-                "RR","RR",
-                'R', Items.REEDS);
+        if (Config.generate_quark ==true) {
+            GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_reed),
+                    "RR","RR",
+                    'R', Items.REEDS);
+        }
 
         GameRegistry.addShapedRecipe(new ItemStack(Blocks.SAND),
                 "SS","SS",
@@ -110,9 +113,11 @@ public class RecipeRegistry {
         GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_slate),
                 "FF","FF",'F', Items.FLINT);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_thatch),
-                "WW","WW",
-                'W', Items.WHEAT);
+        if (Config.generate_quark ==true) {
+            GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_thatch),
+                    "WW","WW",
+                    'W', Items.WHEAT);
+        }
 
         GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_wattle, 8),
                 "CCC","CWC","CCC",
@@ -182,18 +187,24 @@ public class RecipeRegistry {
         stair_slab_wall(BlockRegistry.block_mud, BlockRegistry.stair_mud, BlockRegistry.slab_mud, BlockRegistry.wall_mud);
         stair_slab_wall(BlockRegistry.block_plaster, BlockRegistry.stair_plaster, BlockRegistry.slab_plaster, BlockRegistry.wall_plaster);
         stair_slab_wall(BlockRegistry.block_rammed_earth, BlockRegistry.stair_rammed_earth, BlockRegistry.slab_rammed_earth, BlockRegistry.wall_rammed_earth);
-        stair_slab_wall(BlockRegistry.block_reed, BlockRegistry.stair_reed, BlockRegistry.slab_reed, BlockRegistry.wall_reed);
+        if (Config.generate_quark ==true) {
+            stair_slab_wall(BlockRegistry.block_reed, BlockRegistry.stair_reed, BlockRegistry.slab_reed, BlockRegistry.wall_reed);
+        }
         stair_slab_wall(BlockRegistry.block_slate, BlockRegistry.stair_slate, BlockRegistry.slab_slate, BlockRegistry.wall_slate);
-        stair_slab_wall(BlockRegistry.block_thatch, BlockRegistry.stair_thatch, BlockRegistry.slab_thatch, BlockRegistry.wall_thatch);
+        if (Config.generate_quark ==true) {
+            stair_slab_wall(BlockRegistry.block_thatch, BlockRegistry.stair_thatch, BlockRegistry.slab_thatch, BlockRegistry.wall_thatch);
+        }
         stair_slab_wall(BlockRegistry.block_timber, BlockRegistry.stair_timber, BlockRegistry.slab_timber, BlockRegistry.wall_timber);
         stair_slab_wall(BlockRegistry.block_wattle, BlockRegistry.stair_wattle, BlockRegistry.slab_wattle, BlockRegistry.wall_wattle);
         stair_slab_wall(BlockRegistry.block_wicker, BlockRegistry.stair_wicker, BlockRegistry.slab_wicker, BlockRegistry.wall_wicker);
 
         // compat recipes
-        if (Loader.isModLoaded("Quark")) {
-            Block thatch = Block.REGISTRY.getObject(new ResourceLocation("quark", "thatch"));
-            GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_thatch), thatch);
-            GameRegistry.addShapelessRecipe(new ItemStack(thatch), BlockRegistry.block_thatch);
+        if (Config.generate_quark ==true) {
+            if (Loader.isModLoaded("Quark")) {
+                Block thatch = Block.REGISTRY.getObject(new ResourceLocation("quark", "thatch"));
+                GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_thatch), thatch);
+                GameRegistry.addShapelessRecipe(new ItemStack(thatch), BlockRegistry.block_thatch);
+            }
         }
     }
 }
