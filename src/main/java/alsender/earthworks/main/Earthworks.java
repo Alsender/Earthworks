@@ -30,7 +30,7 @@ public class Earthworks {
 
     public static final String mod_id = "earthworks";
     public static final String name = "Earthworks";
-    public static final String version = "1.0.0";
+    public static final String version = "1.0.1";
 
     public static final CreativeTabs creativeTab = (new CreativeTabs("earthworks") {
 
@@ -55,8 +55,9 @@ public class Earthworks {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-        proxy.preInit(event);
+        Config.init(event.getSuggestedConfigurationFile());
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+        proxy.preInit(event);
     }
 
     @Mod.EventHandler

@@ -5,6 +5,8 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
@@ -106,7 +108,7 @@ public class RecipeRegistry {
                 'S', ItemRegistry.item_sand);
 
         GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_slate),
-                "FFF","FFF","FFF",'F', Items.FLINT);
+                "FF","FF",'F', Items.FLINT);
 
         GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_thatch),
                 "WW","WW",
@@ -186,5 +188,12 @@ public class RecipeRegistry {
         stair_slab_wall(BlockRegistry.block_timber, BlockRegistry.stair_timber, BlockRegistry.slab_timber, BlockRegistry.wall_timber);
         stair_slab_wall(BlockRegistry.block_wattle, BlockRegistry.stair_wattle, BlockRegistry.slab_wattle, BlockRegistry.wall_wattle);
         stair_slab_wall(BlockRegistry.block_wicker, BlockRegistry.stair_wicker, BlockRegistry.slab_wicker, BlockRegistry.wall_wicker);
+
+        // compat recipes
+        if (Loader.isModLoaded("Quark")) {
+            Block thatch = Block.REGISTRY.getObject(new ResourceLocation("quark", "thatch"));
+            GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_thatch), thatch);
+            GameRegistry.addShapelessRecipe(new ItemStack(thatch), BlockRegistry.block_thatch);
+        }
     }
 }

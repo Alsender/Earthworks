@@ -2,6 +2,7 @@ package alsender.earthworks.block;
 
 import alsender.earthworks.main.registry.ItemRegistry;
 import alsender.earthworks.main.Earthworks;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
@@ -13,7 +14,7 @@ import java.util.Random;
  */
 public class Block_Chalk extends ModBlock {
     public Block_Chalk(String name) {
-        super(name, Material.ROCK, 1.0F, 5.0F);
+        super(name, Material.ROCK, SoundType.STONE, 1.0F, 2.5F);
         setCreativeTab(Earthworks.creativeTab);
     }
 
