@@ -1,6 +1,7 @@
 package alsender.earthworks.block.timber;
 
 import alsender.earthworks.block.ModBlock;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -13,7 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class Brick extends ModBlock {
     public Brick(String name) {
-        super("brick_" + name, Material.ROCK, 2.0F, 30.0F);
+        super("brick_" + name, Material.ROCK, SoundType.STONE, 2.0F, 10.0F);
     }
 
     @SideOnly(Side.CLIENT)

@@ -3,6 +3,7 @@ package alsender.earthworks.block;
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
@@ -27,8 +28,9 @@ public class ModBlockFacing extends Block {
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
-    public ModBlockFacing(String name, Material material, Float hardness, Float resistance) {
+    public ModBlockFacing(String name, Material material, SoundType sound, Float hardness, Float resistance) {
         super(material);
+        this.setSoundType(sound);
         setHardness(hardness);
         setResistance(resistance);
 
