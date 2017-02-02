@@ -2,6 +2,7 @@ package alsender.earthworks.block;
 
 import alsender.earthworks.main.registry.BlockRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
@@ -16,7 +17,7 @@ import java.util.Random;
 public class Block_Mud_Bottom extends ModBlock {
 
     public Block_Mud_Bottom(String name) {
-        super(name, Material.CLAY, 0.6F, 3.0F);
+        super(name, Material.CLAY, SoundType.SLIME, 0.6F, 1.0F);
         setCreativeTab(null);
     }
 

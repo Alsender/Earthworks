@@ -6,20 +6,18 @@ import alsender.earthworks.main.registry.RecipeRegistry;
 import alsender.earthworks.main.registry.TimberRegistry;
 import alsender.earthworks.main.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.File;
 
 /**
  * Created by alsender on 12/12/16.
@@ -30,7 +28,7 @@ public class Earthworks {
 
     public static final String mod_id = "earthworks";
     public static final String name = "Earthworks";
-    public static final String version = "1.0.0";
+    public static final String version = "1.0.1";
 
     public static final CreativeTabs creativeTab = (new CreativeTabs("earthworks") {
 
@@ -55,8 +53,9 @@ public class Earthworks {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-        proxy.preInit(event);
+        Config.init(event.getSuggestedConfigurationFile());
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+        proxy.preInit(event);
     }
 
     @Mod.EventHandler

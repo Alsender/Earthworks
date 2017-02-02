@@ -1,6 +1,7 @@
 package alsender.earthworks.block.timber;
 
 import alsender.earthworks.block.ModBlockFacing;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,7 +21,7 @@ public class Daub_Cob extends ModBlockFacing {
     private final String toolTip;
 
     public Daub_Cob(String name, String string) {
-        super("daub_cob_" + name, Material.ROCK, 1.5F, 30.0F);
+        super("daub_cob_" + name, Material.ROCK, SoundType.WOOD, 1.5F, 10.0F);
         this.toolTip = string;
     }
 

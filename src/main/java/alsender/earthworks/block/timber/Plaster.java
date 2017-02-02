@@ -1,6 +1,7 @@
 package alsender.earthworks.block.timber;
 
 import alsender.earthworks.block.ModBlockFacing;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,7 +21,7 @@ public class Plaster extends ModBlockFacing {
     private final String toolTip;
 
     public Plaster(String name, String toolTip) {
-        super("plaster_" + name, Material.ROCK, 3.0F, 22.5F);
+        super("plaster_" + name, Material.ROCK, SoundType.WOOD, 3.0F, 7.5F);
         this.toolTip = toolTip;
     }
 

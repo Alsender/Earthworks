@@ -3,6 +3,7 @@ package alsender.earthworks.block;
 import alsender.earthworks.main.registry.BlockRegistry;
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -23,7 +24,7 @@ public class Block_Mud extends ModBlock {
     protected static final AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.897D, 1.0D);
 
     public Block_Mud(String name) {
-        super(name, Material.CLAY, 0.6F, 3.0F);
+        super(name, Material.CLAY, SoundType.SLIME, 0.6F, 1.0F);
         setCreativeTab(Earthworks.creativeTab);
     }
 
