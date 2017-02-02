@@ -3,8 +3,8 @@
   "defaults": {
     "model": "minecraft:half_slab",
     "textures": {
-      "bottom": "earthworks:blocks/cordwood1_top",
-      "top": "earthworks:blocks/cordwood1",
+      "bottom": "earthworks:blocks/cordwood1",
+      "top": "earthworks:blocks/cordwood1_back",
       "side": "earthworks:blocks/cordwood_side"
     },
     "transform": "forge:default-block"

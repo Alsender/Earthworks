@@ -3,9 +3,9 @@
   "defaults": {
     "model": "minecraft:half_slab",
     "textures": {
-      "bottom": "earthworks:blocks/adobe1",
-      "top": "earthworks:blocks/adobe2",
-      "side": "earthworks:blocks/adobe0"
+      "bottom": "earthworks:blocks/adobe0",
+      "top": "earthworks:blocks/adobe0",
+      "side": "earthworks:blocks/adobe2"
     },
     "transform": "forge:default-block"
   },

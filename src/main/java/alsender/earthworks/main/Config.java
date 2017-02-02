@@ -25,7 +25,7 @@ public class Config {
         config.addCustomCategoryComment("world","World Gen Configs");
         config.addCustomCategoryComment("block","Block Configs");
 
-        spawn_rate = config.getInt("spawn_rate", "world",3,0,255,"Attempts the world generator will make to spawn a CHALK vein.  Set to 0 to turn off CHALK");
+        spawn_rate = config.getInt("spawn_rate", "world",3,0,42,"Attempts the world generator will make to spawn a CHALK vein.  Set to 0 to turn off CHALK");
         min_spawn = config.getInt("min_spawn","world",48,0,256,"Minimum Y level at which CHALK can spawn");
         max_spawn = config.getInt("max_spawn","world",256,0,256,"Maximum Y level at which CHALK can spawn.");
 
