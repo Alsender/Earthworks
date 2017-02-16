@@ -18,7 +18,7 @@ public class ModWorldGen implements IWorldGenerator {
 
     @Override
     public void generate(Random random, int chunkX, int chuckZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-        WorldGenMinable block_chalk = new WorldGenMinable(BlockRegistry.block_chalk.getDefaultState(), 64);
+        WorldGenMinable block_chalk = new WorldGenMinable(BlockRegistry.block_chalk.getDefaultState(), Config.vein_size);
         for (int i = 0; i < Config.spawn_rate; i++) {
             int x = chunkX*16+random.nextInt(16);
             int y = random.nextInt((Config.max_spawn)-(Config.min_spawn))+(Config.min_spawn);
