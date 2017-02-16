@@ -105,7 +105,7 @@ public class BlockRegistry {
         block_wattle = new ModBlock("block_wattle", Material.ROCK, SoundType.STONE, 1.5F, 8.33F);
         block_wicker = new ModBlock("block_wicker", Material.WOOD, SoundType.CLOTH, 0.8F, 1.0F);
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             block_reed = new ModRotatedPillar("block_reed", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
             block_thatch = new ModRotatedPillar("block_thatch", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
         }
@@ -125,7 +125,7 @@ public class BlockRegistry {
         slab_wattle = new ModSlab("slab_wattle", block_wattle);
         slab_wicker = new ModSlab("slab_wicker", block_wicker);
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             slab_reed = new ModSlab("slab_reed", block_reed);
             slab_thatch = new ModSlab("slab_thatch", block_thatch);
         }
@@ -145,7 +145,7 @@ public class BlockRegistry {
         stair_wattle = new ModStair("stair_wattle", block_wattle);
         stair_wicker = new ModStair("stair_wicker", block_wicker);
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             stair_reed = new ModStair("stair_reed", block_reed);
             stair_thatch = new ModStair("stair_thatch", block_thatch);
         }
@@ -165,7 +165,7 @@ public class BlockRegistry {
         wall_wattle = new ModWall("wall_wattle", block_wattle);
         wall_wicker = new ModWall("wall_wicker", block_wicker);
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             wall_reed = new ModWall("wall_reed", block_reed);
             wall_thatch = new ModWall("wall_thatch", block_thatch);
         }
@@ -189,7 +189,7 @@ public class BlockRegistry {
         ((ModBlock)block_wattle).initModel();
         ((ModBlock)block_wicker).initModel();
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             ((ModRotatedPillar)block_reed).initModel();
             ((ModRotatedPillar)block_thatch).initModel();
         }
@@ -209,7 +209,7 @@ public class BlockRegistry {
         ((ModSlab)slab_wattle).initModel();
         ((ModSlab)slab_wicker).initModel();
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             ((ModSlab)slab_reed).initModel();
             ((ModSlab)slab_thatch).initModel();
         }
@@ -229,7 +229,7 @@ public class BlockRegistry {
         ((ModStair)stair_wattle).initModel();
         ((ModStair)stair_wicker).initModel();
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             ((ModStair)stair_reed).initModel();
             ((ModStair)stair_thatch).initModel();
         }
@@ -249,7 +249,7 @@ public class BlockRegistry {
         ((ModWall)wall_wattle).initModel();
         ((ModWall)wall_wicker).initModel();
 
-        if (Config.generate_quark == true) {
+        if (Config.quark_compat == true) {
             ((ModWall)wall_reed).initModel();
             ((ModWall)wall_thatch).initModel();
         }

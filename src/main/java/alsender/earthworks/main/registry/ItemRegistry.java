@@ -2,9 +2,7 @@ package alsender.earthworks.main.registry;
 
 
 import alsender.earthworks.item.ModItem;
-import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -24,9 +22,6 @@ public class ItemRegistry {
             item_sand,
             item_slaked_lime,
             item_timber;
-
-    public static Item
-        item_slab_adobe;
 
     public static void init() {
         item_adobe = new ModItem("adobe");
@@ -54,13 +49,4 @@ public class ItemRegistry {
         ((ModItem)item_slaked_lime).initModel();
         ((ModItem)item_timber).initModel();
     }
-
-/** public static void preInitModels() {
-        final String frames[] = {"x","square","square_x","parallel_vert","parallel_hor","left","right","top","bottom","triangle_r","triangle_l","slant_r","slant_r","slant_l","bottom_l","bottom_r"};
-        ResourceLocation[] resLoc = new ResourceLocation[15];
-        for (int i = 0; i < 15; i++)
-            resLoc[i] = new ResourceLocation("earthworks:daub_cob" +frames[i]);
-        ModelBakery.registerItemVariants(Item.getItemFromBlock(BlockRegistry.daub_cob), resLoc);
-    }
-*/
  }
