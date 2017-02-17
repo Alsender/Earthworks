@@ -28,6 +28,9 @@ public class BlockRegistry {
             block_rammed_earth,
             block_reed,
             block_slate,
+            block_slate_slab,
+            block_slate_shingle,
+            block_slate_tile,
             block_thatch,
             block_timber,
             block_wattle,
@@ -46,6 +49,9 @@ public class BlockRegistry {
             slab_rammed_earth,
             slab_reed,
             slab_slate,
+            slab_slate_slab,
+            slab_slate_shingle,
+            slab_slate_tile,
             slab_thatch,
             slab_timber,
             slab_wattle,
@@ -64,6 +70,9 @@ public class BlockRegistry {
             stair_rammed_earth,
             stair_reed,
             stair_slate,
+            stair_slate_slab,
+            stair_slate_shingle,
+            stair_slate_tile,
             stair_thatch,
             stair_timber,
             stair_wattle,
@@ -82,6 +91,7 @@ public class BlockRegistry {
             wall_rammed_earth,
             wall_reed,
             wall_slate,
+            wall_slate_slab,
             wall_thatch,
             wall_timber,
             wall_wattle,
@@ -101,6 +111,9 @@ public class BlockRegistry {
         block_plaster = new ModBlock("block_plaster", Material.ROCK, SoundType.STONE, 2.0F, 7.5F);
         block_rammed_earth = new ModBlock("block_rammed_earth", Material.GROUND, SoundType.STONE, 2.0F, 10.0F);
         block_slate = new ModBlock("block_slate", Material.ROCK, SoundType.STONE, 1.5F, 10.0F);
+        block_slate_slab = new ModBlock("block_slate_slab",Material.ROCK,SoundType.STONE,1.5F,10.0F);
+        block_slate_shingle = new ModBlock("block_slate_shingle",Material.ROCK,SoundType.STONE,1.2F,10.0F);
+        block_slate_tile = new ModBlock("block_slate_tile",Material.ROCK,SoundType.STONE,1.2F,10.0F);
         block_timber = new ModRotatedPillar("block_timber", Material.WOOD, SoundType.WOOD, 2.0F, 3.33F);
         block_wattle = new ModBlock("block_wattle", Material.ROCK, SoundType.STONE, 1.5F, 8.33F);
         block_wicker = new ModBlock("block_wicker", Material.WOOD, SoundType.CLOTH, 0.8F, 1.0F);
@@ -121,6 +134,9 @@ public class BlockRegistry {
         slab_plaster = new ModSlab("slab_plaster", block_plaster);
         slab_rammed_earth = new ModSlab("slab_rammed_earth", block_rammed_earth);
         slab_slate = new ModSlab("slab_slate", block_slate);
+        slab_slate_slab = new ModSlab("slab_slate_slab", block_slate_slab);
+        slab_slate_shingle = new ModSlab("slab_slate_shingle",block_slate);
+        slab_slate_tile = new ModSlab("slab_slate_tile",block_slate);
         slab_timber = new ModSlab("slab_timber", block_timber);
         slab_wattle = new ModSlab("slab_wattle", block_wattle);
         slab_wicker = new ModSlab("slab_wicker", block_wicker);
@@ -141,6 +157,9 @@ public class BlockRegistry {
         stair_plaster = new ModStair("stair_plaster", block_plaster);
         stair_rammed_earth = new ModStair("stair_rammed_earth", block_rammed_earth);
         stair_slate = new ModStair("stair_slate", block_slate);
+        stair_slate_slab = new ModStair("stair_slate_slab",block_slate_slab);
+        stair_slate_shingle = new ModStair("stair_slate_shingle",block_slate);
+        stair_slate_tile = new ModStair("stair_slate_tile",block_slate);
         stair_timber = new ModStair("stair_timber", block_timber);
         stair_wattle = new ModStair("stair_wattle", block_wattle);
         stair_wicker = new ModStair("stair_wicker", block_wicker);
@@ -161,6 +180,7 @@ public class BlockRegistry {
         wall_plaster = new ModWall("wall_plaster", block_plaster);
         wall_rammed_earth = new ModWall("wall_rammed_earth", block_rammed_earth);
         wall_slate = new ModWall("wall_slate", block_slate);
+        wall_slate_slab = new ModWall("wall_slate_slab", block_slate_slab);
         wall_timber = new ModWall("wall_timber", block_timber);
         wall_wattle = new ModWall("wall_wattle", block_wattle);
         wall_wicker = new ModWall("wall_wicker", block_wicker);
@@ -185,6 +205,9 @@ public class BlockRegistry {
         ((ModBlock)block_plaster).initModel();
         ((ModBlock)block_rammed_earth).initModel();
         ((ModBlock)block_slate).initModel();
+        ((ModBlock)block_slate_slab).initModel();
+        ((ModBlock)block_slate_shingle).initModel();
+        ((ModBlock)block_slate_tile).initModel();
         ((ModRotatedPillar)block_timber).initModel();
         ((ModBlock)block_wattle).initModel();
         ((ModBlock)block_wicker).initModel();
@@ -205,6 +228,9 @@ public class BlockRegistry {
         ((ModSlab)slab_plaster).initModel();
         ((ModSlab)slab_rammed_earth).initModel();
         ((ModSlab)slab_slate).initModel();
+        ((ModSlab)slab_slate_slab).initModel();
+        ((ModSlab)slab_slate_shingle).initModel();
+        ((ModSlab)slab_slate_tile).initModel();
         ((ModSlab)slab_timber).initModel();
         ((ModSlab)slab_wattle).initModel();
         ((ModSlab)slab_wicker).initModel();
@@ -225,6 +251,9 @@ public class BlockRegistry {
         ((ModStair)stair_plaster).initModel();
         ((ModStair)stair_rammed_earth).initModel();
         ((ModStair)stair_slate).initModel();
+        ((ModStair)stair_slate_slab).initModel();
+        ((ModStair)stair_slate_shingle).initModel();
+        ((ModStair)stair_slate_tile).initModel();
         ((ModStair)stair_timber).initModel();
         ((ModStair)stair_wattle).initModel();
         ((ModStair)stair_wicker).initModel();
@@ -245,6 +274,7 @@ public class BlockRegistry {
         ((ModWall)wall_plaster).initModel();
         ((ModWall)wall_rammed_earth).initModel();
         ((ModWall)wall_slate).initModel();
+        ((ModWall)wall_slate_slab).initModel();
         ((ModWall)wall_timber).initModel();
         ((ModWall)wall_wattle).initModel();
         ((ModWall)wall_wicker).initModel();
