@@ -10,11 +10,18 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  */
 public class ClientProxy extends CommonProxy {
 
+    ResourceProxy resourceProxy;
+
     @Override
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
         ItemRegistry.initModels();
         BlockRegistry.initModels();
         TimberRegistry.initModels();
+    }
+
+    @Override
+    public void addResourceOverride(String space, String dir, String file, String ext) {
+        resourceProxy.addResource(space, dir, file, ext);
     }
 }

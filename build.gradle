@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.1.0"
+version = "1.1.1"
 group = "alsender.Earthworks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Earthworks-1.11.2"
 
@@ -21,7 +21,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.11.2-13.20.0.2204"
+    version = "1.11.2-13.20.0.2233"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
