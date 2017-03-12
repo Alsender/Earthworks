@@ -118,11 +118,6 @@ public class BlockRegistry {
         block_wattle = new ModBlock("block_wattle", Material.ROCK, SoundType.STONE, 1.5F, 8.33F);
         block_wicker = new ModBlock("block_wicker", Material.WOOD, SoundType.CLOTH, 0.8F, 1.0F);
 
-        if (Config.quark_compat == true) {
-            block_reed = new ModRotatedPillar("block_reed", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
-            block_thatch = new ModRotatedPillar("block_thatch", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
-        }
-
         slab_adobe = new ModSlab("slab_adobe", block_adobe);
         slab_chalk = new ModSlab("slab_chalk", block_chalk);
         slab_cinder = new ModSlab("slab_cinder", block_cinder);
@@ -140,11 +135,6 @@ public class BlockRegistry {
         slab_timber = new ModSlab("slab_timber", block_timber);
         slab_wattle = new ModSlab("slab_wattle", block_wattle);
         slab_wicker = new ModSlab("slab_wicker", block_wicker);
-
-        if (Config.quark_compat == true) {
-            slab_reed = new ModSlab("slab_reed", block_reed);
-            slab_thatch = new ModSlab("slab_thatch", block_thatch);
-        }
 
         stair_adobe = new ModStair("stair_adobe", block_adobe);
         stair_chalk = new ModStair("stair_chalk", block_chalk);
@@ -164,11 +154,6 @@ public class BlockRegistry {
         stair_wattle = new ModStair("stair_wattle", block_wattle);
         stair_wicker = new ModStair("stair_wicker", block_wicker);
 
-        if (Config.quark_compat == true) {
-            stair_reed = new ModStair("stair_reed", block_reed);
-            stair_thatch = new ModStair("stair_thatch", block_thatch);
-        }
-
         wall_adobe = new ModWall("wall_adobe", block_adobe);
         wall_chalk = new ModWall("wall_chalk", block_chalk);
         wall_cinder =new ModWall("wall_cinder", block_cinder);
@@ -184,11 +169,6 @@ public class BlockRegistry {
         wall_timber = new ModWall("wall_timber", block_timber);
         wall_wattle = new ModWall("wall_wattle", block_wattle);
         wall_wicker = new ModWall("wall_wicker", block_wicker);
-
-        if (Config.quark_compat == true) {
-            wall_reed = new ModWall("wall_reed", block_reed);
-            wall_thatch = new ModWall("wall_thatch", block_thatch);
-        }
     }
 
     @SideOnly(Side.CLIENT)
@@ -212,11 +192,6 @@ public class BlockRegistry {
         ((ModBlock)block_wattle).initModel();
         ((ModBlock)block_wicker).initModel();
 
-        if (Config.quark_compat == true) {
-            ((ModRotatedPillar)block_reed).initModel();
-            ((ModRotatedPillar)block_thatch).initModel();
-        }
-
         ((ModSlab)slab_adobe).initModel();
         ((ModSlab)slab_chalk).initModel();
         ((ModSlab)slab_cinder).initModel();
@@ -234,11 +209,6 @@ public class BlockRegistry {
         ((ModSlab)slab_timber).initModel();
         ((ModSlab)slab_wattle).initModel();
         ((ModSlab)slab_wicker).initModel();
-
-        if (Config.quark_compat == true) {
-            ((ModSlab)slab_reed).initModel();
-            ((ModSlab)slab_thatch).initModel();
-        }
 
         ((ModStair)stair_adobe).initModel();
         ((ModStair)stair_chalk).initModel();
@@ -258,11 +228,6 @@ public class BlockRegistry {
         ((ModStair)stair_wattle).initModel();
         ((ModStair)stair_wicker).initModel();
 
-        if (Config.quark_compat == true) {
-            ((ModStair)stair_reed).initModel();
-            ((ModStair)stair_thatch).initModel();
-        }
-
         ((ModWall)wall_adobe).initModel();
         ((ModWall)wall_chalk).initModel();
         ((ModWall)wall_cinder).initModel();
@@ -278,10 +243,5 @@ public class BlockRegistry {
         ((ModWall)wall_timber).initModel();
         ((ModWall)wall_wattle).initModel();
         ((ModWall)wall_wicker).initModel();
-
-        if (Config.quark_compat == true) {
-            ((ModWall)wall_reed).initModel();
-            ((ModWall)wall_thatch).initModel();
-        }
     }
 }

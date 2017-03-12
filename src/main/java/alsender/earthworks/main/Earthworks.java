@@ -2,6 +2,7 @@ package alsender.earthworks.main;
 
 import alsender.earthworks.main.proxy.CommonProxy;
 import alsender.earthworks.main.registry.BlockRegistry;
+import alsender.earthworks.main.registry.CompatRegistry;
 import alsender.earthworks.main.registry.RecipeRegistry;
 import alsender.earthworks.main.registry.TimberRegistry;
 import alsender.earthworks.main.world.ModWorldGen;
@@ -63,6 +64,12 @@ public class Earthworks {
         proxy.init(event);
         RecipeRegistry.init();
         TimberRegistry.initRecipes();
+        if (Config.quark == true) {
+            CompatRegistry.initQuarkRecipe();
+        }
+        if (Config.betterwithmods == true) {
+            CompatRegistry.initBTMRecipe();
+        }
     }
 
     @Mod.EventHandler
