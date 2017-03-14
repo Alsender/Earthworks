@@ -210,15 +210,48 @@ public class TimberRegistry {
 
     public static void initRecipes() {
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber, 3),
-                " W "," W "," W ",
-                'W', Blocks.LOG);
+//Timber Logs
 
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_timber, 1),
+        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_oak, 3),
+                " W "," W "," W ",
+                'W', new ItemStack(Blocks.LOG, 1, 0));
+
+        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_spruce, 3),
+                " W "," W "," W ",
+                'W', new ItemStack(Blocks.LOG, 1, 1));
+
+        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_birch, 3),
+                " W "," W "," W ",
+                'W', new ItemStack(Blocks.LOG, 1, 2));
+
+        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_jungle, 3),
+                " W "," W "," W ",
+                'W', new ItemStack(Blocks.LOG, 1, 3));
+
+        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_acacia, 3),
+                " W "," W "," W ",
+                'W', new ItemStack(Blocks.LOG2, 1, 0));
+
+        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_dark_oak, 3),
+                " W "," W "," W ",
+                'W', new ItemStack(Blocks.LOG2, 1, 1));
+
+//Slabs/Stairs/Walls
+
+        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_oak, BlockRegistry.stair_timber_oak, BlockRegistry.slab_timber_oak, BlockRegistry.wall_timber_oak);
+        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_spruce, BlockRegistry.stair_timber_spruce, BlockRegistry.slab_timber_spruce, BlockRegistry.wall_timber_spruce);
+        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_birch, BlockRegistry.stair_timber_birch, BlockRegistry.slab_timber_birch, BlockRegistry.wall_timber_birch);
+        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_jungle, BlockRegistry.stair_timber_jungle, BlockRegistry.slab_timber_jungle, BlockRegistry.wall_timber_jungle);
+        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_acacia, BlockRegistry.stair_timber_acacia, BlockRegistry.slab_timber_acacia, BlockRegistry.wall_timber_acacia);
+        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_dark_oak, BlockRegistry.stair_timber_dark_oak, BlockRegistry.slab_timber_dark_oak, BlockRegistry.wall_timber_dark_oak);
+
+//Vertical Planks
+
+        GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_timber_oak, 1),
                 ItemRegistry.item_timber, ItemRegistry.item_timber, ItemRegistry.item_timber);
 
         GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistry.item_timber, 3),
-                BlockRegistry.block_timber);
+                BlockRegistry.block_timber_oak);
 
         arrow0(daub_cob_arrow0, BlockRegistry.block_wattle);
         arrow1(daub_cob_arrow1, BlockRegistry.block_wattle);

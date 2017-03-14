@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "earthworks:blocks/planks_vert/oak/planks_vert_oak"
+  }
+}

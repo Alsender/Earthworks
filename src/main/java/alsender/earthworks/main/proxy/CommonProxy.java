@@ -18,11 +18,13 @@ public class CommonProxy {
         BlockRegistry.init();
         TimberRegistry.init();
         ItemRegistry.init();
-        if (Config.quark == true) {
+        if (Config.quark_compat == true) {
             CompatRegistry.initQuark();
+            CompatRegistry.initQuarkRecipe();
         }
-        if (Config.betterwithmods == true) {
+        if (Config.btm_compat == true) {
             CompatRegistry.initBTM();
+            CompatRegistry.initBTMRecipe();
         }
     }
 

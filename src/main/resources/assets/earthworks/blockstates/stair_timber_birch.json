@@ -2,11 +2,11 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "bottom": "minecraft:blocks/log_oak_top",
-      "top": "minecraft:blocks/log_oak_top",
-      "side": "earthworks:blocks/timber_oak",
-      "sideTop": "minecraft:blocks/log_oak_top",
-      "particle": "earthworks:blocks/timber_oak"
+      "bottom": "minecraft:blocks/log_birch_top",
+      "top": "minecraft:blocks/log_birch_top",
+      "side": "earthworks:blocks/timber_birch",
+      "sideTop": "minecraft:blocks/log_birch_top",
+      "particle": "earthworks:blocks/timber_birch"
     }
   },
 

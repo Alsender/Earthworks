@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:half_slab",
+    "textures": {
+      "bottom": "earthworks:blocks/gabion_bottom",
+      "top": "earthworks:blocks/gabion_top_sand",
+      "side": "earthworks:blocks/gabion_side"
+    },
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "half=top": { "model": "earthworks:slab_upper" },
+    "half=bottom": [{}]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "earthworks:block/wall_post",
+  "textures": {
+    "top": "earthworks:blocks/wall_post_acacia",
+    "bottom": "earthworks:blocks/wall_post_acacia",
+    "wall": "earthworks:blocks/timber_acacia"
+  }
+}

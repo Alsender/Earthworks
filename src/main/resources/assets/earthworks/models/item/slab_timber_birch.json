@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "top": "minecraft:blocks/log_birch_top",
+    "side": "earthworks:blocks/timber_birch",
+    "bottom": "minecraft:blocks/log_birch_top",
+    "particle": "earthworks:blocks/timber_birch"
+  }
+}

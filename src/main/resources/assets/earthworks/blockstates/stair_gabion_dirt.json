@@ -2,11 +2,11 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "bottom": "minecraft:blocks/log_oak_top",
-      "top": "minecraft:blocks/log_oak_top",
-      "side": "earthworks:blocks/timber_oak",
-      "sideTop": "minecraft:blocks/log_oak_top",
-      "particle": "earthworks:blocks/timber_oak"
+      "bottom": "earthworks:blocks/gabion_bottom",
+      "top": "earthworks:blocks/gabion_top_dirt",
+      "side": "earthworks:blocks/gabion_side",
+      "sideTop": "earthworks:blocks/gabion_top_dirt",
+      "particle": "minecraft:blocks/dirt"
     }
   },
 

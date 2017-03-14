@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=oak": { "model": "earthworks:shingle/shingle_oak" },
+    "variant=birch": { "model": "earthworks:shingle/shingle_birch" },
+    "variant=spruce": { "model": "earthworks:shingle/shingle_spruce" },
+    "variant=jungle": { "model": "earthworks:shingle/shingle_jungle" },
+    "variant=acacia": { "model": "earthworks:shingle/shingle_acacia" },
+    "variant=dark_oak": { "model": "earthworks:shingle/shingle_dark_oak" }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "earthworks:block/wall_post",
+  "textures": {
+    "top": "earthworks:blocks/wall_post_big_oak",
+    "bottom": "earthworks:blocks/wall_post_big_oak",
+    "wall": "earthworks:blocks/timber_big_oak"
+  }
+}
