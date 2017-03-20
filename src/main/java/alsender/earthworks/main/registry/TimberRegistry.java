@@ -2,9 +2,9 @@ package alsender.earthworks.main.registry;
 
 
 import alsender.earthworks.block.timber.*;
+import alsender.earthworks.main.crafting.ModCraftingManager;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
@@ -339,157 +339,157 @@ public class TimberRegistry {
     }
 
     public static void arrow0(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt","ttb","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void arrow1(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","ttb","tbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void arrow2(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt", "btt", "ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void arrow3(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","btt","tbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void barndoor(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt","ttt","tbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void bottom(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "   ","bbb","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void bottom_l(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "tbb","tbb","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void bottom_r(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "bbt","bbt","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void left(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tb ","tb ","tb ",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void parallel_hor(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","bbb","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void parallel_vert(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "tbt","tbt","tbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void right(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 " bt"," bt"," bt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void slash(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 7),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 7),
                 "bbt","btb","tbb",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void backslash(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 7),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 7),
                 "tbb","btb","bbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void square(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","tbt","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void top(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","bbb","   ",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void top_l(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","tbb","tbb",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void top_r(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","bbt","bbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void triangle0(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "tbb","ttb","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void triangle1(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","ttb","tbb",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void triangle2(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "bbt","btt","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void triangle3(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 5),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","btt","bbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void xbottom(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","tbt","tbt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void xleft(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","bbt","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void xright(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","tbb","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
     }
     public static void xtop(Block blockOut, Block blockIn) {
-        GameRegistry.addShapedRecipe(new ItemStack(blockOut, 4),
+        ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt","tbt","ttt",
                 't', ItemRegistry.item_timber,
                 'b', blockIn);
