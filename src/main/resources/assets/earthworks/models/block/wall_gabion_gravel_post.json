@@ -1,0 +1,8 @@
+{
+  "parent": "earthworks:block/wall_post",
+  "textures": {
+    "top": "earthworks:blocks/wall_gabion_gravel",
+    "bottom": "earthworks:blocks/gabion_bottom",
+    "wall": "earthworks:blocks/post_gabion"
+  }
+}

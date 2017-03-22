@@ -10,6 +10,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import static alsender.earthworks.main.registry.BlockRegistry.*;
+import static alsender.earthworks.main.registry.ItemRegistry.*;
+
 /**
  * Created by alsender on 13/01/17.
  */
@@ -212,52 +215,67 @@ public class TimberRegistry {
 
 //Timber Logs
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_oak, 3),
+        GameRegistry.addShapedRecipe(new ItemStack(block_timber_oak, 3),
                 " W "," W "," W ",
                 'W', new ItemStack(Blocks.LOG, 1, 0));
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_spruce, 3),
+        GameRegistry.addShapedRecipe(new ItemStack(block_timber_spruce, 3),
                 " W "," W "," W ",
                 'W', new ItemStack(Blocks.LOG, 1, 1));
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_birch, 3),
+        GameRegistry.addShapedRecipe(new ItemStack(block_timber_birch, 3),
                 " W "," W "," W ",
                 'W', new ItemStack(Blocks.LOG, 1, 2));
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_jungle, 3),
+        GameRegistry.addShapedRecipe(new ItemStack(block_timber_jungle, 3),
                 " W "," W "," W ",
                 'W', new ItemStack(Blocks.LOG, 1, 3));
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_acacia, 3),
+        GameRegistry.addShapedRecipe(new ItemStack(block_timber_acacia, 3),
                 " W "," W "," W ",
                 'W', new ItemStack(Blocks.LOG2, 1, 0));
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_timber_dark_oak, 3),
+        GameRegistry.addShapedRecipe(new ItemStack(block_timber_dark_oak, 3),
                 " W "," W "," W ",
                 'W', new ItemStack(Blocks.LOG2, 1, 1));
 
 //Slabs/Stairs/Walls
 
-        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_oak, BlockRegistry.stair_timber_oak, BlockRegistry.slab_timber_oak, BlockRegistry.wall_timber_oak);
-        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_spruce, BlockRegistry.stair_timber_spruce, BlockRegistry.slab_timber_spruce, BlockRegistry.wall_timber_spruce);
-        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_birch, BlockRegistry.stair_timber_birch, BlockRegistry.slab_timber_birch, BlockRegistry.wall_timber_birch);
-        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_jungle, BlockRegistry.stair_timber_jungle, BlockRegistry.slab_timber_jungle, BlockRegistry.wall_timber_jungle);
-        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_acacia, BlockRegistry.stair_timber_acacia, BlockRegistry.slab_timber_acacia, BlockRegistry.wall_timber_acacia);
-        RecipeRegistry.stair_slab_wall(BlockRegistry.block_timber_dark_oak, BlockRegistry.stair_timber_dark_oak, BlockRegistry.slab_timber_dark_oak, BlockRegistry.wall_timber_dark_oak);
+        RecipeRegistry.stair_slab_wall(block_timber_oak, stair_timber_oak, slab_timber_oak, wall_timber_oak);
+        RecipeRegistry.stair_slab_wall(block_timber_spruce, stair_timber_spruce, slab_timber_spruce, wall_timber_spruce);
+        RecipeRegistry.stair_slab_wall(block_timber_birch, stair_timber_birch, slab_timber_birch, wall_timber_birch);
+        RecipeRegistry.stair_slab_wall(block_timber_jungle, stair_timber_jungle, slab_timber_jungle, wall_timber_jungle);
+        RecipeRegistry.stair_slab_wall(block_timber_acacia, stair_timber_acacia, slab_timber_acacia, wall_timber_acacia);
+        RecipeRegistry.stair_slab_wall(block_timber_dark_oak, stair_timber_dark_oak, slab_timber_dark_oak, wall_timber_dark_oak);
 
 //Vertical Planks
 
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_timber_oak, 1),
-                ItemRegistry.item_timber, ItemRegistry.item_timber, ItemRegistry.item_timber);
+        GameRegistry.addShapelessRecipe(new ItemStack(block_timber_oak, 1),
+                item_timber, item_timber, item_timber);
 
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistry.item_timber, 3),
-                BlockRegistry.block_timber_oak);
+        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
+                block_timber_oak);
 
-        arrow0(daub_cob_arrow0, BlockRegistry.block_wattle);
-        arrow1(daub_cob_arrow1, BlockRegistry.block_wattle);
-        arrow2(daub_cob_arrow2, BlockRegistry.block_wattle);
-        arrow3(daub_cob_arrow3, BlockRegistry.block_wattle);
-        barndoor(daub_cob_barndoor0, BlockRegistry.block_wattle);
+        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
+                block_timber_spruce);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
+                block_timber_birch);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
+                block_timber_jungle);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
+                block_timber_acacia);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
+                block_timber_dark_oak);
+
+        arrow0(daub_cob_arrow0, block_wattle);
+        arrow1(daub_cob_arrow1, block_wattle);
+        arrow2(daub_cob_arrow2, block_wattle);
+        arrow3(daub_cob_arrow3, block_wattle);
+        barndoor(daub_cob_barndoor0, block_wattle);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_barndoor1), daub_cob_barndoor0);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_barndoor2), daub_cob_barndoor1);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_barndoor3), daub_cob_barndoor2);
@@ -270,36 +288,36 @@ public class TimberRegistry {
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_xdoor2), daub_cob_xdoor1);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_xdoor3), daub_cob_xdoor2);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_barndoor0), daub_cob_xdoor3);
-        bottom(daub_cob_bottom, BlockRegistry.block_wattle);
-        bottom_l(daub_cob_bottom_l, BlockRegistry.block_wattle);
-        bottom_r(daub_cob_bottom_r, BlockRegistry.block_wattle);
-        left(daub_cob_left, BlockRegistry.block_wattle);
-        parallel_hor(daub_cob_parallel_hor, BlockRegistry.block_wattle);
-        parallel_vert(daub_cob_parallel_vert, BlockRegistry.block_wattle);
-        right(daub_cob_right, BlockRegistry.block_wattle);
-        slash(daub_cob_slash, BlockRegistry.block_wattle);
-        backslash(daub_cob_slash_back, BlockRegistry.block_wattle);
-        square(daub_cob_square, BlockRegistry.block_wattle);
+        bottom(daub_cob_bottom, block_wattle);
+        bottom_l(daub_cob_bottom_l, block_wattle);
+        bottom_r(daub_cob_bottom_r, block_wattle);
+        left(daub_cob_left, block_wattle);
+        parallel_hor(daub_cob_parallel_hor, block_wattle);
+        parallel_vert(daub_cob_parallel_vert, block_wattle);
+        right(daub_cob_right, block_wattle);
+        slash(daub_cob_slash, block_wattle);
+        backslash(daub_cob_slash_back, block_wattle);
+        square(daub_cob_square, block_wattle);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_square_x), daub_cob_square);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_x), daub_cob_square_x);
             GameRegistry.addShapelessRecipe(new ItemStack(daub_cob_x), daub_cob_square);
-        top(daub_cob_top, BlockRegistry.block_wattle);
-        top_l(daub_cob_top_l, BlockRegistry.block_wattle);
-        top_r(daub_cob_top_r, BlockRegistry.block_wattle);
-        triangle0(daub_cob_triangle0, BlockRegistry.block_wattle);
-        triangle1(daub_cob_triangle1, BlockRegistry.block_wattle);
-        triangle2(daub_cob_triangle2, BlockRegistry.block_wattle);
-        triangle3(daub_cob_triangle3, BlockRegistry.block_wattle);
-        xbottom(daub_cob_xbottom, BlockRegistry.block_wattle);
-        xleft(daub_cob_xleft, BlockRegistry.block_wattle);
-        xright(daub_cob_xright, BlockRegistry.block_wattle);
-        xtop(daub_cob_xtop, BlockRegistry.block_wattle);
+        top(daub_cob_top, block_wattle);
+        top_l(daub_cob_top_l, block_wattle);
+        top_r(daub_cob_top_r, block_wattle);
+        triangle0(daub_cob_triangle0, block_wattle);
+        triangle1(daub_cob_triangle1, block_wattle);
+        triangle2(daub_cob_triangle2, block_wattle);
+        triangle3(daub_cob_triangle3, block_wattle);
+        xbottom(daub_cob_xbottom, block_wattle);
+        xleft(daub_cob_xleft, block_wattle);
+        xright(daub_cob_xright, block_wattle);
+        xtop(daub_cob_xtop, block_wattle);
 
-        arrow0(plaster_arrow0, BlockRegistry.block_plaster);
-        arrow1(plaster_arrow1, BlockRegistry.block_plaster);
-        arrow2(plaster_arrow2, BlockRegistry.block_plaster);
-        arrow3(plaster_arrow3, BlockRegistry.block_plaster);
-        barndoor(plaster_barndoor0, BlockRegistry.block_plaster);
+        arrow0(plaster_arrow0, block_plaster);
+        arrow1(plaster_arrow1, block_plaster);
+        arrow2(plaster_arrow2, block_plaster);
+        arrow3(plaster_arrow3, block_plaster);
+        barndoor(plaster_barndoor0, block_plaster);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_barndoor1), plaster_barndoor0);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_barndoor2), plaster_barndoor1);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_barndoor3), plaster_barndoor2);
@@ -312,186 +330,186 @@ public class TimberRegistry {
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_xdoor2), plaster_xdoor1);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_xdoor3), plaster_xdoor2);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_barndoor0), plaster_xdoor3);
-        bottom(plaster_bottom, BlockRegistry.block_plaster);
-        bottom_l(plaster_bottom_l, BlockRegistry.block_plaster);
-        bottom_r(plaster_bottom_r, BlockRegistry.block_plaster);
-        left(plaster_left, BlockRegistry.block_plaster);
-        parallel_hor(plaster_parallel_hor, BlockRegistry.block_plaster);
-        parallel_vert(plaster_parallel_vert, BlockRegistry.block_plaster);
-        right(plaster_right, BlockRegistry.block_plaster);
-        slash(plaster_slash, BlockRegistry.block_plaster);
-        backslash(plaster_slash_back, BlockRegistry.block_plaster);
-        square(plaster_square, BlockRegistry.block_plaster);
+        bottom(plaster_bottom, block_plaster);
+        bottom_l(plaster_bottom_l, block_plaster);
+        bottom_r(plaster_bottom_r, block_plaster);
+        left(plaster_left, block_plaster);
+        parallel_hor(plaster_parallel_hor, block_plaster);
+        parallel_vert(plaster_parallel_vert, block_plaster);
+        right(plaster_right, block_plaster);
+        slash(plaster_slash, block_plaster);
+        backslash(plaster_slash_back, block_plaster);
+        square(plaster_square, block_plaster);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_square_x), plaster_square);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_x), plaster_square_x);
             GameRegistry.addShapelessRecipe(new ItemStack(plaster_x), plaster_square);
-        top(plaster_top, BlockRegistry.block_plaster);
-        top_l(plaster_top_l, BlockRegistry.block_plaster);
-        top_r(plaster_top_r, BlockRegistry.block_plaster);
-        triangle0(plaster_triangle0, BlockRegistry.block_plaster);
-        triangle1(plaster_triangle1, BlockRegistry.block_plaster);
-        triangle2(plaster_triangle2, BlockRegistry.block_plaster);
-        triangle3(plaster_triangle3, BlockRegistry.block_plaster);
-        xbottom(plaster_xbottom, BlockRegistry.block_plaster);
-        xleft(plaster_xleft, BlockRegistry.block_plaster);
-        xright(plaster_xright, BlockRegistry.block_plaster);
-        xtop(plaster_xtop, BlockRegistry.block_plaster);
+        top(plaster_top, block_plaster);
+        top_l(plaster_top_l, block_plaster);
+        top_r(plaster_top_r, block_plaster);
+        triangle0(plaster_triangle0, block_plaster);
+        triangle1(plaster_triangle1, block_plaster);
+        triangle2(plaster_triangle2, block_plaster);
+        triangle3(plaster_triangle3, block_plaster);
+        xbottom(plaster_xbottom, block_plaster);
+        xleft(plaster_xleft, block_plaster);
+        xright(plaster_xright, block_plaster);
+        xtop(plaster_xtop, block_plaster);
     }
 
     public static void arrow0(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt","ttb","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void arrow1(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","ttb","tbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void arrow2(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt", "btt", "ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void arrow3(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","btt","tbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void barndoor(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt","ttt","tbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void bottom(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "   ","bbb","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void bottom_l(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "tbb","tbb","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void bottom_r(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "bbt","bbt","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void left(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tb ","tb ","tb ",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void parallel_hor(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","bbb","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void parallel_vert(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "tbt","tbt","tbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void right(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 " bt"," bt"," bt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void slash(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 7),
                 "bbt","btb","tbb",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void backslash(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 7),
                 "tbb","btb","bbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void square(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","tbt","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void top(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","bbb","   ",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void top_l(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","tbb","tbb",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void top_r(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","bbt","bbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void triangle0(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "tbb","ttb","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void triangle1(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","ttb","tbb",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void triangle2(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "bbt","btt","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void triangle3(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 5),
                 "ttt","btt","bbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void xbottom(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","tbt","tbt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void xleft(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","bbt","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void xright(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "ttt","tbb","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
     public static void xtop(Block blockOut, Block blockIn) {
         ModCraftingManager.addMirrorlessRecipe(new ItemStack(blockOut, 4),
                 "tbt","tbt","ttt",
-                't', ItemRegistry.item_timber,
+                't', item_timber,
                 'b', blockIn);
     }
 }

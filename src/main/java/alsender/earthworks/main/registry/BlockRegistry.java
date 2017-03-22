@@ -2,7 +2,6 @@ package alsender.earthworks.main.registry;
 
 
 import alsender.earthworks.block.*;
-import alsender.earthworks.main.Config;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -304,8 +303,15 @@ public class BlockRegistry {
         ((ModWall)wall_plaster).initModel();
         ((ModWall)wall_rammed_earth).initModel();
         ((ModWall)wall_slate).initModel();
+        ((ModWall)wall_slate_shingle).initModel();
         ((ModWall)wall_slate_slab).initModel();
+        ((ModWall)wall_slate_tile).initModel();
         ((ModWall)wall_timber_oak).initModel();
+        ((ModWall)wall_timber_spruce).initModel();
+        ((ModWall)wall_timber_birch).initModel();
+        ((ModWall)wall_timber_jungle).initModel();
+        ((ModWall)wall_timber_acacia).initModel();
+        ((ModWall)wall_timber_dark_oak).initModel();
         ((ModWall)wall_wattle).initModel();
         ((ModWall)wall_wicker).initModel();
     }

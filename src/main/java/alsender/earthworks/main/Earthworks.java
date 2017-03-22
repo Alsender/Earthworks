@@ -2,9 +2,6 @@ package alsender.earthworks.main;
 
 import alsender.earthworks.main.proxy.CommonProxy;
 import alsender.earthworks.main.registry.BlockRegistry;
-import alsender.earthworks.main.registry.CompatRegistry;
-import alsender.earthworks.main.registry.RecipeRegistry;
-import alsender.earthworks.main.registry.TimberRegistry;
 import alsender.earthworks.main.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

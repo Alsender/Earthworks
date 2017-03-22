@@ -21,7 +21,7 @@ public class ClientProxy extends CommonProxy {
         if (Config.quark == true) {
             CompatRegistry.initQuarkModels();
         }
-        if (Config.betterwithmods = true) {
+        if (Config.betterwithmods == true) {
             CompatRegistry.initBTMModels();
         }
     }

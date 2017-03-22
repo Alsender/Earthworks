@@ -1,7 +1,6 @@
 package alsender.earthworks.main.registry;
 
 
-import alsender.earthworks.item.BlockItemWoodShingle;
 import alsender.earthworks.item.ModItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.relauncher.Side;
@@ -21,9 +20,6 @@ public class ItemRegistry {
             item_quicklime,
             item_slaked_lime,
             item_timber;
-
-    public static BlockItemWoodShingle
-            item_wood_shingles;
 
     public static void init() {
         item_adobe = new ModItem("adobe");

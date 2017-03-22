@@ -17,7 +17,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-
 /**
  * Created by alsender on 12/16/16.
  */
@@ -43,13 +42,6 @@ public class ModSlab extends BlockSlab {
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-    }
-
-    public ModSlab getSingleSlab() {
-        return null;
-    }
-    public ModSlab getDoubleSlab() {
-        return null;
     }
 
     @Override

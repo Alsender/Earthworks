@@ -1,6 +1,5 @@
 package alsender.earthworks.main.registry;
 
-import alsender.earthworks.main.Config;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -9,6 +8,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import static alsender.earthworks.main.registry.BlockRegistry.*;
+import static alsender.earthworks.main.registry.ItemRegistry.*;
+import static alsender.earthworks.main.registry.CompatRegistry.block_thatch;
 
 /**
  * Created by alsender on 12/12/16.
@@ -19,159 +22,180 @@ public class RecipeRegistry {
 
 //Block Recipes
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_adobe),
+        GameRegistry.addShapedRecipe(new ItemStack(block_adobe),
                 "AA","AA",
-                'A', ItemRegistry.item_adobe);
+                'A', item_adobe);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_cob),
+        GameRegistry.addShapedRecipe(new ItemStack(block_cob),
                 "CC","CC",
-                'C', ItemRegistry.item_cob);
+                'C', item_cob);
 
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_cob, 2),
-                Blocks.CLAY, Items.WHEAT, BlockRegistry.block_mud);
+        GameRegistry.addShapelessRecipe(new ItemStack(block_cob, 2),
+                Blocks.CLAY, Items.WHEAT, block_mud);
 
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_concrete, 2),
-                Blocks.GRAVEL, ItemRegistry.item_lime_plaster, Blocks.SAND);
+        GameRegistry.addShapelessRecipe(new ItemStack(block_concrete, 2),
+                Blocks.GRAVEL, item_lime_plaster, Blocks.SAND);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_cordwood, 5),
+        GameRegistry.addShapedRecipe(new ItemStack(block_cordwood, 5),
                 "WPW","PWP","WPW",
                 'W', Blocks.LOG,
-                'P', ItemRegistry.item_lime_plaster);
+                'P', item_lime_plaster);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_dry_stone, 8),
+        GameRegistry.addShapedRecipe(new ItemStack(block_dry_stone, 8),
                 "CCC","C C","CCC",
-                'C', Blocks.STONE);
+                'C', new ItemStack(Blocks.STONE,1,0));
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_gabion0, 2),
+        GameRegistry.addShapedRecipe(new ItemStack(block_gabion0, 2),
                 "SWS","WGW","SWS",
                 'W', Items.WHEAT,
                 'S', Items.STICK,
                 'G', Blocks.GRAVEL);
 
-        GameRegistry.addShapelessRecipe(new ItemStack(BlockRegistry.block_mud, 8),
+        GameRegistry.addShapedRecipe(new ItemStack(block_gabion1, 2),
+                "SWS","WGW","SWS",
+                'W', Items.WHEAT,
+                'S', Items.STICK,
+                'G', new ItemStack(Blocks.SAND, 1, 0));
+
+        GameRegistry.addShapedRecipe(new ItemStack(block_gabion2, 2),
+                "SWS","WGW","SWS",
+                'W', Items.WHEAT,
+                'S', Items.STICK,
+                'G', Blocks.DIRT);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(block_mud, 8),
                 Blocks.DIRT, Blocks.DIRT, Blocks.DIRT,
                 Blocks.DIRT, Items.WATER_BUCKET, Blocks.DIRT,
                 Blocks.DIRT, Blocks.DIRT, Blocks.DIRT);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_mud),
+        GameRegistry.addShapedRecipe(new ItemStack(block_mud),
                 "DD","DD",
-                'D', ItemRegistry.item_mud);
+                'D', item_mud);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_plaster),
+        GameRegistry.addShapedRecipe(new ItemStack(block_plaster),
                 " P ","PWP"," P ",
-                'P', ItemRegistry.item_lime_plaster,
+                'P', item_lime_plaster,
                 'W', Blocks.PLANKS);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_rammed_earth, 3),
+        GameRegistry.addShapedRecipe(new ItemStack(block_rammed_earth, 3),
                 "   ","DDD","DDD",
                 'D', Blocks.DIRT);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_slate),
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate),
                 "FF","FF",
                 'F', Items.FLINT);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_slate_slab,8),
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_slab,8),
                 "SSS","S S","SSS",
-                'S', BlockRegistry.block_slate);
+                'S', block_slate);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_slate_shingle,4),
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_shingle,4),
                 "SS","SS",
-                'S',BlockRegistry.block_slate);
+                'S',block_slate);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_slate_tile,4),
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_tile,4),
                 "SS","SS",
-                'S',BlockRegistry.block_slate_slab);
+                'S',block_slate_slab);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_wattle, 8),
+        GameRegistry.addShapedRecipe(new ItemStack(block_wattle, 8),
                 "CCC","CWC","CCC",
-                'C', BlockRegistry.block_cob,
-                'W', BlockRegistry.block_wicker);
+                'C', block_cob,
+                'W', block_wicker);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_wattle, 2),
+        GameRegistry.addShapedRecipe(new ItemStack(block_wattle, 2),
                 "CCC","CWC","CCC",
-                'C', ItemRegistry.item_cob,
-                'W', BlockRegistry.block_wicker);
+                'C', item_cob,
+                'W', block_wicker);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_wicker, 2),
+        GameRegistry.addShapedRecipe(new ItemStack(block_wicker, 2),
                 "SWS","W W","SWS",
                 'W', Items.WHEAT,
                 'S', Items.STICK);
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.block_chalk),
+        GameRegistry.addShapedRecipe(new ItemStack(block_chalk),
                 "CC","CC",
-                'C', ItemRegistry.item_chalk);
+                'C', item_chalk);
 
 //Slabs
 
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.slab_slate_shingle,6),
-                "SSS",
-                'S',BlockRegistry.block_slate_shingle);
-
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.slab_slate_tile,6),
-                "SSS",
-                'S',BlockRegistry.block_slate_tile);
-
 //Stairs
-
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.stair_slate_shingle,4),
-                "S  ","SS ","SSS",
-                'S',BlockRegistry.block_slate_shingle);
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.stair_slate_shingle, 4),
-                "  S"," SS","SSS",
-                'S',BlockRegistry.block_slate_shingle);
-
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.stair_slate_tile,4),
-                "S  ","SS ","SSS",
-                'S',BlockRegistry.block_slate_tile);
-        GameRegistry.addShapedRecipe(new ItemStack(BlockRegistry.stair_slate_tile,4),
-                "  S"," SS","SSS",
-                'S',BlockRegistry.block_slate_tile);
 
 //Walls
 
 //Item Recipes
 
-
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistry.item_cob, 8),
+        GameRegistry.addShapelessRecipe(new ItemStack(item_cob, 8),
                 Items.CLAY_BALL, Items.CLAY_BALL, Items.CLAY_BALL,
-                Items.CLAY_BALL, Items.WHEAT, ItemRegistry.item_mud,
-                ItemRegistry.item_mud, ItemRegistry.item_mud, ItemRegistry.item_mud);
+                Items.CLAY_BALL, Items.WHEAT, item_mud,
+                item_mud, item_mud, item_mud);
 
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistry.item_slaked_lime, 8),
-                ItemRegistry.item_quicklime, ItemRegistry.item_quicklime, ItemRegistry.item_quicklime,
-                ItemRegistry.item_quicklime, Items.WATER_BUCKET, ItemRegistry.item_quicklime,
-                ItemRegistry.item_quicklime, ItemRegistry.item_quicklime, ItemRegistry.item_quicklime);
+        GameRegistry.addShapelessRecipe(new ItemStack(item_slaked_lime, 8),
+                item_quicklime, item_quicklime, item_quicklime,
+                item_quicklime, Items.WATER_BUCKET, item_quicklime,
+                item_quicklime, item_quicklime, item_quicklime);
+
+//Compat Recipes
+
+        if (Loader.isModLoaded("quark")) {
+            Block thatch = Block.REGISTRY.getObject(new ResourceLocation("quark", "thatch"));
+            GameRegistry.addShapelessRecipe(new ItemStack(block_thatch), thatch);
+            GameRegistry.addShapelessRecipe(new ItemStack(thatch), block_thatch);
+        }
+
+        if (Loader.isModLoaded("betterwithmods")) {
+            Item dirt = Item.REGISTRY.getObject(new ResourceLocation("betterwithmods", "dirt_pile"));
+            Item sand = Item.REGISTRY.getObject(new ResourceLocation("betterwithmods", "sand_pile"));
+
+            GameRegistry.addShapedRecipe(new ItemStack(Blocks.DIRT),
+                    "DD", "DD",
+                    'D', dirt);
+            GameRegistry.addShapedRecipe(new ItemStack(Blocks.SAND),
+                    "SS", "SS",
+                    'S', sand);
+            GameRegistry.addShapelessRecipe(new ItemStack(item_adobe, 8),
+                    Items.CLAY_BALL, Items.CLAY_BALL, Items.CLAY_BALL,
+                    Items.CLAY_BALL, Items.WHEAT, Items.CLAY_BALL,
+                    Items.CLAY_BALL, sand, sand);
+            GameRegistry.addShapelessRecipe(new ItemStack(item_lime_plaster, 2),
+                    item_slaked_lime, sand);
+            GameRegistry.addShapelessRecipe(new ItemStack(item_lime_plaster, 8),
+                    item_quicklime, item_quicklime, item_quicklime,
+                    item_quicklime, Items.WATER_BUCKET, sand,
+                    sand, sand, sand);
+            GameRegistry.addShapelessRecipe(new ItemStack(item_mud, 8),
+                    dirt, dirt, dirt,
+                    dirt, Items.WATER_BUCKET, dirt,
+                    dirt, dirt, dirt);
+        }
 
 //Furnace Recipes
-        GameRegistry.addSmelting(ItemRegistry.item_chalk, new ItemStack(ItemRegistry.item_quicklime), 0.1F);
-        GameRegistry.addSmelting(BlockRegistry.block_chalk, new ItemStack(ItemRegistry.item_quicklime, 4), 0.1F);
 
-        brick(BlockRegistry.block_concrete, BlockRegistry.block_cinder);
+        GameRegistry.addSmelting(item_chalk, new ItemStack(item_quicklime), 0.1F);
+        GameRegistry.addSmelting(block_chalk, new ItemStack(item_quicklime, 4), 0.1F);
 
-        stair_slab_wall(BlockRegistry.block_adobe, BlockRegistry.stair_adobe, BlockRegistry.slab_adobe, BlockRegistry.wall_adobe);
-        stair_slab_wall(BlockRegistry.block_cob, BlockRegistry.stair_cob, BlockRegistry.slab_cob, BlockRegistry.wall_cob);
-        stair_slab_wall(BlockRegistry.block_cinder, BlockRegistry.stair_cinder, BlockRegistry.slab_cinder, BlockRegistry.wall_cinder);
-        stair_slab_wall(BlockRegistry.block_chalk,BlockRegistry.stair_chalk,BlockRegistry.slab_chalk,BlockRegistry.wall_chalk);
-        stair_slab_wall(BlockRegistry.block_concrete, BlockRegistry.stair_concrete, BlockRegistry.slab_concrete, BlockRegistry.wall_concrete);
-        stair_slab_wall(BlockRegistry.block_cordwood, BlockRegistry.stair_cordwood,BlockRegistry.slab_cordwood,BlockRegistry.wall_cordwood);
-        stair_slab_wall(BlockRegistry.block_dry_stone, BlockRegistry.stair_dry_stone, BlockRegistry.slab_dry_stone, BlockRegistry.wall_dry_stone);
-        stair_slab_wall(BlockRegistry.block_mud, BlockRegistry.stair_mud, BlockRegistry.slab_mud, BlockRegistry.wall_mud);
-        stair_slab_wall(BlockRegistry.block_plaster, BlockRegistry.stair_plaster, BlockRegistry.slab_plaster, BlockRegistry.wall_plaster);
-        stair_slab_wall(BlockRegistry.block_rammed_earth, BlockRegistry.stair_rammed_earth, BlockRegistry.slab_rammed_earth, BlockRegistry.wall_rammed_earth);
-        if (Config.quark_compat ==true) {
-        }
-        stair_slab_wall(BlockRegistry.block_slate, BlockRegistry.stair_slate, BlockRegistry.slab_slate, BlockRegistry.wall_slate);
-        stair_slab_wall(BlockRegistry.block_slate_slab,BlockRegistry.stair_slate_slab,BlockRegistry.slab_slate_slab,BlockRegistry.wall_slate_slab);
-        if (Config.quark_compat ==true) {
-        }
-        stair_slab_wall(BlockRegistry.block_timber_oak, BlockRegistry.stair_timber_oak, BlockRegistry.slab_timber_oak, BlockRegistry.wall_timber_oak);
-        stair_slab_wall(BlockRegistry.block_wattle, BlockRegistry.stair_wattle, BlockRegistry.slab_wattle, BlockRegistry.wall_wattle);
-        stair_slab_wall(BlockRegistry.block_wicker, BlockRegistry.stair_wicker, BlockRegistry.slab_wicker, BlockRegistry.wall_wicker);
+//Extraneous
 
-    // compat recipes
-        if (Config.quark_compat ==true) {
+        brick(block_concrete, block_cinder);
 
-        }
+        stair_slab_wall(block_adobe, stair_adobe, slab_adobe, wall_adobe);
+        stair_slab_wall(block_cob, stair_cob, slab_cob, wall_cob);
+        stair_slab_wall(block_cinder, stair_cinder, slab_cinder, wall_cinder);
+        stair_slab_wall(block_chalk,stair_chalk,slab_chalk,wall_chalk);
+        stair_slab_wall(block_concrete, stair_concrete, slab_concrete, wall_concrete);
+        stair_slab_wall(block_cordwood, stair_cordwood,slab_cordwood,wall_cordwood);
+        stair_slab_wall(block_dry_stone, stair_dry_stone, slab_dry_stone, wall_dry_stone);
+        stair_slab_wall(block_gabion0, stair_gabion0, slab_gabion0, wall_gabion0);
+        stair_slab_wall(block_gabion1, stair_gabion1, slab_gabion1, wall_gabion1);
+        stair_slab_wall(block_gabion2, stair_gabion2, slab_gabion2, wall_gabion2);
+        stair_slab_wall(block_mud, stair_mud, slab_mud, wall_mud);
+        stair_slab_wall(block_plaster, stair_plaster, slab_plaster, wall_plaster);
+        stair_slab_wall(block_rammed_earth, stair_rammed_earth, slab_rammed_earth, wall_rammed_earth);
+        stair_slab_wall(block_slate, stair_slate, slab_slate, wall_slate);
+        stair_slab_wall(block_slate_shingle, stair_slate_shingle, slab_slate_shingle, wall_slate_shingle);
+        stair_slab_wall(block_slate_slab,stair_slate_slab,slab_slate_slab,wall_slate_slab);
+        stair_slab_wall(block_slate_tile,stair_slate_tile,slab_slate_tile,wall_slate_tile);
+        stair_slab_wall(block_wattle, stair_wattle, slab_wattle, wall_wattle);
+        stair_slab_wall(block_wicker, stair_wicker, slab_wicker, wall_wicker);
     }
 
     //Stairs, Slabs, and Walls

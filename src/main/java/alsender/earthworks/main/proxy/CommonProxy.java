@@ -1,10 +1,7 @@
 package alsender.earthworks.main.proxy;
 
 import alsender.earthworks.main.Config;
-import alsender.earthworks.main.registry.BlockRegistry;
-import alsender.earthworks.main.registry.CompatRegistry;
-import alsender.earthworks.main.registry.ItemRegistry;
-import alsender.earthworks.main.registry.TimberRegistry;
+import alsender.earthworks.main.registry.*;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -18,11 +15,13 @@ public class CommonProxy {
         BlockRegistry.init();
         TimberRegistry.init();
         ItemRegistry.init();
-        if (Config.quark_compat == true) {
+        RecipeRegistry.init();
+        TimberRegistry.initRecipes();
+        if (Config.quark == true) {
             CompatRegistry.initQuark();
             CompatRegistry.initQuarkRecipe();
         }
-        if (Config.btm_compat == true) {
+        if (Config.betterwithmods == true) {
             CompatRegistry.initBTM();
             CompatRegistry.initBTMRecipe();
         }
@@ -33,6 +32,4 @@ public class CommonProxy {
 
     public void postInit(FMLPostInitializationEvent event) {
     }
-
-    public void addResourceOverride(String space, String dir, String file, String ext) {}
 }

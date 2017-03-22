@@ -1,6 +1,6 @@
 [
 {
-  "modid": "Earthworks",
+  "modid": "earthworks",
   "name": "Earthworks",
   "description": "Adds a small variety of earthen based building blocks.",
   "version": "${version}",

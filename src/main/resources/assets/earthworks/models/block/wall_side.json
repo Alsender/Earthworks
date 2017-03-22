@@ -7,7 +7,7 @@
       "to": [ 11, 14, 8 ],
       "faces": {
         "down":  { "texture": "#bottom", "cullface": "down" },
-        "up":    { "texture": "#top" },
+        "up":    { "texture": "#wall" },
         "north": { "texture": "#wall", "cullface": "north" },
         "west":  { "texture": "#wall" },
         "east":  { "texture": "#wall" }

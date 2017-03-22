@@ -1,9 +1,6 @@
 package alsender.earthworks.main.registry;
 
-import alsender.earthworks.block.ModRotatedPillar;
-import alsender.earthworks.block.ModSlab;
-import alsender.earthworks.block.ModStair;
-import alsender.earthworks.block.ModWall;
+import alsender.earthworks.block.*;
 import alsender.earthworks.item.ModItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -12,8 +9,6 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -62,7 +57,7 @@ public class CompatRegistry {
             item_sand;
 
     public static void initQuark() {
-//      block_planks_vert = new Block_Planks_Vert("block_planks_vert", Material.WOOD, SoundType.WOOD, 2.0F, 3.33F);
+        block_planks_vert = new Block_Planks_Vert("block_planks_vert", Material.WOOD, SoundType.WOOD, 2.0F, 3.33F);
         block_reed = new ModRotatedPillar("block_reed", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
         block_thatch = new ModRotatedPillar("block_thatch", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
 
@@ -97,7 +92,7 @@ public class CompatRegistry {
     @SideOnly(Side.CLIENT)
     public static void initQuarkModels() {
 
-//      ((Block_Planks_Vert)block_planks_vert).initModel();
+        ((Block_Planks_Vert)block_planks_vert).initModel();
         ((ModRotatedPillar)block_reed).initModel();
         ((ModRotatedPillar)block_thatch).initModel();
 
