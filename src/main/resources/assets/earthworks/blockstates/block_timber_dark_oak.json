@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_bottom_top",
+    "textures": {
+      "bottom": "minecraft:blocks/log_big_oak_top",
+      "top": "minecraft:blocks/log_big_oak_top",
+      "side": "earthworks:blocks/timber_big_oak"
+    }
+  },
+  "variants": {
+    "axis=x": [{ "x": 90, "y": 90 }],
+    "axis=y": [{}],
+    "axis=z": [{ "x": 90 }],
+    "inventory": [{}]
+  }
+}

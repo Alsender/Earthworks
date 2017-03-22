@@ -45,13 +45,6 @@ public class ModSlab extends BlockSlab {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
 
-    public ModSlab getSingleSlab() {
-        return null;
-    }
-    public ModSlab getDoubleSlab() {
-        return null;
-    }
-
     @Override
     public IProperty getVariantProperty() {
         return HALF;

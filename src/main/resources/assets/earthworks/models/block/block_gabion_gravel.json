@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "minecraft:blocks/gravel",
+    "down": "earthworks:blocks/gabion_bottom",
+    "up": "earthworks:blocks/gabion_top_gravel",
+    "north": "earthworks:blocks/gabion_side",
+    "east": "earthworks:blocks/gabion_side",
+    "south": "earthworks:blocks/gabion_side",
+    "west": "earthworks:blocks/gabion_side"
+  }
+}

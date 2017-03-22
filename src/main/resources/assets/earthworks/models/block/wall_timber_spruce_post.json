@@ -1,0 +1,8 @@
+{
+  "parent": "earthworks:block/wall_post",
+  "textures": {
+    "top": "earthworks:blocks/wall_spruce",
+    "bottom": "earthworks:blocks/wall_spruce",
+    "wall": "earthworks:blocks/post_spruce"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "top": "earthworks:blocks/gabion_top_gravel",
+    "side": "earthworks:blocks/gabion_side",
+    "bottom": "earthworks:blocks/gabion_bottom",
+    "particle": "earthworks:blocks/gabion_top_gravel"
+  }
+}
