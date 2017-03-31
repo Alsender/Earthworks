@@ -1,5 +1,7 @@
 package alsender.earthworks.main.registry;
 
+import alsender.earthworks.main.Config;
+import alsender.earthworks.main.crafting.ModCraftingManager;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -25,6 +27,10 @@ public class RecipeRegistry {
         GameRegistry.addShapedRecipe(new ItemStack(block_adobe),
                 "AA","AA",
                 'A', item_adobe);
+
+        GameRegistry.addShapedRecipe(new ItemStack(block_chalk),
+                "CC","CC",
+                'C', item_chalk);
 
         GameRegistry.addShapedRecipe(new ItemStack(block_cob),
                 "CC","CC",
@@ -72,6 +78,32 @@ public class RecipeRegistry {
                 "DD","DD",
                 'D', item_mud);
 
+        Block woodPlankVert;
+
+        if (!Loader.isModLoaded("quark") || Config.persistantplanks == true) {
+            woodPlankVert = block_planks_vert;
+        } else {
+            woodPlankVert = Block.REGISTRY.getObject(new ResourceLocation("quark", "vertical_planks"));
+        }
+
+        GameRegistry.addShapelessRecipe(new ItemStack(woodPlankVert, 4, 0),
+                block_timber_oak);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(woodPlankVert, 4, 1),
+                block_timber_spruce);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(woodPlankVert, 4, 2),
+                block_timber_birch);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(woodPlankVert, 4, 3),
+                block_timber_jungle);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(woodPlankVert, 4, 4),
+                block_timber_acacia);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(woodPlankVert, 4, 5),
+                block_timber_dark_oak);
+
         GameRegistry.addShapedRecipe(new ItemStack(block_plaster),
                 " P ","PWP"," P ",
                 'P', item_lime_plaster,
@@ -112,9 +144,33 @@ public class RecipeRegistry {
                 'W', Items.WHEAT,
                 'S', Items.STICK);
 
-        GameRegistry.addShapedRecipe(new ItemStack(block_chalk),
-                "CC","CC",
-                'C', item_chalk);
+        for (int i = 0; i < 4; i++) {
+            ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, i),
+                    new ItemStack(Blocks.LOG, 1, i), Items.FLINT);
+        }
+
+        for (int i = 0; i < 2; i++) {
+            ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, (i+4)),
+                    new ItemStack(Blocks.LOG2, 1, i), Items.FLINT);
+        }
+
+        ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, 0),
+                block_timber_oak, Items.FLINT);
+
+        ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, 1),
+                block_timber_spruce, Items.FLINT);
+
+        ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, 2),
+                block_timber_birch, Items.FLINT);
+
+        ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, 3),
+                block_timber_jungle, Items.FLINT);
+
+        ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, 4),
+                block_timber_acacia, Items.FLINT);
+
+        ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, 5),
+                block_timber_dark_oak, Items.FLINT);
 
 //Slabs
 
@@ -177,6 +233,13 @@ public class RecipeRegistry {
 
         brick(block_concrete, block_cinder);
 
+        stair_slab_fence(new ItemStack(woodPlankVert, 1, 0), stair_planks_vert0, slab_planks_vert0, fence_planks_vert0);
+        stair_slab_fence(new ItemStack(woodPlankVert, 1, 1), stair_planks_vert1, slab_planks_vert1, fence_planks_vert1);
+        stair_slab_fence(new ItemStack(woodPlankVert, 1, 2), stair_planks_vert2, slab_planks_vert2, fence_planks_vert2);
+        stair_slab_fence(new ItemStack(woodPlankVert, 1, 3), stair_planks_vert3, slab_planks_vert3, fence_planks_vert3);
+        stair_slab_fence(new ItemStack(woodPlankVert, 1, 4), stair_planks_vert4, slab_planks_vert4, fence_planks_vert4);
+        stair_slab_fence(new ItemStack(woodPlankVert, 1, 5), stair_planks_vert5, slab_planks_vert5, fence_planks_vert5);
+
         stair_slab_wall(block_adobe, stair_adobe, slab_adobe, wall_adobe);
         stair_slab_wall(block_cob, stair_cob, slab_cob, wall_cob);
         stair_slab_wall(block_cinder, stair_cinder, slab_cinder, wall_cinder);
@@ -217,6 +280,24 @@ public class RecipeRegistry {
                 "BBB",
                 "BBB",
                 'B', block);
+    }
+
+    public static void stair_slab_fence(ItemStack block, Block stair, Block slab, Block fence) {
+        GameRegistry.addShapedRecipe(new ItemStack(stair, 4),
+                "B  ",
+                "BB ",
+                "BBB",
+                'B', block);
+        GameRegistry.addShapedRecipe(new ItemStack(slab, 6),
+                "BBB",
+                'B', block);
+        GameRegistry.addShapedRecipe(block,
+                "B",
+                "B",
+                'B', slab);
+        GameRegistry.addShapedRecipe(new ItemStack(fence, 3),
+                "BSB","BSB",
+                'B', block, 'S', Items.STICK);
     }
 
     //Bricks

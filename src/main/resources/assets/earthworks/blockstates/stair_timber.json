@@ -5,7 +5,7 @@
       "bottom": "minecraft:blocks/log_oak_top",
       "top": "minecraft:blocks/log_oak_top",
       "side": "earthworks:blocks/timber_oak",
-      "sideTop": "minecraft:blocks/log_oak_top",
+      "sideTop": "earthworks:blocks/interior_oak",
       "particle": "earthworks:blocks/timber_oak"
     }
   },

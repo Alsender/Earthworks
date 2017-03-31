@@ -5,7 +5,7 @@
       "bottom": "minecraft:blocks/log_spruce_top",
       "top": "minecraft:blocks/log_spruce_top",
       "side": "earthworks:blocks/timber_spruce",
-      "sideTop": "minecraft:blocks/log_spruce_top",
+      "sideTop": "earthworks:blocks/interior_spruce",
       "particle": "earthworks:blocks/timber_spruce"
     }
   },

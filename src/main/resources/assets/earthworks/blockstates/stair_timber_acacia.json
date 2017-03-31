@@ -5,7 +5,7 @@
       "bottom": "minecraft:blocks/log_acacia_top",
       "top": "minecraft:blocks/log_acacia_top",
       "side": "earthworks:blocks/timber_acacia",
-      "sideTop": "minecraft:blocks/log_acacia_top",
+      "sideTop": "earthworks:blocks/interior_acacia",
       "particle": "earthworks:blocks/timber_acacia"
     }
   },

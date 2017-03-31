@@ -5,7 +5,7 @@
       "bottom": "minecraft:blocks/log_jungle_top",
       "top": "minecraft:blocks/log_jungle_top",
       "side": "earthworks:blocks/timber_jungle",
-      "sideTop": "minecraft:blocks/log_jungle_top",
+      "sideTop": "earthworks:blocks/interior_jungle",
       "particle": "earthworks:blocks/timber_jungle"
     }
   },

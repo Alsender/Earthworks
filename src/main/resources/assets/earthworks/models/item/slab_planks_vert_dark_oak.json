@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "top": "earthworks:blocks/planks_vert/planks_vert_dark_oak",
+    "side": "earthworks:blocks/planks_vert/planks_vert_dark_oak",
+    "bottom": "earthworks:blocks/planks_vert/planks_vert_dark_oak",
+    "particle": "earthworks:blocks/planks_vert/planks_vert_dark_oak"
+  }
+}

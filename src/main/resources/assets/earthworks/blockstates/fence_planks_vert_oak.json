@@ -1,0 +1,17 @@
+{
+  "multipart": [
+    {   "apply": { "model": "earthworks:fence_planks_vert0_post" }},
+    {   "when": { "north": "true" },
+      "apply": { "model": "earthworks:fence_planks_vert0_side", "uvlock": true }
+    },
+    {   "when": { "east": "true" },
+      "apply": { "model": "earthworks:fence_planks_vert0_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true" },
+      "apply": { "model": "earthworks:fence_planks_vert0_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true" },
+      "apply": { "model": "earthworks:fence_planks_vert0_side", "y": 270, "uvlock": true }
+    }
+  ]
+}
