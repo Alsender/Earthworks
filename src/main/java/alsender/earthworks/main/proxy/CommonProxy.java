@@ -15,19 +15,23 @@ public class CommonProxy {
         BlockRegistry.init();
         TimberRegistry.init();
         ItemRegistry.init();
-        RecipeRegistry.init();
-        TimberRegistry.initRecipes();
         if (Config.quark == true) {
             CompatRegistry.initQuark();
-            CompatRegistry.initQuarkRecipe();
         }
         if (Config.betterwithmods == true) {
             CompatRegistry.initBTM();
-            CompatRegistry.initBTMRecipe();
         }
     }
 
     public void init(FMLInitializationEvent event) {
+        RecipeRegistry.init();
+        TimberRegistry.initRecipes();
+        if (Config.quark == true) {
+            CompatRegistry.initQuarkRecipe();
+        }
+        if (Config.betterwithmods == true) {
+            CompatRegistry.initBTMRecipe();
+        }
     }
 
     public void postInit(FMLPostInitializationEvent event) {

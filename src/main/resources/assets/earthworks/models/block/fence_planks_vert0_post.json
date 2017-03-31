@@ -1,0 +1,6 @@
+{
+  "parent": "earthworks:block/fence_post",
+  "textures": {
+    "texture": "earthworks:blocks/planks_vert/oak/planks_vert_oak"
+  }
+}

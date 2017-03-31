@@ -5,7 +5,7 @@
       "bottom": "minecraft:blocks/log_birch_top",
       "top": "minecraft:blocks/log_birch_top",
       "side": "earthworks:blocks/timber_birch",
-      "sideTop": "minecraft:blocks/log_birch_top",
+      "sideTop": "earthworks:blocks/interior_birch",
       "particle": "earthworks:blocks/timber_birch"
     }
   },

@@ -7,8 +7,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Created by alsender on 12/12/16.
@@ -27,6 +29,7 @@ public class BlockRegistry {
             block_gabion_falling0, block_gabion_falling1, block_gabion_falling2,
             block_mud,
             block_mud_bottom,
+            block_planks_vert,
             block_plaster,
             block_rammed_earth,
             block_slate, block_slate_slab, block_slate_shingle, block_slate_tile,
@@ -35,6 +38,10 @@ public class BlockRegistry {
             block_wattle,
             block_wicker,
             block_wood_shingle;
+
+    public static Block
+            fence_planks_vert0, fence_planks_vert1, fence_planks_vert2,
+            fence_planks_vert3, fence_planks_vert4, fence_planks_vert5;
 
     public static Block
             slab_adobe,
@@ -46,6 +53,8 @@ public class BlockRegistry {
             slab_dry_stone,
             slab_gabion0, slab_gabion1, slab_gabion2,
             slab_mud,
+            slab_planks_vert0, slab_planks_vert1, slab_planks_vert2,
+            slab_planks_vert3, slab_planks_vert4, slab_planks_vert5,
             slab_plaster,
             slab_rammed_earth,
             slab_slate, slab_slate_slab,
@@ -53,7 +62,9 @@ public class BlockRegistry {
             slab_timber_oak, slab_timber_birch, slab_timber_spruce,
             slab_timber_jungle, slab_timber_acacia, slab_timber_dark_oak,
             slab_wattle,
-            slab_wicker;
+            slab_wicker,
+            slab_wood_shingle_oak, slab_wood_shingle_spruce, slab_wood_shingle_birch,
+            slab_wood_shingle_jungle, slab_wood_shingle_acacia, slab_wood_shingle_dark_oak;
 
     public static Block
             stair_adobe,
@@ -65,6 +76,8 @@ public class BlockRegistry {
             stair_dry_stone,
             stair_gabion0, stair_gabion1, stair_gabion2,
             stair_mud,
+            stair_planks_vert0, stair_planks_vert1, stair_planks_vert2,
+            stair_planks_vert3, stair_planks_vert4, stair_planks_vert5,
             stair_plaster,
             stair_rammed_earth,
             stair_slate, stair_slate_slab,
@@ -72,7 +85,9 @@ public class BlockRegistry {
             stair_timber_oak, stair_timber_birch, stair_timber_spruce,
             stair_timber_jungle, stair_timber_acacia, stair_timber_dark_oak,
             stair_wattle,
-            stair_wicker;
+            stair_wicker,
+            stair_wood_shingle_oak, stair_wood_shingle_spruce, stair_wood_shingle_birch,
+            stair_wood_shingle_jungle, stair_wood_shingle_acacia, stair_wood_shingle_dark_oak;
 
     public static Block
             wall_adobe,
@@ -91,7 +106,9 @@ public class BlockRegistry {
             wall_timber_oak, wall_timber_birch, wall_timber_spruce,
             wall_timber_jungle, wall_timber_acacia, wall_timber_dark_oak,
             wall_wattle,
-            wall_wicker;
+            wall_wicker,
+            wall_wood_shingle_oak, wall_wood_shingle_spruce, wall_wood_shingle_birch,
+            wall_wood_shingle_jungle, wall_wood_shingle_acacia, wall_wood_shingle_dark_oak;
 
     public static void init() {
 
@@ -126,6 +143,18 @@ public class BlockRegistry {
         block_wicker = new ModBlock("block_wicker", Material.WOOD, SoundType.CLOTH, 0.8F, 1.0F);
         block_wood_shingle = new Block_Wood_Shingle("block_wood_shingle",Material.WOOD,SoundType.WOOD,2.0F,3.33F);
 
+        if (!Loader.isModLoaded("quark") || Config.persistantplanks == true) {
+            block_planks_vert = new Block_Planks_Vert("block_planks_vert", Material.WOOD, SoundType.WOOD, 2.0F, 3.33F);
+            OreDictionary.registerOre("plankWood", block_planks_vert);
+        }
+
+        fence_planks_vert0 = new ModFence("fence_planks_vert_oak");
+        fence_planks_vert1 = new ModFence("fence_planks_vert_spruce");
+        fence_planks_vert2 = new ModFence("fence_planks_vert_birch");
+        fence_planks_vert3 = new ModFence("fence_planks_vert_jungle");
+        fence_planks_vert4 = new ModFence("fence_planks_vert_acacia");
+        fence_planks_vert5 = new ModFence("fence_planks_vert_dark_oak");
+
         slab_adobe = new ModSlab("slab_adobe", block_adobe);
         slab_chalk = new ModSlab("slab_chalk", block_chalk);
         slab_cinder = new ModSlab("slab_cinder", block_cinder);
@@ -137,6 +166,12 @@ public class BlockRegistry {
         slab_gabion1 = new ModSlab("slab_gabion_sand", block_gabion1);
         slab_gabion2 = new ModSlab("slab_gabion_dirt", block_gabion2);
         slab_mud = new ModSlab("slab_mud", block_mud);
+        slab_planks_vert0 = new ModSlab("slab_planks_vert_oak");
+        slab_planks_vert1 = new ModSlab("slab_planks_vert_spruce");
+        slab_planks_vert2 = new ModSlab("slab_planks_vert_birch");
+        slab_planks_vert3 = new ModSlab("slab_planks_vert_jungle");
+        slab_planks_vert4 = new ModSlab("slab_planks_vert_acacia");
+        slab_planks_vert5 = new ModSlab("slab_planks_vert_dark_oak");
         slab_plaster = new ModSlab("slab_plaster", block_plaster);
         slab_rammed_earth = new ModSlab("slab_rammed_earth", block_rammed_earth);
         slab_slate = new ModSlab("slab_slate", block_slate);
@@ -151,6 +186,12 @@ public class BlockRegistry {
         slab_timber_dark_oak = new ModSlab("slab_timber_dark_oak", block_timber_dark_oak);
         slab_wattle = new ModSlab("slab_wattle", block_wattle);
         slab_wicker = new ModSlab("slab_wicker", block_wicker);
+        slab_wood_shingle_oak = new ModSlab("slab_wood_shingle_oak", block_wood_shingle);
+        slab_wood_shingle_spruce = new ModSlab("slab_wood_shingle_spruce", block_wood_shingle);
+        slab_wood_shingle_birch = new ModSlab("slab_wood_shingle_birch", block_wood_shingle);
+        slab_wood_shingle_jungle = new ModSlab("slab_wood_shingle_jungle", block_wood_shingle);
+        slab_wood_shingle_acacia = new ModSlab("slab_wood_shingle_acacia", block_wood_shingle);
+        slab_wood_shingle_dark_oak = new ModSlab("slab_wood_shingle_dark_oak", block_wood_shingle);
 
         stair_adobe = new ModStair("stair_adobe", block_adobe);
         stair_chalk = new ModStair("stair_chalk", block_chalk);
@@ -163,6 +204,12 @@ public class BlockRegistry {
         stair_gabion1 = new ModStair("stair_gabion_sand", block_gabion1);
         stair_gabion2 = new ModStair("stair_gabion_dirt", block_gabion2);
         stair_mud = new ModStair("stair_mud", block_mud);
+        stair_planks_vert0 = new ModStair("stair_planks_vert_oak", block_adobe);
+        stair_planks_vert1 = new ModStair("stair_planks_vert_spruce", block_adobe);
+        stair_planks_vert2 = new ModStair("stair_planks_vert_birch", block_adobe);
+        stair_planks_vert3 = new ModStair("stair_planks_vert_jungle", block_adobe);
+        stair_planks_vert4 = new ModStair("stair_planks_vert_acacia", block_adobe);
+        stair_planks_vert5 = new ModStair("stair_planks_vert_dark_oak", block_adobe);
         stair_plaster = new ModStair("stair_plaster", block_plaster);
         stair_rammed_earth = new ModStair("stair_rammed_earth", block_rammed_earth);
         stair_slate = new ModStair("stair_slate", block_slate);
@@ -177,6 +224,12 @@ public class BlockRegistry {
         stair_timber_dark_oak = new ModStair("stair_timber_dark_oak", block_timber_dark_oak);
         stair_wattle = new ModStair("stair_wattle", block_wattle);
         stair_wicker = new ModStair("stair_wicker", block_wicker);
+        stair_wood_shingle_oak = new ModStair("stair_wood_shingle_oak", block_wood_shingle);
+        stair_wood_shingle_spruce = new ModStair("stair_wood_shingle_spruce", block_wood_shingle);
+        stair_wood_shingle_birch = new ModStair("stair_wood_shingle_birch", block_wood_shingle);
+        stair_wood_shingle_jungle = new ModStair("stair_wood_shingle_jungle", block_wood_shingle);
+        stair_wood_shingle_acacia = new ModStair("stair_wood_shingle_acacia", block_wood_shingle);
+        stair_wood_shingle_dark_oak = new ModStair("stair_wood_shingle_dark_oak", block_wood_shingle);
 
         wall_adobe = new ModWall("wall_adobe", block_adobe);
         wall_chalk = new ModWall("wall_chalk", block_chalk);
@@ -203,6 +256,19 @@ public class BlockRegistry {
         wall_timber_dark_oak = new ModWall("wall_timber_dark_oak", block_timber_dark_oak);
         wall_wattle = new ModWall("wall_wattle", block_wattle);
         wall_wicker = new ModWall("wall_wicker", block_wicker);
+        wall_wood_shingle_oak = new ModWall("wall_wood_shingle_oak", block_wood_shingle);
+        wall_wood_shingle_spruce = new ModWall("wall_wood_shingle_spruce", block_wood_shingle);
+        wall_wood_shingle_birch = new ModWall("wall_wood_shingle_birch", block_wood_shingle);
+        wall_wood_shingle_jungle = new ModWall("wall_wood_shingle_jungle", block_wood_shingle);
+        wall_wood_shingle_acacia = new ModWall("wall_wood_shingle_acacia", block_wood_shingle);
+        wall_wood_shingle_dark_oak = new ModWall("wall_wood_shingle_dark_oak", block_wood_shingle);
+
+        OreDictionary.registerOre("logTimber", block_timber_oak);
+        OreDictionary.registerOre("logTimber", block_timber_spruce);
+        OreDictionary.registerOre("logTimber", block_timber_birch);
+        OreDictionary.registerOre("logTimber", block_timber_jungle);
+        OreDictionary.registerOre("logTimber", block_timber_acacia);
+        OreDictionary.registerOre("logTimber", block_timber_dark_oak);
     }
 
     @SideOnly(Side.CLIENT)
@@ -238,6 +304,17 @@ public class BlockRegistry {
         ((ModBlock)block_wicker).initModel();
         ((Block_Wood_Shingle)block_wood_shingle).initModel();
 
+        if (!Loader.isModLoaded("quark") || Config.persistantplanks == true) {
+            ((Block_Planks_Vert)block_planks_vert).initModel();
+        }
+
+        ((ModFence)fence_planks_vert0).initModel();
+        ((ModFence)fence_planks_vert1).initModel();
+        ((ModFence)fence_planks_vert2).initModel();
+        ((ModFence)fence_planks_vert3).initModel();
+        ((ModFence)fence_planks_vert4).initModel();
+        ((ModFence)fence_planks_vert5).initModel();
+
         ((ModSlab)slab_adobe).initModel();
         ((ModSlab)slab_chalk).initModel();
         ((ModSlab)slab_cinder).initModel();
@@ -249,6 +326,12 @@ public class BlockRegistry {
         ((ModSlab)slab_gabion1).initModel();
         ((ModSlab)slab_gabion2).initModel();
         ((ModSlab)slab_mud).initModel();
+        ((ModSlab)slab_planks_vert0).initModel();
+        ((ModSlab)slab_planks_vert1).initModel();
+        ((ModSlab)slab_planks_vert2).initModel();
+        ((ModSlab)slab_planks_vert3).initModel();
+        ((ModSlab)slab_planks_vert4).initModel();
+        ((ModSlab)slab_planks_vert5).initModel();
         ((ModSlab)slab_plaster).initModel();
         ((ModSlab)slab_rammed_earth).initModel();
         ((ModSlab)slab_slate).initModel();
@@ -263,6 +346,12 @@ public class BlockRegistry {
         ((ModSlab)slab_timber_dark_oak).initModel();
         ((ModSlab)slab_wattle).initModel();
         ((ModSlab)slab_wicker).initModel();
+        ((ModSlab)slab_wood_shingle_oak).initModel();
+        ((ModSlab)slab_wood_shingle_spruce).initModel();
+        ((ModSlab)slab_wood_shingle_birch).initModel();
+        ((ModSlab)slab_wood_shingle_jungle).initModel();
+        ((ModSlab)slab_wood_shingle_acacia).initModel();
+        ((ModSlab)slab_wood_shingle_dark_oak).initModel();
 
         ((ModStair)stair_adobe).initModel();
         ((ModStair)stair_chalk).initModel();
@@ -275,6 +364,12 @@ public class BlockRegistry {
         ((ModStair)stair_gabion1).initModel();
         ((ModStair)stair_gabion2).initModel();
         ((ModStair)stair_mud).initModel();
+        ((ModStair)stair_planks_vert0).initModel();
+        ((ModStair)stair_planks_vert1).initModel();
+        ((ModStair)stair_planks_vert2).initModel();
+        ((ModStair)stair_planks_vert3).initModel();
+        ((ModStair)stair_planks_vert4).initModel();
+        ((ModStair)stair_planks_vert5).initModel();
         ((ModStair)stair_plaster).initModel();
         ((ModStair)stair_rammed_earth).initModel();
         ((ModStair)stair_slate).initModel();
@@ -289,6 +384,12 @@ public class BlockRegistry {
         ((ModStair)stair_timber_dark_oak).initModel();
         ((ModStair)stair_wattle).initModel();
         ((ModStair)stair_wicker).initModel();
+        ((ModStair)stair_wood_shingle_oak).initModel();
+        ((ModStair)stair_wood_shingle_spruce).initModel();
+        ((ModStair)stair_wood_shingle_birch).initModel();
+        ((ModStair)stair_wood_shingle_jungle).initModel();
+        ((ModStair)stair_wood_shingle_acacia).initModel();
+        ((ModStair)stair_wood_shingle_dark_oak).initModel();
 
         ((ModWall)wall_adobe).initModel();
         ((ModWall)wall_chalk).initModel();
@@ -315,5 +416,11 @@ public class BlockRegistry {
         ((ModWall)wall_timber_dark_oak).initModel();
         ((ModWall)wall_wattle).initModel();
         ((ModWall)wall_wicker).initModel();
+        ((ModWall)wall_wood_shingle_oak).initModel();
+        ((ModWall)wall_wood_shingle_spruce).initModel();
+        ((ModWall)wall_wood_shingle_birch).initModel();
+        ((ModWall)wall_wood_shingle_jungle).initModel();
+        ((ModWall)wall_wood_shingle_acacia).initModel();
+        ((ModWall)wall_wood_shingle_dark_oak).initModel();
     }
 }

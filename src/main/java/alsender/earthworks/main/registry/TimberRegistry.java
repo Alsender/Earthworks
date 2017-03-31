@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import static alsender.earthworks.main.registry.BlockRegistry.*;
 import static alsender.earthworks.main.registry.ItemRegistry.*;
@@ -248,28 +249,8 @@ public class TimberRegistry {
         RecipeRegistry.stair_slab_wall(block_timber_acacia, stair_timber_acacia, slab_timber_acacia, wall_timber_acacia);
         RecipeRegistry.stair_slab_wall(block_timber_dark_oak, stair_timber_dark_oak, slab_timber_dark_oak, wall_timber_dark_oak);
 
-//Vertical Planks
-
-        GameRegistry.addShapelessRecipe(new ItemStack(block_timber_oak, 1),
-                item_timber, item_timber, item_timber);
-
-        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
-                block_timber_oak);
-
-        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
-                block_timber_spruce);
-
-        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
-                block_timber_birch);
-
-        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
-                block_timber_jungle);
-
-        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
-                block_timber_acacia);
-
-        GameRegistry.addShapelessRecipe(new ItemStack(item_timber, 3),
-                block_timber_dark_oak);
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(item_timber, 6),
+                new Object[] {"logTimber", "logTimber"}));
 
         arrow0(daub_cob_arrow0, block_wattle);
         arrow1(daub_cob_arrow1, block_wattle);

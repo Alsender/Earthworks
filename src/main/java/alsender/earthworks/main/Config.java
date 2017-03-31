@@ -14,7 +14,7 @@ public class Config {
     public static Configuration config;
 
     public static int spawn_rate, min_spawn, max_spawn, vein_size;
-    public static boolean quark, betterwithmods, gabion;
+    public static boolean quark, persistantplanks, betterwithmods, gabion;
 
     public static void init(File configFile) {
         config = new Configuration(configFile);
@@ -34,6 +34,7 @@ public class Config {
         gabion = config.getBoolean("gabion_particles","block",true,"Set this to false to disable the gabion particles.");
 
         quark = config.getBoolean("generate_quark","block",true,"Set this to false to disable Earthworks blocks that Quark also adds.  Currently includes: Thatch, and Reed Block");
+        persistantplanks = config.getBoolean("persistant_planks","compat",false,"Set this to true to force Earthworks VERTICAL PLANKS to register when Quark is also installed.  This is for cases where you've already started a world with Earthworks, and are adding Quark after the fact.  Of if you just like redundant blocks.");
         betterwithmods = config.getBoolean("betterwithmods","compat",true,"Set this to FALSE to DISABLE Earthworks blocks and items that Better with Mods also adds.  Currently this includes: Dirt and Sand Items.");
 
         if (config.hasChanged()) {

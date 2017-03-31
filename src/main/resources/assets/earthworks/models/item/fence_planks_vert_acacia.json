@@ -1,0 +1,7 @@
+{
+  "parent": "earthworks:block/fence_inventory",
+  "textures": {
+    "texture": "earthworks:blocks/planks_vert/planks_vert_acacia",
+    "slats": "blocks/planks_acacia"
+  }
+}

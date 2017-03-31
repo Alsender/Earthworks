@@ -3,6 +3,7 @@ package alsender.earthworks.block;
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -29,6 +30,20 @@ public class ModSlab extends BlockSlab {
         super(block.getDefaultState().getMaterial());
         setHardness(block.getDefaultState().getBlockHardness(world, pos));
 
+
+        setUnlocalizedName(Earthworks.mod_id + "." + name);
+        setRegistryName(name);
+        setCreativeTab(Earthworks.creativeTab);
+
+        useNeighborBrightness = true;
+
+        GameRegistry.register(this);
+        GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+    }
+
+    public ModSlab(String name) {
+        super(Material.WOOD);
+        setHardness(2.0F);
 
         setUnlocalizedName(Earthworks.mod_id + "." + name);
         setRegistryName(name);
