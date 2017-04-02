@@ -64,37 +64,41 @@ public class Block_Gabion extends ModBlock {
         }
     }
 
-    public void onEntityWalk(World world, BlockPos pos, Entity entity) {
-        this.activate(world, pos);
-        super.onEntityWalk(world, pos, entity);
-    }
-
-    @SideOnly(Side.CLIENT)
-    public void randomDisplayTick(IBlockState state, World world, BlockPos pos, Random random) {
-        if (flag == true) {
-            if (world.getBlockState(pos.down()).getMaterial().isReplaceable()) {
-                world.spawnParticle(EnumParticleTypes.FALLING_DUST,
-                    pos.getX() + Math.random(),
-                    pos.getY() + Math.random(),
-                    pos.getZ() + Math.random(),
-                    0.0D, 0.0D, 0.0D,
-                    Block.getIdFromBlock(block));
-            }
-        }
-    }
-
-    @SideOnly(Side.CLIENT)
-    private void activate(World world, BlockPos pos) {
-        if (flag == true) {
-            world.spawnParticle(EnumParticleTypes.BLOCK_CRACK,
-                    pos.getX() + Math.random(),
-                    pos.getY() + Math.random(),
-                    pos.getZ() + Math.random(),
-                    0.0D, 0.0D, 0.0D,
-                    Block.getIdFromBlock(block));
-        }
-    }
-
+/** public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+ *      this.activate(world, pos);
+ *      super.onEntityWalk(world, pos, entity);
+ *  }
+ *
+ *  @SideOnly(Side.CLIENT)
+ *  public void randomDisplayTick(IBlockState state, World world, BlockPos pos, Random random) {
+ *      if(!world.isRemote) {
+ *          if (flag == true) {
+ *              if (world.getBlockState(pos.down()).getMaterial().isReplaceable()) {
+ *                  world.spawnParticle(EnumParticleTypes.FALLING_DUST,
+ *                          pos.getX() + Math.random(),
+ *                          pos.getY() + Math.random(),
+ *                          pos.getZ() + Math.random(),
+ *                          0.0D, 0.0D, 0.0D,
+ *                          Block.getIdFromBlock(block));
+ *              }
+ *          }
+ *      }
+ *  }
+ *
+ *  @SideOnly(Side.CLIENT)
+ *  private void activate(World world, BlockPos pos) {
+ *      if (!world.isRemote) {
+ *          if (flag == true) {
+ *              world.spawnParticle(EnumParticleTypes.BLOCK_CRACK,
+ *                      pos.getX() + Math.random(),
+ *                      pos.getY() + Math.random(),
+ *                      pos.getZ() + Math.random(),
+ *                      0.0D, 0.0D, 0.0D,
+ *                      Block.getIdFromBlock(block));
+ *          }
+ *      }
+ *  }
+ */
     public int getID() {
         return this.ID;
     }
