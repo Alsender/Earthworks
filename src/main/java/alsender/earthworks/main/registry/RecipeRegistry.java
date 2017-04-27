@@ -174,9 +174,99 @@ public class RecipeRegistry {
 
 //Slabs
 
+        GameRegistry.addShapedRecipe(new ItemStack(slab_wood_shingle_oak, 6),
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 0));
+
+        GameRegistry.addShapedRecipe(new ItemStack(slab_wood_shingle_spruce, 6),
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 1));
+
+        GameRegistry.addShapedRecipe(new ItemStack(slab_wood_shingle_birch, 6),
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 2));
+
+        GameRegistry.addShapedRecipe(new ItemStack(slab_wood_shingle_jungle, 6),
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 3));
+
+        GameRegistry.addShapedRecipe(new ItemStack(slab_wood_shingle_acacia, 6),
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 4));
+
+        GameRegistry.addShapedRecipe(new ItemStack(slab_wood_shingle_dark_oak, 6),
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 5));
+
 //Stairs
 
+        GameRegistry.addShapedRecipe(new ItemStack(stair_wood_shingle_oak, 4),
+                "B  ",
+                "BB ",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 0));
+
+        GameRegistry.addShapedRecipe(new ItemStack(stair_wood_shingle_spruce, 4),
+                "B  ",
+                "BB ",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 1));
+
+        GameRegistry.addShapedRecipe(new ItemStack(stair_wood_shingle_birch, 4),
+                "B  ",
+                "BB ",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 2));
+
+        GameRegistry.addShapedRecipe(new ItemStack(stair_wood_shingle_jungle, 4),
+                "B  ",
+                "BB ",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 3));
+
+        GameRegistry.addShapedRecipe(new ItemStack(stair_wood_shingle_acacia, 4),
+                "B  ",
+                "BB ",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 4));
+
+        GameRegistry.addShapedRecipe(new ItemStack(stair_wood_shingle_dark_oak, 4),
+                "B  ",
+                "BB ",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 5));
+
 //Walls
+
+        GameRegistry.addShapedRecipe(new ItemStack(wall_wood_shingle_oak, 6),
+                "BBB",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 0));
+
+        GameRegistry.addShapedRecipe(new ItemStack(wall_wood_shingle_spruce, 6),
+                "BBB",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 1));
+
+        GameRegistry.addShapedRecipe(new ItemStack(wall_wood_shingle_birch, 6),
+                "BBB",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 2));
+
+        GameRegistry.addShapedRecipe(new ItemStack(wall_wood_shingle_jungle, 6),
+                "BBB",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 3));
+
+        GameRegistry.addShapedRecipe(new ItemStack(wall_wood_shingle_acacia, 6),
+                "BBB",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 4));
+
+        GameRegistry.addShapedRecipe(new ItemStack(wall_wood_shingle_dark_oak, 6),
+                "BBB",
+                "BBB",
+                'B', new ItemStack(block_wood_shingle, 1, 5));
 
 //Item Recipes
 
