@@ -282,10 +282,11 @@ GameRegistry.addShapedRecipe(new ItemStack(wall_wood_shingle_oak, 6),
 
 //Compat Recipes
 
-        if (Loader.isModLoaded("quark")) {
-            Block thatch = Block.REGISTRY.getObject(new ResourceLocation("quark", "thatch"));
-            GameRegistry.addShapelessRecipe(new ItemStack(block_thatch), thatch);
-            GameRegistry.addShapelessRecipe(new ItemStack(thatch), block_thatch);
+        if (Loader.isModLoaded("Quark")) {
+            if (Config.quark == true) {
+                Block thatch = Block.REGISTRY.getObject(new ResourceLocation("quark", "thatch"));
+                GameRegistry.addShapelessRecipe(new ItemStack(thatch), block_thatch);
+            }
         }
 
         if (Loader.isModLoaded("betterwithmods")) {
