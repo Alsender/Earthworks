@@ -10,6 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import static alsender.earthworks.main.registry.BlockRegistry.*;
 import static alsender.earthworks.main.registry.ItemRegistry.*;
@@ -36,8 +38,8 @@ public class RecipeRegistry {
                 "CC","CC",
                 'C', item_cob);
 
-        GameRegistry.addShapelessRecipe(new ItemStack(block_cob, 2),
-                Blocks.CLAY, Items.WHEAT, block_mud);
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(block_cob, 2),
+                Blocks.CLAY, "vegetation", block_mud));
 
         GameRegistry.addShapelessRecipe(new ItemStack(block_concrete, 2),
                 Blocks.GRAVEL, item_lime_plaster, Blocks.SAND);
@@ -270,15 +272,58 @@ public class RecipeRegistry {
 
 //Item Recipes
 
-        GameRegistry.addShapelessRecipe(new ItemStack(item_cob, 8),
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(item_cob, 8),
                 Items.CLAY_BALL, Items.CLAY_BALL, Items.CLAY_BALL,
                 Items.CLAY_BALL, Items.WHEAT, item_mud,
-                item_mud, item_mud, item_mud);
+                item_mud, item_mud, item_mud));
 
         GameRegistry.addShapelessRecipe(new ItemStack(item_slaked_lime, 8),
                 item_quicklime, item_quicklime, item_quicklime,
                 item_quicklime, Items.WATER_BUCKET, item_quicklime,
                 item_quicklime, item_quicklime, item_quicklime);
+
+//Tool Recipes
+
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_square),
+                "W  ","W  ","WWW",'W',"plankWood"));
+
+        GameRegistry.addShapelessRecipe(new ItemStack(tool_Acheulean),
+                Blocks.COBBLESTONE, Items.FLINT);
+        GameRegistry.addShapelessRecipe(new ItemStack(tool_Acheulean),
+                Blocks.STONE, Items.FLINT);
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_adz),
+                "IS "," S "," S ",'I', Items.IRON_INGOT, 'S', Items.STICK);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(tool_compass),
+                Items.COMPASS);
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_froe),
+                "II "," S ",'I', Items.IRON_INGOT, 'S', Items.STICK);
+
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_planer),
+                "W W","WIW",'W', "plankWood", 'I', Items.IRON_INGOT));
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_level),
+                "GGG",'G', Items.GOLD_INGOT);
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_saw),
+                "IIS","DDS",'I', Items.IRON_INGOT, 'S', Items.STICK, 'D', Items.DIAMOND);
+
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_wood_hammer),
+                "WWW","WSW"," S ",'W', "plankWood", 'S', Items.STICK));
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_stone_hammer),
+                "WWW","WSW"," S ",'W', Blocks.COBBLESTONE, 'S', Items.STICK);
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_iron_hammer),
+                "WWW","WSW"," S ",'W', Items.IRON_INGOT, 'S', Items.STICK);
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_gold_hammer),
+                "WWW","WSW"," S ",'W', Items.GOLD_INGOT, 'S', Items.STICK);
+
+        GameRegistry.addShapedRecipe(new ItemStack(tool_diamond_hammer),
+                "WWW","WSW"," S ",'W', Items.DIAMOND, 'S', Items.STICK);
 
 //Compat Recipes
 
@@ -331,7 +376,7 @@ public class RecipeRegistry {
         stair_slab_fence(new ItemStack(woodPlankVert, 1, 4), stair_planks_vert4, slab_planks_vert4, fence_planks_vert4);
         stair_slab_fence(new ItemStack(woodPlankVert, 1, 5), stair_planks_vert5, slab_planks_vert5, fence_planks_vert5);
 
-        stair_slab_wall(block_adobe, stair_adobe, slab_adobe, wall_adobe);
+        stair_slab_wall(block_adobe, stair_adobe, BlockRegistry.slab_adobe, wall_adobe);
         stair_slab_wall(block_cob, stair_cob, slab_cob, wall_cob);
         stair_slab_wall(block_cinder, stair_cinder, slab_cinder, wall_cinder);
         stair_slab_wall(block_chalk,stair_chalk,slab_chalk,wall_chalk);

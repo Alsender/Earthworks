@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "half=bottom": {
+      "model": "earthworks:thatch0"
+    },
+    "half=top": {
+      "model": "earthworks:thatch0"
+    }
+  }
+}

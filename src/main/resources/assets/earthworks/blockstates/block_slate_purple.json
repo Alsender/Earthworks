@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "earthworks:blocks/slate_purple"
+    }
+  },
+  "variants": {
+    "normal":[
+      {"model": "cube_all"},
+      {"model": "cube_all", "y": 180},
+      {"model": "cube_all", "x": 180},
+      {"model": "cube_all", "z": 180}
+    ],
+    "inventory": {
+      "model": "cube_all"
+    }
+  }
+}

@@ -24,7 +24,8 @@ public class ShapelessReturnRecipes extends ShapelessRecipes {
         for (int i = 0; i < nonnulllist.size(); ++i) {
             ItemStack itemstack = inv.getStackInSlot(i);
             if (itemstack != null && itemstack.getItem() == Items.FLINT) {
-                nonnulllist.set(i, (itemstack.copy()));
+                int count = itemstack.getCount();
+                nonnulllist.set(i, (itemstack.splitStack(count)));
             } else {
                 nonnulllist.set(i, ForgeHooks.getContainerItem(itemstack));
             }

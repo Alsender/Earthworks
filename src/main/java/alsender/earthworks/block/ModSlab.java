@@ -37,7 +37,6 @@ public class ModSlab extends BlockSlab {
         useNeighborBrightness = true;
 
         GameRegistry.register(this);
-        GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     public ModSlab(String name) {
@@ -51,7 +50,6 @@ public class ModSlab extends BlockSlab {
         useNeighborBrightness = true;
 
         GameRegistry.register(this);
-        GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     @SideOnly(Side.CLIENT)
@@ -79,18 +77,20 @@ public class ModSlab extends BlockSlab {
 
     @Override
     public BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, HALF, getVariantProperty());
+        return new BlockStateContainer(this, HALF);
     }
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        if (this.isDouble()) { return getDefaultState(); }
-        else { return getDefaultState().withProperty(HALF, meta == 1 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP); }
+        IBlockState iblockstate = this.getDefaultState();
+        if (!this.isDouble()) {
+            iblockstate = iblockstate.withProperty(HALF, (meta) == 0 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP);
+        }
+        return iblockstate;
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        if (this.isDouble()) { return 0; }
-        else { return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 1 : 0; }
+        return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 0 : 1;
     }
 }

@@ -1,0 +1,49 @@
+{
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "facing=up": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_green",
+        "top": "earthworks:blocks/slate_shingle_green",
+        "side": "earthworks:blocks/slate_shingle_green"
+      }
+    },
+    "facing=south": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_green",
+        "top": "earthworks:blocks/slate_shingle_green",
+        "side": "earthworks:blocks/slate_shingle_green"
+      }
+    },
+    "facing=east": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_green",
+        "top": "earthworks:blocks/slate_shingle_green",
+        "side": "earthworks:blocks/slate_shingle_green"
+      }, "y": 270
+    },
+    "facing=west": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_green",
+        "top": "earthworks:blocks/slate_shingle_green",
+        "side": "earthworks:blocks/slate_shingle_green"
+      }, "y": 90
+    },
+    "facing=north": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_green",
+        "top": "earthworks:blocks/slate_shingle_green",
+        "side": "earthworks:blocks/slate_shingle_green"
+      }, "y": 180
+    },
+    "inventory": {
+      "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_green",
+        "top": "earthworks:blocks/slate_shingle_green",
+        "side": "earthworks:blocks/slate_shingle_green"
+      }
+    }
+  }
+}

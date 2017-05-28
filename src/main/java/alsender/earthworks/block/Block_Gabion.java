@@ -23,12 +23,12 @@ public class Block_Gabion extends ModBlock {
 
     private boolean flag = Config.gabion;
     private Block block;
-    private int ID;
+    private int IDNum;
 
     public Block_Gabion(String name, int ID,  Material material, SoundType soundType, Float hardness, Float resistance, Block block) {
         super(name, material, soundType, hardness, resistance);
         this.block = block;
-        this.ID = ID;
+        this.IDNum = ID;
     }
 
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
@@ -99,13 +99,13 @@ public class Block_Gabion extends ModBlock {
  *      }
  *  }
  */
-    public int getID() {
-        return this.ID;
+    public int getIDNum() {
+        return this.IDNum;
     }
 
     private Block switchGabion(Block block) {
         Block blockReturn = null;
-        switch (getID()) {
+        switch (getIDNum()) {
             case 0 : blockReturn = BlockRegistry.block_gabion_falling0;
                     break;
             case 1 : blockReturn = BlockRegistry.block_gabion_falling1;
