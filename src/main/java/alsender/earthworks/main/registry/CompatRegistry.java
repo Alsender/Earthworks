@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import static alsender.earthworks.main.registry.RecipeRegistry.stair_slab_wall;
 
@@ -33,6 +34,14 @@ public class CompatRegistry {
             wall_reed,
             wall_thatch;
 
+    public static ModDoubleSlab
+            doubleslab_reed,
+            doubleslab_thatch;
+
+    public static ModItemSlab
+            itemslab_reed,
+            itemslab_thatch;
+
     public static Item
             item_dirt,
             item_sand;
@@ -41,8 +50,15 @@ public class CompatRegistry {
         block_reed = new ModRotatedPillar("block_reed", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
         block_thatch = new ModRotatedPillar("block_thatch", Material.GRASS, SoundType.CLOTH, 0.8F, 1.0F);
 
+
         slab_reed = new ModSlab("slab_reed", block_reed);
+        doubleslab_reed = new ModDoubleSlab(slab_reed);
+        itemslab_reed = new ModItemSlab(slab_reed, doubleslab_reed);
+
         slab_thatch = new ModSlab("slab_thatch", block_thatch);
+        doubleslab_thatch = new ModDoubleSlab(slab_thatch);
+        itemslab_thatch = new ModItemSlab(slab_thatch, doubleslab_thatch);
+
 
         stair_reed = new ModStair("stair_reed", block_reed);
         stair_thatch = new ModStair("stair_thatch", block_thatch);
@@ -102,10 +118,10 @@ public class CompatRegistry {
                 "SS","SS",
                 'S', item_sand);
 
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistry.item_adobe, 8),
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ItemRegistry.item_adobe, 8),
                 Items.CLAY_BALL, Items.CLAY_BALL, Items.CLAY_BALL,
-                Items.CLAY_BALL, Items.WHEAT, Items.CLAY_BALL,
-                Items.CLAY_BALL, item_sand, item_sand);
+                Items.CLAY_BALL, "vegetation", Items.CLAY_BALL,
+                Items.CLAY_BALL, item_sand, item_sand));
 
         GameRegistry.addShapelessRecipe(new ItemStack(item_dirt, 4),
                 Blocks.DIRT);
