@@ -84,13 +84,13 @@ public class ModSlab extends BlockSlab {
     public IBlockState getStateFromMeta(int meta) {
         IBlockState iblockstate = this.getDefaultState();
         if (!this.isDouble()) {
-            iblockstate = iblockstate.withProperty(HALF, (meta) == 0 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP);
+            iblockstate = iblockstate.withProperty(HALF, (meta) == 1 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP);
         }
         return iblockstate;
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 0 : 1;
+        return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 1 : 0;
     }
 }

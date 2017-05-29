@@ -274,7 +274,7 @@ public class RecipeRegistry {
 
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(item_cob, 8),
                 Items.CLAY_BALL, Items.CLAY_BALL, Items.CLAY_BALL,
-                Items.CLAY_BALL, Items.WHEAT, item_mud,
+                Items.CLAY_BALL, "vegetation", item_mud,
                 item_mud, item_mud, item_mud));
 
         GameRegistry.addShapelessRecipe(new ItemStack(item_slaked_lime, 8),
