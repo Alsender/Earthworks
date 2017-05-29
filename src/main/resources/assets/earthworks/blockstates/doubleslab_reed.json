@@ -3,7 +3,7 @@
   "defaults": {
     "textures": {
       "bottom": "earthworks:blocks/block_reed_top",
-      "top": "earthworks:blocks/reed_top",
+      "top": "earthworks:blocks/block_reed_top",
       "side": "earthworks:blocks/block_reed"
     }
   },
