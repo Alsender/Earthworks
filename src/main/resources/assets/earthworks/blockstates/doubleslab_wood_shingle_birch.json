@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "half=bottom": {
+      "model": "earthworks:shingle/shingle_birch"
+    },
+    "half=top": {
+      "model": "earthworks:shingle/shingle_birch"
+    }
+  }
+}

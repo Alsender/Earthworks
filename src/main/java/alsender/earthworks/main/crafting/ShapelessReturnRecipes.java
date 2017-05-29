@@ -23,7 +23,8 @@ public class ShapelessReturnRecipes extends ShapelessRecipes {
         for (int i = 0; i < aitemstack.length; ++i) {
             ItemStack itemstack = inv.getStackInSlot(i);
             if (itemstack != null && itemstack.getItem() == Items.FLINT) {
-                aitemstack[i] = itemstack.copy();
+                int count = itemstack.stackSize;
+                aitemstack[i] = itemstack.splitStack(count);
             } else {
                 aitemstack[i] = ForgeHooks.getContainerItem(itemstack);
             }
