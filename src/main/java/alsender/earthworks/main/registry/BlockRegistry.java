@@ -195,7 +195,7 @@ public class BlockRegistry {
         block_slate_slab = new ModBlock("block_slate_slab",Material.ROCK,SoundType.STONE,1.5F,10.0F);
         block_slate_slab_green = new ModBlock("block_slate_slab_green",Material.ROCK,SoundType.STONE,1.5F,10.0F);
         block_slate_slab_purple = new ModBlock("block_slate_slab_purple",Material.ROCK,SoundType.STONE,1.5F,10.0F);
-        block_slate_shingle = new ModBlock("block_slate_shingle",Material.ROCK,SoundType.STONE,1.2F,10.0F);
+        block_slate_shingle = new ModBlockFacing("block_slate_shingle",Material.ROCK,SoundType.STONE,1.2F,10.0F);
         block_slate_shingle_verte = new ModBlockFacing("block_slate_shingle_verte",Material.ROCK,SoundType.STONE,1.2F,10.0F);
         block_slate_shingle_purple = new ModBlockFacing("block_slate_shingle_purple",Material.ROCK,SoundType.STONE,1.2F,10.0F);
         block_slate_tile = new ModBlock("block_slate_tile",Material.ROCK,SoundType.STONE,1.2F,10.0F);
@@ -540,7 +540,7 @@ public class BlockRegistry {
         ((ModBlock)block_slate_slab).initModel();
         ((ModBlock)block_slate_slab_green).initModel();
         ((ModBlock)block_slate_slab_purple).initModel();
-        ((ModBlock)block_slate_shingle).initModel();
+        ((ModBlockFacing)block_slate_shingle).initModel();
         ((ModBlockFacing)block_slate_shingle_verte).initModel();
         ((ModBlockFacing)block_slate_shingle_purple).initModel();
         ((ModBlock)block_slate_tile).initModel();
