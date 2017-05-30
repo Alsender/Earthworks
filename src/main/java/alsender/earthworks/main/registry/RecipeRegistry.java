@@ -119,17 +119,47 @@ public class RecipeRegistry {
                 "FF","FF",
                 'F', Items.FLINT);
 
+        GameRegistry.addShapelessRecipe(new ItemStack(block_slate_green),
+                block_slate);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(block_slate_purple),
+                block_slate_green);
+
         GameRegistry.addShapedRecipe(new ItemStack(block_slate_slab,8),
                 "SSS","S S","SSS",
                 'S', block_slate);
+
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_slab_green,8),
+                "SSS","S S","SSS",
+                'S', block_slate_green);
+
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_slab_purple,8),
+                "SSS","S S","SSS",
+                'S', block_slate_purple);
 
         GameRegistry.addShapedRecipe(new ItemStack(block_slate_shingle,4),
                 "SS","SS",
                 'S',block_slate);
 
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_shingle_verte,4),
+                "SS","SS",
+                'S',block_slate_green);
+
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_shingle_purple,4),
+                "SS","SS",
+                'S',block_slate_purple);
+
         GameRegistry.addShapedRecipe(new ItemStack(block_slate_tile,4),
                 "SS","SS",
                 'S',block_slate_slab);
+
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_tile_verte,4),
+                "SS","SS",
+                'S',block_slate_slab_green);
+
+        GameRegistry.addShapedRecipe(new ItemStack(block_slate_tile_purple,4),
+                "SS","SS",
+                'S',block_slate_slab_purple);
 
         GameRegistry.addShapedRecipe(new ItemStack(block_wattle, 8),
                 "CCC","CWC","CCC",
@@ -390,9 +420,17 @@ public class RecipeRegistry {
         stair_slab_wall(block_plaster, stair_plaster, slab_plaster, wall_plaster);
         stair_slab_wall(block_rammed_earth, stair_rammed_earth, slab_rammed_earth, wall_rammed_earth);
         stair_slab_wall(block_slate, stair_slate, slab_slate, wall_slate);
+        stair_slab_wall(block_slate_green, stair_slate_green, slab_slate_green, wall_slate_green);
+        stair_slab_wall(block_slate_purple, stair_slate_purple, slab_slate_purple, wall_slate_purple);
         stair_slab_wall(block_slate_shingle, stair_slate_shingle, slab_slate_shingle, wall_slate_shingle);
-        stair_slab_wall(block_slate_slab,stair_slate_slab,slab_slate_slab,wall_slate_slab);
-        stair_slab_wall(block_slate_tile,stair_slate_tile,slab_slate_tile,wall_slate_tile);
+        stair_slab_wall(block_slate_shingle_verte, stair_slate_shingle_verte, slab_slate_shingle_verte, wall_slate_shingle_verte);
+        stair_slab_wall(block_slate_shingle_purple, stair_slate_shingle_purple, slab_slate_shingle_purple, wall_slate_shingle_purple);
+        stair_slab_wall(block_slate_slab, stair_slate_slab, slab_slate_slab, wall_slate_slab);
+        stair_slab_wall(block_slate_slab_green, stair_slate_slab_green, slab_slate_slab_green, wall_slate_slab_green);
+        stair_slab_wall(block_slate_slab_purple, stair_slate_slab_purple, slab_slate_slab_purple, wall_slate_slab_purple);
+        stair_slab_wall(block_slate_tile, stair_slate_tile, slab_slate_tile, wall_slate_tile);
+        stair_slab_wall(block_slate_tile_verte, stair_slate_tile_verte, slab_slate_tile_verte, wall_slate_tile_verte);
+        stair_slab_wall(block_slate_tile_purple, stair_slate_tile_purple, slab_slate_tile_purple, wall_slate_tile_purple);
         stair_slab_wall(block_wattle, stair_wattle, slab_wattle, wall_wattle);
         stair_slab_wall(block_wicker, stair_wicker, slab_wicker, wall_wicker);
     }
