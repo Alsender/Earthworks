@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "earthworks:blocks/block_slate"
+    }
+  },
+  "variants": {
+    "half=bottom": [
+      { "model": "cube_all" },
+      { "model": "cube_all", "y": 90 },
+      { "model": "cube_all", "y": 180 },
+      { "model": "cube_all", "y": 270 }
+    ],
+    "half=top": [
+      { "model": "cube_all" },
+      { "model": "cube_all", "y": 90 },
+      { "model": "cube_all", "y": 180 },
+      { "model": "cube_all", "y": 270 }
+    ]
+  }
+}

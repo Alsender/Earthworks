@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "defaults": {  },
+  "variants": {
+    "axis=y": { "model": "earthworks:thatch0" },
+    "axis=z": { "model": "earthworks:thatch0", "x": 90 },
+    "axis=x": { "model": "earthworks:thatch0", "x": 90, "y": 90 },
+    "axis=none": { "model": "earthworks:thatch0" },
+    "inventory": { "model": "earthworks:thatch0" }
+  }
+}

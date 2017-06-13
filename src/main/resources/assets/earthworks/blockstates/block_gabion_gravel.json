@@ -1,0 +1,8 @@
+{
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "normal": { "model": "earthworks:block_gabion_gravel" },
+    "inventory": { "model": "earthworks:block_gabion_gravel" }
+  }
+}

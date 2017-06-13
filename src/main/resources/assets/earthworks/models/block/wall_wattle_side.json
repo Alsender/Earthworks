@@ -1,0 +1,6 @@
+{
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "earthworks:blocks/daub_cob/daub_cob0"
+  }
+}

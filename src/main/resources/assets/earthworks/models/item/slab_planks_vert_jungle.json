@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "top": "earthworks:blocks/planks_vert/planks_vert_jungle",
+    "side": "earthworks:blocks/planks_vert/planks_vert_jungle",
+    "bottom": "earthworks:blocks/planks_vert/planks_vert_jungle",
+    "particle": "earthworks:blocks/planks_vert/planks_vert_jungle"
+  }
+}

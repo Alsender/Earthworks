@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=oak": { "model": "earthworks:planks_vert/planks_vert_oak" },
+    "variant=birch": { "model": "earthworks:planks_vert/planks_vert_birch" },
+    "variant=spruce": { "model": "earthworks:planks_vert/planks_vert_spruce" },
+    "variant=jungle": { "model": "earthworks:planks_vert/planks_vert_jungle" },
+    "variant=acacia": { "model": "earthworks:planks_vert/planks_vert_acacia" },
+    "variant=dark_oak": { "model": "earthworks:planks_vert/planks_vert_dark_oak" }
+  }
+}

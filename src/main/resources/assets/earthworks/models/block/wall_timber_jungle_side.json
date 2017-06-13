@@ -1,0 +1,8 @@
+{
+  "parent": "earthworks:block/wall_side",
+  "textures": {
+    "top": "earthworks:blocks/wall_jungle",
+    "bottom": "earthworks:blocks/wall_jungle",
+    "wall": "blocks/log_jungle"
+  }
+}

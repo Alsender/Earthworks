@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {  },
+  "variants": {
+    "normal": [
+      { "model": "earthworks:dry_stone0" },
+      { "model": "earthworks:dry_stone1" },
+      { "model": "earthworks:dry_stone2" },
+      { "model": "earthworks:dry_stone3" }
+//  { "model": "earthworks:dry_stone4" }
+    ],
+    "inventory": {
+      "model": "earthworks:dry_stone0"
+    }
+  }
+}

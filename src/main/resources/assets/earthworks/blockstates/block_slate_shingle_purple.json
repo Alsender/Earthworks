@@ -1,0 +1,49 @@
+{
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "facing=up": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_purple",
+        "top": "earthworks:blocks/slate_shingle_purple",
+        "side": "earthworks:blocks/slate_shingle_purple"
+      }
+    },
+    "facing=south": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_purple",
+        "top": "earthworks:blocks/slate_shingle_purple",
+        "side": "earthworks:blocks/slate_shingle_purple"
+      }
+    },
+    "facing=east": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_purple",
+        "top": "earthworks:blocks/slate_shingle_purple",
+        "side": "earthworks:blocks/slate_shingle_purple"
+      }, "y": 270
+    },
+    "facing=west": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_purple",
+        "top": "earthworks:blocks/slate_shingle_purple",
+        "side": "earthworks:blocks/slate_shingle_purple"
+      }, "y": 90
+    },
+    "facing=north": { "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_purple",
+        "top": "earthworks:blocks/slate_shingle_purple",
+        "side": "earthworks:blocks/slate_shingle_purple"
+      }, "y": 180
+    },
+    "inventory": {
+      "model": "minecraft:cube_bottom_top",
+      "textures": {
+        "bottom": "earthworks:blocks/slate_shingle_purple",
+        "top": "earthworks:blocks/slate_shingle_purple",
+        "side": "earthworks:blocks/slate_shingle_purple"
+      }
+    }
+  }
+}

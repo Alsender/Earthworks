@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:half_slab",
+    "textures": {
+      "bottom": "earthworks:blocks/planks_vert/oak/planks_vert_oak",
+      "top": "earthworks:blocks/planks_vert/oak/planks_vert_oak",
+      "side": "earthworks:blocks/planks_vert/oak/planks_vert_oak"
+    },
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
+  }
+}

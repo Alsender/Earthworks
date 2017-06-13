@@ -1,0 +1,18 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+  },
+  "variants": {
+    "normal": [
+      {
+        "model": "earthworks:daub_cob0"
+      },
+      {
+        "model": "earthworks:daub_cob1"
+      }
+    ],
+    "inventory": {
+      "model": "earthworks:daub_cob0"
+    }
+  }
+}

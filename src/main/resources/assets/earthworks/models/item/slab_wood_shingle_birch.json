@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "top": "earthworks:blocks/shingle_birch",
+    "side": "earthworks:blocks/shingle_birch",
+    "bottom": "earthworks:blocks/shingle_birch",
+    "particle": "earthworks:blocks/shingle_birch"
+  }
+}

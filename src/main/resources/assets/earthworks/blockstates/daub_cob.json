@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "type=x": { "model":"earthworks:daub_cob_x" },
+    "type=square": { "model":"earthworks:daub_cob_square" },
+    "type=square_x": { "model":"earthworks:daub_cob_square_x" },
+    "type=parallel_vert": { "model":"earthworks:daub_cob_parallel_vert" },
+    "type=parallel_hor": { "model":"earthworks:daub_cob_parallel_hor" },
+    "type=left": { "model":"earthworks:daub_cob_left" },
+    "type=right": { "model":"earthworks:daub_cob_right" },
+    "type=top": { "model":"earthworks:daub_cob_top" },
+    "type=bottom": { "model":"earthworks:daub_cob_bottom" },
+    "type=triangle_r": { "model":"earthworks:daub_cob_triangle_r" },
+    "type=triangle_l": { "model":"earthworks:daub_cob_triangle_l" },
+    "type=slant_r": { "model":"earthworks:daub_cob_slant_r" },
+    "type=slant_l": { "model":"earthworks:daub_cob_slant_l" },
+    "type=bottom_l": { "model":"earthworks:daub_cob_bottom_l" },
+    "type=bottom_r": { "model":"earthworks:daub_cob_bottom_r" }
+  }
+}

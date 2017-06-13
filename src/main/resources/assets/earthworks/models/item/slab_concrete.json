@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "top": "earthworks:blocks/concrete",
+    "side": "earthworks:blocks/concrete",
+    "bottom": "earthworks:blocks/concrete",
+    "particle": "earthworks:blocks/concrete"
+  }
+}

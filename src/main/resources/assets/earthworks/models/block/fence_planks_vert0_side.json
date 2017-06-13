@@ -1,0 +1,6 @@
+{
+  "parent": "earthworks:block/fence_side",
+  "textures": {
+    "slats": "minecraft:blocks/planks_oak"
+  }
+}

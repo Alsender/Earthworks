@@ -1,0 +1,9 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "top": "earthworks:blocks/adobe2",
+        "side": "earthworks:blocks/adobe0",
+        "bottom": "earthworks:blocks/adobe1",
+        "particle": "earthworks:blocks/adobe3"
+    }
+}

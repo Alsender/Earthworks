@@ -1,0 +1,9 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "top": "earthworks:blocks/daub_cob/daub_cob0",
+        "side": "earthworks:blocks/daub_cob/daub_cob0",
+        "bottom": "earthworks:blocks/daub_cob/daub_cob0",
+        "particle": "earthworks:blocks/daub_cob/daub_cob0"
+    }
+}

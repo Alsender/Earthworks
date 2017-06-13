@@ -1,0 +1,9 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "top": "earthworks:blocks/slate_tile_purple",
+    "side": "earthworks:blocks/slate_tile_purple",
+    "bottom": "earthworks:blocks/slate_tile_purple",
+    "particle": "earthworks:blocks/slate_tile_purple"
+  }
+}

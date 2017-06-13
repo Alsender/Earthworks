@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "facing=up": { "model": "earthworks:daub_cob/daub_cob_bottom_l" },
+    "facing=south": { "model": "earthworks:daub_cob/daub_cob_bottom_l" },
+    "facing=east": { "model": "earthworks:daub_cob/daub_cob_bottom_l", "y": 270 },
+    "facing=west": { "model": "earthworks:daub_cob/daub_cob_bottom_l", "y": 90 },
+    "facing=north": { "model": "earthworks:daub_cob/daub_cob_bottom_l", "y": 180 },
+    "inventory": {
+      "model": "earthworks:daub_cob/daub_cob_bottom_r"
+    }
+  }
+}
