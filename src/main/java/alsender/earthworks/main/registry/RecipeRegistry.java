@@ -2,6 +2,7 @@ package alsender.earthworks.main.registry;
 
 import alsender.earthworks.main.Config;
 import alsender.earthworks.main.crafting.ModCraftingManager;
+import alsender.earthworks.main.crafting.ShapelessReturnRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -10,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.RecipeSorter;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
@@ -176,6 +178,7 @@ public class RecipeRegistry {
                 'W', Items.WHEAT,
                 'S', Items.STICK);
 
+        RecipeSorter.register("earthworks:shapelessReturn", ShapelessReturnRecipes.class, RecipeSorter.Category.SHAPELESS, "");
         for (int i = 0; i < 4; i++) {
             ModCraftingManager.addShapelessReturnRecipe(new ItemStack(block_wood_shingle, 6, i),
                     new ItemStack(Blocks.LOG, 1, i), Items.FLINT);

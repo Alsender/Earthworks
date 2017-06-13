@@ -41,7 +41,9 @@ public class BlockRegistry {
             block_timber_jungle, block_timber_acacia, block_timber_dark_oak,
             block_wattle,
             block_wicker,
-            block_wood_shingle;
+            block_wood_shingle,
+
+            chalk_dust;
 
     public static Block
             fence_planks_vert0, fence_planks_vert1, fence_planks_vert2,
@@ -507,7 +509,6 @@ public class BlockRegistry {
         OreDictionary.registerOre("vegetation", Blocks.DOUBLE_PLANT);
         OreDictionary.registerOre("vegetation", Blocks.LEAVES);
         OreDictionary.registerOre("vegetation", Blocks.LEAVES2);
-        OreDictionary.registerOre("vegetation", Blocks.REEDS);
         OreDictionary.registerOre("vegetation", Blocks.SAPLING);
         OreDictionary.registerOre("vegetation", Blocks.TALLGRASS);
         OreDictionary.registerOre("vegetation", Blocks.VINE);

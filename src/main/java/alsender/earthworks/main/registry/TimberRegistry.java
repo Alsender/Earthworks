@@ -2,6 +2,7 @@ package alsender.earthworks.main.registry;
 
 
 import alsender.earthworks.block.timber.*;
+import alsender.earthworks.main.crafting.MirrorlessShapedRecipes;
 import alsender.earthworks.main.crafting.ModCraftingManager;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -9,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.RecipeSorter;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import static alsender.earthworks.main.registry.BlockRegistry.*;
@@ -241,7 +243,7 @@ public class TimberRegistry {
                 'W', new ItemStack(Blocks.LOG2, 1, 1));
 
 //Slabs/Stairs/Walls
-
+        RecipeSorter.register("earthworks:mirrorlessShaped", MirrorlessShapedRecipes.class, RecipeSorter.Category.SHAPED, "");
         RecipeRegistry.stair_slab_wall(block_timber_oak, stair_timber_oak, slab_timber_oak, wall_timber_oak);
         RecipeRegistry.stair_slab_wall(block_timber_spruce, stair_timber_spruce, slab_timber_spruce, wall_timber_spruce);
         RecipeRegistry.stair_slab_wall(block_timber_birch, stair_timber_birch, slab_timber_birch, wall_timber_birch);
