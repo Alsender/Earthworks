@@ -24,7 +24,7 @@ public class Earthworks {
 
     public static final String mod_id = "earthworks";
     public static final String name = "Earthworks";
-    public static final String version = "1.3.2";
+    public static final String version = "1.3.4";
 
     public static final CreativeTabs creativeTab = (new CreativeTabs("earthworks") {
 

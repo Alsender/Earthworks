@@ -506,7 +506,6 @@ public class BlockRegistry {
         OreDictionary.registerOre("vegetation", Blocks.DOUBLE_PLANT);
         OreDictionary.registerOre("vegetation", Blocks.LEAVES);
         OreDictionary.registerOre("vegetation", Blocks.LEAVES2);
-        OreDictionary.registerOre("vegetation", Blocks.REEDS);
         OreDictionary.registerOre("vegetation", Blocks.SAPLING);
         OreDictionary.registerOre("vegetation", Blocks.TALLGRASS);
         OreDictionary.registerOre("vegetation", Blocks.VINE);
