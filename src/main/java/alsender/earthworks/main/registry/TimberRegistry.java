@@ -239,14 +239,14 @@ public class TimberRegistry {
                 new ItemStack(Blocks.LOG, 1, 3));
 
         ModCraftingManager.addShapedRecipe("block_timber_acacia", new ItemStack(block_timber_acacia, 3),1,3,
-                new ItemStack(Blocks.LOG, 1, 4),
-                new ItemStack(Blocks.LOG, 1, 4),
-                new ItemStack(Blocks.LOG, 1, 4));
+                new ItemStack(Blocks.LOG2, 1, 0),
+                new ItemStack(Blocks.LOG2, 1, 0),
+                new ItemStack(Blocks.LOG2, 1, 0));
 
         ModCraftingManager.addShapedRecipe("block_timber_dark_oak", new ItemStack(block_timber_dark_oak, 3),1,3,
-                new ItemStack(Blocks.LOG, 1, 5),
-                new ItemStack(Blocks.LOG, 1, 5),
-                new ItemStack(Blocks.LOG, 1, 5));
+                new ItemStack(Blocks.LOG2, 1, 1),
+                new ItemStack(Blocks.LOG2, 1, 1),
+                new ItemStack(Blocks.LOG2, 1, 1));
 
 //Slabs/Stairs/Walls
         RecipeSorter.register("earthworks:mirrorlessShaped", MirrorlessShapedRecipes.class, RecipeSorter.Category.SHAPED, "");

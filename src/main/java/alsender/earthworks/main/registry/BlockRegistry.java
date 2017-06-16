@@ -43,7 +43,7 @@ public class BlockRegistry {
             block_wicker,
             block_wood_shingle,
 
-            chalk_dust;
+            block_chalk_dust;
 
     public static Block
             fence_planks_vert0, fence_planks_vert1, fence_planks_vert2,
@@ -217,6 +217,8 @@ public class BlockRegistry {
             block_planks_vert = new Block_Planks_Vert("block_planks_vert", Material.WOOD, SoundType.WOOD, 2.0F, 3.33F);
             OreDictionary.registerOre("plankWood", block_planks_vert);
         }
+
+//      block_chalk_dust = new Block_ChalkDust();
 
         fence_planks_vert0 = new ModFence("fence_planks_vert_oak");
         fence_planks_vert1 = new ModFence("fence_planks_vert_spruce");

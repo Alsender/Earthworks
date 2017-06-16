@@ -1,6 +1,7 @@
 package alsender.earthworks.main.registry;
 
 
+import alsender.earthworks.item.Item_Chalk;
 import alsender.earthworks.item.ModItem;
 import alsender.earthworks.item.ModItemTool;
 import net.minecraft.item.Item;
@@ -41,10 +42,10 @@ public class ItemRegistry {
 
     public static void init() {
         item_adobe = new ModItem("adobe");
+        item_chalk = new Item_Chalk();
         item_cob = new ModItem("cob");
         item_lime_plaster = new ModItem("lime_plaster");
         item_mud = new ModItem("mud");
-        item_chalk = new ModItem("chalk");
         item_quicklime = new ModItem("quicklime");
         item_slaked_lime = new ModItem("slaked_lime");
         item_timber = new ModItem("timber");

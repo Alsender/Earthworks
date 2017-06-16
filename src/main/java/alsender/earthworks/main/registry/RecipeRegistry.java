@@ -205,19 +205,19 @@ public class RecipeRegistry {
                 new ItemStack(block_wood_shingle, 1, 0), new ItemStack(block_wood_shingle, 1, 0), new ItemStack(block_wood_shingle, 1, 0));
 
         ModCraftingManager.addShapedRecipe("slab_wood_shingle_spruce",new ItemStack(slab_wood_shingle_spruce, 6),3,1,
-                new ItemStack(block_wood_shingle, 1, 1), new ItemStack(block_wood_shingle, 1, 0), new ItemStack(block_wood_shingle, 1, 0));
+                new ItemStack(block_wood_shingle, 1, 1), new ItemStack(block_wood_shingle, 1, 1), new ItemStack(block_wood_shingle, 1, 1));
 
         ModCraftingManager.addShapedRecipe("slab_wood_shingle_birch", new ItemStack(slab_wood_shingle_birch, 6),3,1,
-                new ItemStack(block_wood_shingle, 1, 2), new ItemStack(block_wood_shingle, 1, 0), new ItemStack(block_wood_shingle, 1, 0));
+                new ItemStack(block_wood_shingle, 1, 2), new ItemStack(block_wood_shingle, 1, 2), new ItemStack(block_wood_shingle, 1, 2));
 
         ModCraftingManager.addShapedRecipe("slab_wood_shingle_jungle", new ItemStack(slab_wood_shingle_jungle, 6),3,1,
-                new ItemStack(block_wood_shingle, 1, 3), new ItemStack(block_wood_shingle, 1, 0), new ItemStack(block_wood_shingle, 1, 0));
+                new ItemStack(block_wood_shingle, 1, 3), new ItemStack(block_wood_shingle, 1, 3), new ItemStack(block_wood_shingle, 1, 3));
 
         ModCraftingManager.addShapedRecipe("slab_wood_shingle_acacia", new ItemStack(slab_wood_shingle_acacia, 6),3,1,
-                new ItemStack(block_wood_shingle, 1, 4), new ItemStack(block_wood_shingle, 1, 0), new ItemStack(block_wood_shingle, 1, 0));
+                new ItemStack(block_wood_shingle, 1, 4), new ItemStack(block_wood_shingle, 1, 4), new ItemStack(block_wood_shingle, 1, 4));
 
         ModCraftingManager.addShapedRecipe("slab_wood_shingle_dark_oak", new ItemStack(slab_wood_shingle_dark_oak, 6),3,1,
-                new ItemStack(block_wood_shingle, 1, 5), new ItemStack(block_wood_shingle, 1, 0), new ItemStack(block_wood_shingle, 1, 0));
+                new ItemStack(block_wood_shingle, 1, 5), new ItemStack(block_wood_shingle, 1, 5), new ItemStack(block_wood_shingle, 1, 5));
 
 //Stairs
 
@@ -326,27 +326,27 @@ public class RecipeRegistry {
 
         ModCraftingManager.addShapedRecipe("tool_wood_hammer", new ItemStack(tool_wood_hammer),3,3,
                 Blocks.PLANKS, Blocks.PLANKS, Blocks.PLANKS,
-                ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY,
+                Blocks.PLANKS, Items.STICK, Blocks.PLANKS,
                 ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY);
 
         ModCraftingManager.addShapedRecipe("tool_stone_hammer", new ItemStack(tool_stone_hammer),3,3,
                 Blocks.COBBLESTONE, Blocks.COBBLESTONE, Blocks.COBBLESTONE,
-                ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY,
+                Blocks.COBBLESTONE, Items.STICK, Blocks.COBBLESTONE,
                 ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY);
 
         ModCraftingManager.addShapedRecipe("tool_iron_hammer", new ItemStack(tool_iron_hammer),3,3,
                 Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT,
-                ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY,
+                Items.IRON_INGOT, Items.STICK, Items.IRON_INGOT,
                 ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY);
 
         ModCraftingManager.addShapedRecipe("tool_gold_hammer", new ItemStack(tool_gold_hammer),3,3,
                 Items.GOLD_INGOT, Items.GOLD_INGOT, Items.GOLD_INGOT,
-                ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY,
+                Items.GOLD_INGOT, Items.STICK, Items.GOLD_INGOT,
                 ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY);
 
         ModCraftingManager.addShapedRecipe("tool_diamond_hammer", new ItemStack(tool_diamond_hammer),3,3,
                 Items.DIAMOND, Items.DIAMOND, Items.DIAMOND,
-                ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY,
+                Items.DIAMOND, Items.STICK, Items.DIAMOND,
                 ItemStack.EMPTY, Items.STICK, ItemStack.EMPTY);
 
 //Compat Recipes
