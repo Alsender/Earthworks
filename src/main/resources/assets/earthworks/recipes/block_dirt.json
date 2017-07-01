@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "minecraft:dirt",
+    "data": 0
+  },
+  "pattern": [
+    "DD",
+    "DD"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "D": {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    }
+  }
+}

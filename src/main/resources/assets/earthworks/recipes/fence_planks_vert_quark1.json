@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "earthworks:fence_planks_vert_spruce",
+    "count": 6
+  },
+  "pattern": [
+    "BSB",
+    "BSB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "quark_planks"
+  }],
+  "key": {
+    "B": {
+      "item": "quark:vertical_planks",
+      "data": 1
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  }
+}

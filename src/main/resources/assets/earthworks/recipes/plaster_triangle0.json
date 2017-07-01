@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:plaster_triangle0",
+    "count": 5
+  },
+  "pattern": [
+    "tbb",
+    "ttb",
+    "ttt"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "b": {
+      "item": "earthworks:block_plaster"
+    },
+    "t": {
+      "item": "earthworks:item_timber"
+    }
+  },
+  "mirrored": "false"
+}

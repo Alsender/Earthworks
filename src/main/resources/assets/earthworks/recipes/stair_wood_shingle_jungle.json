@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:stair_wood_shingle_jungle",
+    "count": 4
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:block_wood_shingle",
+      "data": 3
+    }
+  }
+}

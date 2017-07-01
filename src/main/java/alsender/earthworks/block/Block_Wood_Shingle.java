@@ -1,6 +1,5 @@
 package alsender.earthworks.block;
 
-import alsender.earthworks.item.BlockItemWoodShingle;
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPlanks;
@@ -15,9 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 3/2/17.
@@ -26,7 +25,7 @@ public class Block_Wood_Shingle extends Block {
 
     public final String blockName;
 
-    public Block_Wood_Shingle(String name, Material mat, SoundType sound, float hardness, float resistance) {
+    public Block_Wood_Shingle(IForgeRegistry<Block> registry, String name, Material mat, SoundType sound, float hardness, float resistance) {
         super(mat);
         this.setSoundType(sound);
         this.setHardness(hardness);
@@ -37,8 +36,7 @@ public class Block_Wood_Shingle extends Block {
         this.setCreativeTab(Earthworks.creativeTab);
         this.setDefaultState(this.blockState.getBaseState().withProperty(BlockPlanks.VARIANT, BlockPlanks.EnumType.OAK));
 
-        GameRegistry.register(this);
-        GameRegistry.register(new BlockItemWoodShingle(this).setRegistryName(this.getRegistryName()));
+        registry.register(this);
 
         this.blockName = name;
     }

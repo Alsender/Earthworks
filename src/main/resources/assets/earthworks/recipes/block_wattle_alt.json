@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "earthworks:block_wattle",
+    "count": 2
+  },
+  "pattern": [
+    "CCC",
+    "CWC",
+    "CCC"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "earthworks:item_cob"
+    },
+    "W": {
+      "item": "earthworks:block_wicker"
+    }
+  }
+}

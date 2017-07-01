@@ -9,14 +9,13 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 12/16/16.
@@ -25,21 +24,20 @@ public class ModSlab extends BlockSlab {
     public final World world = null;
     public final BlockPos pos = null;
 
-    public ModSlab(String name, Block block) {
+    public ModSlab(IForgeRegistry<Block> registry, String name, Block block) {
         super(block.getDefaultState().getMaterial());
         setHardness(block.getDefaultState().getBlockHardness(world, pos));
-
 
         setUnlocalizedName(Earthworks.mod_id + "." + name);
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
 
-        useNeighborBrightness = true;
+        registry.register(this);
 
-        GameRegistry.register(this);
+        useNeighborBrightness = true;
     }
 
-    public ModSlab(String name) {
+    public ModSlab(IForgeRegistry<Block> registry, String name) {
         super(Material.WOOD);
         setHardness(2.0F);
 
@@ -47,9 +45,9 @@ public class ModSlab extends BlockSlab {
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
 
-        useNeighborBrightness = true;
+        registry.register(this);
 
-        GameRegistry.register(this);
+        useNeighborBrightness = true;
     }
 
     @SideOnly(Side.CLIENT)

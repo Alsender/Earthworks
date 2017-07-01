@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "earthworks:plaster_square_x"
+  },
+  "ingredients": [
+    {
+      "item": "earthworks:plaster_square"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "mirrored": "false"
+}

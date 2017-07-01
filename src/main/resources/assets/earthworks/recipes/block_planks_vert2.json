@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "earthworks:block_planks_vert",
+    "data": 2,
+    "count": 4
+  },
+  "ingredients": [
+    {
+      "item": "earthworks:block_timber_birch"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [{
+    "type": "vert_planks"
+  }]
+}

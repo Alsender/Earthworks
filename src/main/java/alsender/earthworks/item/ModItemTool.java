@@ -14,9 +14,9 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 4/7/17.
@@ -27,11 +27,11 @@ public class ModItemTool extends Item {
     private BlockPos pos;
     private EntityPlayer player;
 
-    public ModItemTool(String name, int durability) {
+    public ModItemTool(IForgeRegistry<Item> registry, String name, int durability) {
         setCreativeTab(Earthworks.creativeTab);
         setRegistryName("tool_" + name);
         setUnlocalizedName(Earthworks.mod_id + ".tool_" + name);
-        GameRegistry.register(this);
+        registry.register(this);
         this.setMaxDamage(durability);
         this.setMaxStackSize(1);
     }

@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:stair_planks_vert_dark_oak",
+    "count": 4
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "quark_planks"
+  }],
+  "key": {
+    "B": {
+      "item": "quark:vertical_planks",
+      "data": 5
+    }
+  }
+}

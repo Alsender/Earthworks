@@ -3,7 +3,6 @@ package alsender.earthworks.block;
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -16,9 +15,9 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.ArrayList;
 
@@ -29,7 +28,7 @@ public class ModDoubleSlab extends BlockSlab {
 
     private Block slab;
 
-    public ModDoubleSlab(Block block) {
+    public ModDoubleSlab(IForgeRegistry<Block> registry, Block block) {
         super(block.getMaterial(block.getDefaultState()));
 
         String name = "double" + block.getRegistryName().toString().substring(11);
@@ -38,7 +37,7 @@ public class ModDoubleSlab extends BlockSlab {
         this.setUnlocalizedName(Earthworks.mod_id + "." + name);
         this.slab = block;
 
-        GameRegistry.register(this);
+        registry.register(this);
     }
 
     @SideOnly(Side.CLIENT)

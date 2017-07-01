@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "earthworks:block_concrete",
+    "count": 2
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "earthworks:item_lime_plaster"
+    },
+    {
+      "item": "minecraft:sand",
+      "data": 0
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:block_wood_shingle",
+    "count": 6,
+    "data": 4
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:log2",
+      "data": 0
+    },
+    {
+      "item": "minecraft:flint",
+      "data": 0
+    }
+  ],
+  "type": "earthworks:shapeless_return"
+}

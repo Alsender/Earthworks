@@ -7,6 +7,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.Random;
 
@@ -17,8 +18,8 @@ public class Block_Gabion_Falling extends ModBlock {
 
     private Block block;
 
-    public Block_Gabion_Falling(String name,  Block block) {
-        super("block_gabion_falling_" + name, Material.ROCK, SoundType.SAND,2.0F,12.0F);
+    public Block_Gabion_Falling(IForgeRegistry<Block> registry, String name, Block block) {
+        super(registry, "block_gabion_falling_" + name, Material.ROCK, SoundType.SAND,2.0F,12.0F);
         setCreativeTab(null);
         this.block = block;
     }

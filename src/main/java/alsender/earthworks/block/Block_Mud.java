@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 12/12/16.
@@ -23,8 +24,8 @@ public class Block_Mud extends ModBlock {
 
     protected static final AxisAlignedBB AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.897D, 1.0D);
 
-    public Block_Mud(String name) {
-        super(name, Material.CLAY, SoundType.SLIME, 0.6F, 1.0F);
+    public Block_Mud(IForgeRegistry<Block> registry, String name) {
+        super(registry, name, Material.CLAY, SoundType.SLIME, 0.6F, 1.0F);
         setCreativeTab(Earthworks.creativeTab);
     }
 

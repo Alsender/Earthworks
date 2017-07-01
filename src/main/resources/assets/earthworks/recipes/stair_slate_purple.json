@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "earthworks:stair_slate_purple",
+    "count": 4
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:block_slate_purple"
+    }
+  }
+}

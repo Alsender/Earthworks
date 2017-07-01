@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "quark:vertical_planks",
+    "data": 4,
+    "count": 4
+  },
+  "ingredients": [
+    {
+      "item": "earthworks:block_timber_acacia"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [{
+    "type": "quark_planks"
+  }]
+}

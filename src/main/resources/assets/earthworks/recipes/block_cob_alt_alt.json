@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:block_cob",
+    "count": 2
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "materialBinding"
+    },
+    {
+      "item": "earthworks:block_mud"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

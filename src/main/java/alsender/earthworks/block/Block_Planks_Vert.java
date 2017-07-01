@@ -1,6 +1,5 @@
 package alsender.earthworks.block;
 
-import alsender.earthworks.item.BlockItemPlanksVert;
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPlanks;
@@ -15,16 +14,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 3/5/17.
  */
 public class Block_Planks_Vert extends Block {
 
-    public Block_Planks_Vert(String name, Material material, SoundType sound, Float hardness, Float resistance) {
+    public Block_Planks_Vert(IForgeRegistry<Block> registry, String name, Material material, SoundType sound, Float hardness, Float resistance) {
         super(material);
         this.setSoundType(sound);
         this.setHardness(hardness);
@@ -35,8 +34,7 @@ public class Block_Planks_Vert extends Block {
         this.setCreativeTab(Earthworks.creativeTab);
         this.setDefaultState(this.blockState.getBaseState().withProperty(BlockPlanks.VARIANT, BlockPlanks.EnumType.OAK));
 
-        GameRegistry.register(this);
-        GameRegistry.register(new BlockItemPlanksVert(this).setRegistryName(this.getRegistryName()));
+        registry.register(this);
     }
 
     @Override

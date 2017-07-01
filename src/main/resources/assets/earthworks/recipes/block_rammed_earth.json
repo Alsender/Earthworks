@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:block_rammed_earth",
+    "count": 3
+  },
+  "pattern": [
+    "   ",
+    "DDD",
+    "DDD"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:dirt",
+      "data": 0
+    }
+  }
+}

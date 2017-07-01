@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "earthworks:block_chalk"
+  },
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "earthworks:item_chalk"
+    }
+  }
+}

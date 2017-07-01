@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "earthworks:block_mud"
+  },
+  "pattern": [
+    "B",
+    "B"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:itemslab_mud"
+    }
+  }
+}

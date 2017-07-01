@@ -4,22 +4,30 @@ package alsender.earthworks.main.registry;
 import alsender.earthworks.item.Item_Chalk;
 import alsender.earthworks.item.ModItem;
 import alsender.earthworks.item.ModItemTool;
+import alsender.earthworks.main.Config;
 import net.minecraft.item.Item;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 12/12/16.
  */
+@Mod.EventBusSubscriber
 public class ItemRegistry {
 
     public static Item
             item_adobe,
             item_cob,
+            item_dirt,
             item_lime_plaster,
             item_mud,
             item_chalk,
             item_quicklime,
+            item_sand,
             item_slaked_lime,
             item_timber;
 
@@ -40,30 +48,39 @@ public class ItemRegistry {
             tool_gold_hammer,
             tool_diamond_hammer;
 
-    public static void init() {
-        item_adobe = new ModItem("adobe");
-        item_chalk = new Item_Chalk();
-        item_cob = new ModItem("cob");
-        item_lime_plaster = new ModItem("lime_plaster");
-        item_mud = new ModItem("mud");
-        item_quicklime = new ModItem("quicklime");
-        item_slaked_lime = new ModItem("slaked_lime");
-        item_timber = new ModItem("timber");
+    @SubscribeEvent
+    public static void initItems(RegistryEvent.Register<Item> event) {
+        IForgeRegistry<Item> r = event.getRegistry();
+        item_adobe = new ModItem(r, "adobe");
+        item_chalk = new Item_Chalk(r);
+        item_cob = new ModItem(r, "cob");
+        item_lime_plaster = new ModItem(r, "lime_plaster");
+        item_mud = new ModItem(r, "mud");
+        item_quicklime = new ModItem(r, "quicklime");
+        item_slaked_lime = new ModItem(r, "slaked_lime");
+        item_timber = new ModItem(r, "timber");
 
-        tool_square = new ModItemTool("square", 60);
-        tool_Acheulean = new ModItemTool("hand_axe", 132);
-        tool_adz = new ModItemTool("adz",251);
-        tool_compass = new ModItemTool("compass",251);
-        tool_froe = new ModItemTool("froe", 251);
-        tool_planer = new ModItemTool("hand_planer", 251);
-        tool_level = new ModItemTool("level", 33);
-        tool_saw = new ModItemTool("saw", 1562);
+        tool_square = new ModItemTool(r, "square", 60);
+        tool_Acheulean = new ModItemTool(r, "hand_axe", 132);
+        tool_adz = new ModItemTool(r, "adz",251);
+        tool_compass = new ModItemTool(r, "compass",251);
+        tool_froe = new ModItemTool(r, "froe", 251);
+        tool_planer = new ModItemTool(r, "hand_planer", 251);
+        tool_level = new ModItemTool(r, "level", 33);
+        tool_saw = new ModItemTool(r, "saw", 1562);
 
-        tool_wood_hammer = new ModItemTool("wood_hammer", 60);
-        tool_stone_hammer = new ModItemTool("stone_hammer", 132);
-        tool_iron_hammer = new ModItemTool("iron_hammer", 251);
-        tool_gold_hammer = new ModItemTool("gold_hammer", 33);
-        tool_diamond_hammer = new ModItemTool("diamond_hammer", 1562);
+        tool_wood_hammer = new ModItemTool(r, "wood_hammer", 60);
+        tool_stone_hammer = new ModItemTool(r, "stone_hammer", 132);
+        tool_iron_hammer = new ModItemTool(r, "iron_hammer", 251);
+        tool_gold_hammer = new ModItemTool(r, "gold_hammer", 33);
+        tool_diamond_hammer = new ModItemTool(r, "diamond_hammer", 1562);
+
+        //  BETTER WITH MODS COMPAT //
+
+        if (Config.betterwithmods == true) {
+            item_dirt = new ModItem(r, "dirt");
+            item_sand = new ModItem(r, "sand");
+        }
     }
 
     @SideOnly(Side.CLIENT)
@@ -91,5 +108,12 @@ public class ItemRegistry {
         ((ModItemTool)tool_iron_hammer).initModel();
         ((ModItemTool)tool_gold_hammer).initModel();
         ((ModItemTool)tool_diamond_hammer).initModel();
+
+        //  BETTER WITH MODS COMPAT //
+
+        if (Config.betterwithmods == true) {
+            ((ModItem)item_dirt).initModel();
+            ((ModItem)item_sand).initModel();
+        }
     }
- }
+}

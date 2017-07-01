@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "earthworks:itemslab_timber_dark_oak",
+    "count": 6
+  },
+  "pattern": [
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:block_timber_dark_oak"
+    }
+  }
+}

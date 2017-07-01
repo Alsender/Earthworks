@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "earthworks:daub_cob_x"
+  },
+  "ingredients": [
+    {
+      "item": "earthworks:daub_cob_square_x"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "mirrored": "false"
+}

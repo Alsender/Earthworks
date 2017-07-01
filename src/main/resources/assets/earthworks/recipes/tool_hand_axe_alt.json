@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "earthworks:tool_hand_axe"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:stone",
+      "data": 0
+    },
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

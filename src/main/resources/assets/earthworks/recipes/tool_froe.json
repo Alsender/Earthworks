@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:tool_froe"
+  },
+  "pattern": [
+    "II ",
+    " S "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  }
+}

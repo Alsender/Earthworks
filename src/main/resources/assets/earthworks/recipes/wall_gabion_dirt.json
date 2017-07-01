@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "earthworks:wall_gabion_dirt",
+    "count": 6
+  },
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:block_gabion_dirt"
+    }
+  }
+}

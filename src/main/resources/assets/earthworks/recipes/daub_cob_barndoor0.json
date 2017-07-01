@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:daub_cob_barndoor0",
+    "count": 4
+  },
+  "pattern": [
+    "tbt",
+    "ttt",
+    "tbt"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "b": {
+      "item": "earthworks:block_wattle"
+    },
+    "t": {
+      "item": "earthworks:item_timber"
+    }
+  },
+  "mirrored": "false"
+}

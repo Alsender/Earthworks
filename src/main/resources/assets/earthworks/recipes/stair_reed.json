@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "earthworks:stair_reed",
+    "count": 4
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "quark_compat"
+  }],
+  "key": {
+    "B": {
+      "item": "earthworks:block_reed"
+    }
+  }
+}

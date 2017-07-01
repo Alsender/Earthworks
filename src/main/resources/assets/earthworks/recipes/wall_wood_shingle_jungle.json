@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "earthworks:wall_wood_shingle_jungle",
+    "count": 6
+  },
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:block_wood_shingle",
+      "data": 3
+    }
+  }
+}

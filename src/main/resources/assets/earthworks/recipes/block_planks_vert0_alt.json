@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "earthworks:block_planks_vert",
+    "data": 0
+  },
+  "pattern": [
+    "B",
+    "B"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "vert_planks"
+  }],
+  "key": {
+    "B": {
+      "item": "earthworks:itemslab_planks_vert_oak"
+    }
+  }
+}

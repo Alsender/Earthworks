@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:plaster_slash",
+    "count": 7
+  },
+  "pattern": [
+    "bbt",
+    "btb",
+    "tbb"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "b": {
+      "item": "earthworks:block_plaster"
+    },
+    "t": {
+      "item": "earthworks:item_timber"
+    }
+  },
+  "mirrored": "false"
+}

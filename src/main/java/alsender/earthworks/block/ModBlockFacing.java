@@ -11,14 +11,13 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 1/5/17.
@@ -27,7 +26,7 @@ public class ModBlockFacing extends Block {
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
-    public ModBlockFacing(String name, Material material, SoundType sound, Float hardness, Float resistance) {
+    public ModBlockFacing(IForgeRegistry<Block> registry, String name, Material material, SoundType sound, Float hardness, Float resistance) {
         super(material);
         this.setSoundType(sound);
         setHardness(hardness);
@@ -37,8 +36,8 @@ public class ModBlockFacing extends Block {
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
         this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-        GameRegistry.register(this);
-        GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
+        registry.register(this);
     }
 
     @SideOnly(Side.CLIENT)

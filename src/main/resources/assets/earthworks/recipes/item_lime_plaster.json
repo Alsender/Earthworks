@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "earthworks:item_lime_plaster",
+    "count": 2
+  },
+  "ingredients": [
+    {
+      "item": "earthworks:item_slaked_lime"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustSand"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

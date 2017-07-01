@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "earthworks:block_gabion_gravel",
+    "count": 2
+  },
+  "pattern": [
+    "SWS",
+    "WGW",
+    "SWS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "G": {
+      "item": "minecraft:gravel"
+    }
+  }
+}

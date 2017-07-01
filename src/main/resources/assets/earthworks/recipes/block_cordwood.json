@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:block_cordwood",
+    "count": 5
+  },
+  "pattern": [
+    "WPW",
+    "PWP",
+    "WPW"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "earthworks:item_lime_plaster"
+    },
+    "W": {
+      "item": "minecraft:log",
+      "data": 0
+    }
+  }
+}

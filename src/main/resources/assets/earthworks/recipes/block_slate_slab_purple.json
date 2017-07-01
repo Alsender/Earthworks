@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "earthworks:block_slate_slab_purple",
+    "count": 8
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "SSS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "earthworks:block_slate_purple"
+    }
+  }
+}

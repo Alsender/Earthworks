@@ -1,0 +1,36 @@
+{
+  "result": {
+    "item": "earthworks:item_mud",
+    "count": 8
+  },
+  "ingredients": [
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "dustDirt"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

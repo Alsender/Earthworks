@@ -6,20 +6,22 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.registries.IForgeRegistry;
 
 /**
  * Created by alsender on 6/15/17.
  */
 public class Item_Chalk extends ModItem {
 
-    public Item_Chalk() {
-        super("chalk");
+    public Item_Chalk(IForgeRegistry <Item> registry) {
+        super(registry, "chalk");
     }
 
     /**

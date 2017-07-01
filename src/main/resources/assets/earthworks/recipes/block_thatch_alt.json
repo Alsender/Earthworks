@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:block_thatch"
+  },
+  "pattern": [
+    "B",
+    "B"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "quark_compat"
+  }],
+  "key": {
+    "B": {
+      "item": "earthworks:itemslab_thatch"
+    }
+  }
+}

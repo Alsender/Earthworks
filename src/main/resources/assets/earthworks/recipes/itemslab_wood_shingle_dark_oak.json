@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "earthworks:itemslab_wood_shingle_dark_oak",
+    "count": 6
+  },
+  "pattern": [
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:block_wood_shingle",
+      "data": 5
+    }
+  }
+}

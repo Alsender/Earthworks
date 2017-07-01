@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:block_timber_birch",
+    "count": 3
+  },
+  "pattern": [
+    " W ",
+    " W ",
+    " W "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:log",
+      "data": 2
+    }
+  }
+}

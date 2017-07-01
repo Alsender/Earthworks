@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "earthworks:block_plaster"
+  },
+  "pattern": [
+    " P ",
+    "PWP",
+    " P "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "earthworks:item_lime_plaster"
+    },
+    "W": {
+      "item": "minecraft:planks",
+      "data": 0
+    }
+  }
+}

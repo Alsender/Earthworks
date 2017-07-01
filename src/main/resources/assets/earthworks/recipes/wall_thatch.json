@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "earthworks:wall_thatch",
+    "count": 6
+  },
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "quark_compat"
+  }],
+  "key": {
+    "B": {
+      "item": "earthworks:block_thatch"
+    }
+  }
+}

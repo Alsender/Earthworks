@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -28,8 +29,8 @@ public class Daub_Cob extends ModBlockFacing {
     private final String toolTip;
     public final int ID;
 
-    public Daub_Cob(String name, String string, int ID) {
-        super("daub_cob_" + name, Material.ROCK, SoundType.WOOD, 1.5F, 10.0F);
+    public Daub_Cob(IForgeRegistry<Block> registry, String name, String string, int ID) {
+        super(registry, "daub_cob_" + name, Material.ROCK, SoundType.WOOD, 1.5F, 10.0F);
         this.toolTip = string;
         this.ID = ID;
     }

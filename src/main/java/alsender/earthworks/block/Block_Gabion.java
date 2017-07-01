@@ -1,18 +1,15 @@
 package alsender.earthworks.block;
 
-import alsender.earthworks.main.Config;
 import alsender.earthworks.main.registry.BlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.Random;
 
@@ -21,12 +18,11 @@ import java.util.Random;
  */
 public class Block_Gabion extends ModBlock {
 
-    private boolean flag = Config.gabion;
     private Block block;
     private int IDNum;
 
-    public Block_Gabion(String name, int ID,  Material material, SoundType soundType, Float hardness, Float resistance, Block block) {
-        super(name, material, soundType, hardness, resistance);
+    public Block_Gabion(IForgeRegistry<Block> registry, String name, int ID, Material material, SoundType soundType, Float hardness, Float resistance, Block block) {
+        super(registry, name, material, soundType, hardness, resistance);
         this.block = block;
         this.IDNum = ID;
     }

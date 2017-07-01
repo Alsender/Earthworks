@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "earthworks:block_slate_shingle_purple",
+    "count": 4
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "earthworks:block_slate_purple"
+    }
+  }
+}

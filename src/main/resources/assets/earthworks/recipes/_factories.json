@@ -1,0 +1,11 @@
+{
+  "recipes": {
+    "shapeless_return": "alsender.earthworks.main.crafting.ShapelessReturnRecipeFactory"
+  },
+  "conditions": {
+    "quark_compat": "alsender.earthworks.main.crafting.ConditionsFactories$QuarkCompat",
+    "bwm_compat": "alsender.earthworks.main.crafting.ConditionsFactories$BWMCompat",
+    "vert_planks": "alsender.earthworks.main.crafting.ConditionsFactories$UseVertPlanks",
+    "quark_planks": "alsender.earthworks.main.crafting.ConditionsFactories$UseQuarkPlanks"
+  }
+}

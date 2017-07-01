@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "earthworks:block_wicker",
+    "count": 2
+  },
+  "pattern": [
+    "SWS",
+    "W W",
+    "SWS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  }
+}

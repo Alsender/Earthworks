@@ -1,0 +1,36 @@
+{
+  "result": {
+    "item": "earthworks:item_cob",
+    "count": 8
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "type": "forge:ore_dict", "ore": "materialBinding"
+    },
+    {
+      "item": "earthworks:item_mud"
+    },
+    {
+      "item": "earthworks:item_mud"
+    },
+    {
+      "item": "earthworks:item_mud"
+    },
+    {
+      "item": "earthworks:item_mud"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

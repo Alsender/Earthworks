@@ -22,7 +22,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -72,7 +71,7 @@ public class Block_ChalkDust extends Block {
         this.setRegistryName("block_chalk_dust");
         this.setCreativeTab(Earthworks.creativeTab);
 
-        GameRegistry.register(this);
+//      GameRegistry.register(this);
 
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Block_ChalkDust.EnumAttachPosition.NONE).withProperty(EAST, Block_ChalkDust.EnumAttachPosition.NONE).withProperty(SOUTH, Block_ChalkDust.EnumAttachPosition.NONE).withProperty(WEST, Block_ChalkDust.EnumAttachPosition.NONE));
     }

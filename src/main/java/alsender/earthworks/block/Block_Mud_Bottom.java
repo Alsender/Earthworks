@@ -8,6 +8,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.Random;
 
@@ -16,8 +17,8 @@ import java.util.Random;
  */
 public class Block_Mud_Bottom extends ModBlock {
 
-    public Block_Mud_Bottom(String name) {
-        super(name, Material.CLAY, SoundType.SLIME, 0.6F, 1.0F);
+    public Block_Mud_Bottom(IForgeRegistry<Block> registry, String name) {
+        super(registry, name, Material.CLAY, SoundType.SLIME, 0.6F, 1.0F);
         setCreativeTab(null);
     }
 

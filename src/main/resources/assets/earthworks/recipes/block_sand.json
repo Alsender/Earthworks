@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "minecraft:sand",
+    "data": 0
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "S": {
+      "type": "forge:ore_dict", "ore": "dustSand"
+    }
+  }
+}

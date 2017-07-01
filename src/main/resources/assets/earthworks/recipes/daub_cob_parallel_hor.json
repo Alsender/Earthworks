@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:daub_cob_parallel_hor",
+    "count": 5
+  },
+  "pattern": [
+    "ttt",
+    "bbb",
+    "ttt"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "b": {
+      "item": "earthworks:block_wattle"
+    },
+    "t": {
+      "item": "earthworks:item_timber"
+    }
+  },
+  "mirrored": "false"
+}

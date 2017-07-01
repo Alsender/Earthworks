@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:daub_cob_arrow3",
+    "count": 4
+  },
+  "pattern": [
+    "ttt",
+    "btt",
+    "tbt"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "b": {
+      "item": "earthworks:block_wattle"
+    },
+    "t": {
+      "item": "earthworks:item_timber"
+    }
+  },
+  "mirrored": "false"
+}

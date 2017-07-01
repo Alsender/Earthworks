@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "earthworks:itemslab_planks_vert_acacia",
+    "count": 6
+  },
+  "pattern": [
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "quark_planks"
+  }],
+  "key": {
+    "B": {
+      "item": "quark:vertical_planks",
+      "data": 4
+    }
+  }
+}

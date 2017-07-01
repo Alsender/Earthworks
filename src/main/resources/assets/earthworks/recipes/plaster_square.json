@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:plaster_square",
+    "count": 4
+  },
+  "pattern": [
+    "ttt",
+    "tbt",
+    "ttt"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "b": {
+      "item": "earthworks:block_plaster"
+    },
+    "t": {
+      "item": "earthworks:item_timber"
+    }
+  },
+  "mirrored": "false"
+}

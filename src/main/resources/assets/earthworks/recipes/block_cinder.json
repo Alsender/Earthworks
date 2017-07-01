@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "earthworks:block_cinder",
+    "count": 4
+  },
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "earthworks:block_concrete"
+    }
+  }
+}

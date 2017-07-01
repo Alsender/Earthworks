@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "earthworks:tool_square"
+  },
+  "pattern": [
+    "P  ",
+    "P  ",
+    "PPP"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "type": "forge:ore_dict", "ore": "plankWood"
+    }
+  }
+}

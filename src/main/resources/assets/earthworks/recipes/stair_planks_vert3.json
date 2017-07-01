@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:stair_planks_vert_jungle",
+    "count": 4
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "vert_planks"
+  }],
+  "key": {
+    "B": {
+      "item": "earthworks:block_planks_vert",
+      "data": 3
+    }
+  }
+}

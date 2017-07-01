@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "earthworks:daub_cob_barndoor2"
+  },
+  "ingredients": [
+    {
+      "item": "earthworks:daub_cob_barndoor1"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "mirrored": "false"
+}

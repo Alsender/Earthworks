@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "earthworks:tool_saw"
+  },
+  "pattern": [
+    "IIS",
+    "DDS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  }
+}

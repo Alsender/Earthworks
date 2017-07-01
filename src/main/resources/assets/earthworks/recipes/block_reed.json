@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "earthworks:block_reed"
+  },
+  "pattern": [
+    "RR",
+    "RR"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "conditions": [{
+    "type": "quark_compat"
+  }],
+  "key": {
+    "R": {
+      "item": "minecraft:reeds"
+    }
+  }
+}

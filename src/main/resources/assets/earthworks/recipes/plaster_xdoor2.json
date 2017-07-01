@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "earthworks:plaster_xdoor2"
+  },
+  "ingredients": [
+    {
+      "item": "earthworks:plaster_xdoor1"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "mirrored": "false"
+}

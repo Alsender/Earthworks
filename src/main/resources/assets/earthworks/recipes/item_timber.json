@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "earthworks:item_timber",
+    "count": 6
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "T": {
+      "type": "forge:ore_dict", "ore": "logTimber"
+    }
+  }
+}

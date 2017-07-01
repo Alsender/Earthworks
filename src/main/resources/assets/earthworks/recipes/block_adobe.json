@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "earthworks:block_adobe"
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "earthworks:item_adobe"
+    }
+  }
+}
