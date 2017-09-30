@@ -13,8 +13,8 @@ import static alsender.earthworks.main.registry.ItemRegistry.*;
 public class OreDictRegistry {
 
     public static void init() {
-        OreDictionary.registerOre("dustDirt", item_dirt);
-        OreDictionary.registerOre("dustSand", item_sand);
+        OreDictionary.registerOre("pileDirt", item_dirt);
+        OreDictionary.registerOre("pileSand", item_sand);
 
         OreDictionary.registerOre("logTimber", block_timber_oak);
         OreDictionary.registerOre("logTimber", block_timber_spruce);

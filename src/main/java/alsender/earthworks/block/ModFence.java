@@ -19,6 +19,9 @@ public class ModFence extends BlockFence {
 
     public ModFence(IForgeRegistry<Block> registry, String name) {
         super(Material.WOOD, MapColor.WOOD);
+        setHardness(2.0F);
+        setResistance(3.0F);
+
         setUnlocalizedName(Earthworks.mod_id + "." + name);
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
