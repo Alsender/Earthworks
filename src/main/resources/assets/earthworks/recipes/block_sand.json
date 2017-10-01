@@ -10,7 +10,7 @@
   "type": "forge:ore_shaped",
   "key": {
     "S": {
-      "type": "forge:ore_dict", "ore": "dustSand"
+      "type": "forge:ore_dict", "ore": "pileSand"
     }
   }
 }

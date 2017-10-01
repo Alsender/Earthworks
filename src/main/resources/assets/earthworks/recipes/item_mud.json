@@ -5,31 +5,31 @@
   },
   "ingredients": [
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
       "item": "minecraft:water_bucket"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustDirt"
+      "type": "forge:ore_dict", "ore": "pileDirt"
     }
   ],
   "type": "forge:ore_shapeless"

@@ -8,7 +8,7 @@
       "item": "earthworks:item_slaked_lime"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustSand"
+      "type": "forge:ore_dict", "ore": "pileSand"
     }
   ],
   "type": "forge:ore_shapeless"

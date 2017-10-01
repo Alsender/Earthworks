@@ -26,10 +26,10 @@
       "item": "minecraft:clay_ball"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustSand"
+      "type": "forge:ore_dict", "ore": "pileSand"
     },
     {
-      "type": "forge:ore_dict", "ore": "dustSand"
+      "type": "forge:ore_dict", "ore": "pileSand"
     }
   ],
   "type": "forge:ore_shapeless"
