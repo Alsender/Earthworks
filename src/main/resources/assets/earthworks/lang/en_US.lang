@@ -208,7 +208,7 @@ item.earthworks.item_dirt.name=Dirt Ball
 item.earthworks.item_lime_plaster.name=Lime Plaster
 item.earthworks.item_mud.name=Mud Ball
 item.earthworks.item_quicklime.name=Quicklime
-item.earthworks.item_sand.name=Sand
+item.earthworks.item_sand.name=Sand Pile
 item.earthworks.item_slaked_lime.name=Slaked Lime
 item.earthworks.item_timber.name=Timber Framing
 
@@ -217,7 +217,7 @@ item.earthworks.item_timber.name=Timber Framing
 item.earthworks.tool_square.name=Square
 item.earthworks.tool_hand_axe.name=Handaxe
 item.earthworks.tool_adz.name=Adz
-item.earthworks.tool_compass.name=Compass
+item.earthworks.tool_compass.name=Divider Compass
 item.earthworks.tool_froe.name=Froe
 item.earthworks.tool_hand_planer.name=Planer
 item.earthworks.tool_level.name=Level
