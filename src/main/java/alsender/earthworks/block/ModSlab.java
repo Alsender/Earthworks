@@ -21,76 +21,77 @@ import net.minecraftforge.registries.IForgeRegistry;
  * Created by alsender on 12/16/16.
  */
 public class ModSlab extends BlockSlab {
-    public final World world = null;
-    public final BlockPos pos = null;
+	public final World world = null;
+	public final BlockPos pos = null;
 
-    public ModSlab(IForgeRegistry<Block> registry, String name, Block block) {
-        super(block.getDefaultState().getMaterial());
-        setHardness(block.getDefaultState().getBlockHardness(world, pos));
+	public ModSlab(IForgeRegistry<Block> registry, String name, Block block) {
+		super(block.getDefaultState().getMaterial());
+		setHardness(block.getDefaultState().getBlockHardness(world, pos));
 
-        setTranslationKey(Earthworks.mod_id + "." + name);
-        setRegistryName(name);
-        setCreativeTab(Earthworks.creativeTab);
+		setTranslationKey(Earthworks.mod_id + "." + name);
+		setRegistryName(name);
+		setCreativeTab(Earthworks.creativeTab);
 
-        registry.register(this);
+		registry.register(this);
 
-        useNeighborBrightness = true;
-    }
+		useNeighborBrightness = true;
+	}
 
-    public ModSlab(IForgeRegistry<Block> registry, String name) {
-        super(Material.WOOD);
-        setHardness(2.0F);
+	public ModSlab(IForgeRegistry<Block> registry, String name) {
+		super(Material.WOOD);
+		setHardness(2.0F);
 
-        setTranslationKey(Earthworks.mod_id + "." + name);
-        setRegistryName(name);
-        setCreativeTab(Earthworks.creativeTab);
+		setTranslationKey(Earthworks.mod_id + "." + name);
+		setRegistryName(name);
+		setCreativeTab(Earthworks.creativeTab);
 
-        registry.register(this);
+		registry.register(this);
 
-        useNeighborBrightness = true;
-    }
+		useNeighborBrightness = true;
+	}
 
-    @SideOnly(Side.CLIENT)
-    public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-    }
+	@SideOnly(Side.CLIENT)
+	public void initModel() {
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0,
+				new ModelResourceLocation(getRegistryName(), "inventory"));
+	}
 
-    @Override
-    public IProperty getVariantProperty() {
-        return HALF;
-    }
+	@Override
+	public IProperty<?> getVariantProperty() {
+		return HALF;
+	}
 
-    @Override
-    public String getTranslationKey(int meta) {
-        return null;
-    }
+	@Override
+	public String getTranslationKey(int meta) {
+		return null;
+	}
 
-    @Override
-	public Comparable getTypeForItem(ItemStack stack) {
-        return 0;
-    }
+	@Override
+	public Comparable<?> getTypeForItem(ItemStack stack) {
+		return 0;
+	}
 
-    @Override
+	@Override
 	public boolean isDouble() {
-        return false;
-    }
+		return false;
+	}
 
-    @Override
-    public BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, HALF);
-    }
+	@Override
+	public BlockStateContainer createBlockState() {
+		return new BlockStateContainer(this, HALF);
+	}
 
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        IBlockState iblockstate = this.getDefaultState();
-        if (!this.isDouble()) {
-            iblockstate = iblockstate.withProperty(HALF, (meta) == 1 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP);
-        }
-        return iblockstate;
-    }
+	@Override
+	public IBlockState getStateFromMeta(int meta) {
+		IBlockState iblockstate = this.getDefaultState();
+		if(!this.isDouble()) {
+			iblockstate = iblockstate.withProperty(HALF, (meta) == 1 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP);
+		}
+		return iblockstate;
+	}
 
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 1 : 0;
-    }
+	@Override
+	public int getMetaFromState(IBlockState state) {
+		return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 1 : 0;
+	}
 }

@@ -1,5 +1,7 @@
 package alsender.earthworks.block;
 
+import java.util.ArrayList;
+
 import alsender.earthworks.main.Earthworks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
@@ -19,90 +21,92 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
 
-import java.util.ArrayList;
-
 /**
  * Created by alsender on 5/26/17.
  */
 public class ModDoubleSlab extends BlockSlab {
 
-    private Block slab;
+	private Block slab;
 
-    public ModDoubleSlab(IForgeRegistry<Block> registry, Block block) {
-        super(block.getMaterial(block.getDefaultState()));
+	public ModDoubleSlab(IForgeRegistry<Block> registry, Block block) {
+		super(block.getMaterial(block.getDefaultState()));
 
-        String name = "double" + block.getRegistryName().toString().substring(11);
+		String name = "double" + block.getRegistryName().toString().substring(11);
 
-        this.setRegistryName(name);
-        this.setTranslationKey(Earthworks.mod_id + "." + name);
-        this.slab = block;
+		this.setRegistryName(name);
+		this.setTranslationKey(Earthworks.mod_id + "." + name);
+		this.slab = block;
+		this.setSoundType(block.getSoundType());
+		this.setHardness(block.getDefaultState().getBlockHardness(null, null));
 
-        registry.register(this);
-    }
+		registry.register(this);
+	}
 
-    @SideOnly(Side.CLIENT)
-    public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName().toString(), "inventory"));
-    }
+	@SideOnly(Side.CLIENT)
+	public void initModel() {
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0,
+				new ModelResourceLocation(getRegistryName().toString(), "inventory"));
+	}
 
-    public void setSlab(Block slab) {
-        this.slab = slab;
-    }
+	public void setSlab(Block slab) {
+		this.slab = slab;
+	}
 
-    @Override
-    public ArrayList<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int foturne) {
-        ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
-        drops.add(new ItemStack(Item.getItemFromBlock(this.slab), 1));
-        drops.add(new ItemStack(Item.getItemFromBlock(this.slab), 1));
-        return drops;
-    }
+	@Override
+	public ArrayList<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int foturne) {
+		ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
+		drops.add(new ItemStack(Item.getItemFromBlock(this.slab), 1));
+		drops.add(new ItemStack(Item.getItemFromBlock(this.slab), 1));
+		return drops;
+	}
 
-    @Override
-    public String getTranslationKey(int meta) {
-        return null;
-    }
+	@Override
+	public String getTranslationKey(int meta) {
+		return null;
+	}
 
-    @Override
-    public boolean isDouble() {
-        return true;
-    }
+	@Override
+	public boolean isDouble() {
+		return true;
+	}
 
-    @SideOnly(Side.CLIENT)
-    protected static boolean isHalfSlab(IBlockState state) {
-        return true;
-    }
+	@SideOnly(Side.CLIENT)
+	protected static boolean isHalfSlab(IBlockState state) {
+		return true;
+	}
 
-    @Override
-    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
-        return new ItemStack(Item.getItemFromBlock(this.slab));
-    }
+	@Override
+	public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos,
+			EntityPlayer player) {
+		return new ItemStack(Item.getItemFromBlock(this.slab));
+	}
 
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        IBlockState iblockstate = this.getDefaultState();
-        if (!this.isDouble()) {
-            iblockstate = iblockstate.withProperty(HALF, (meta) == 0 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP);
-        }
-        return iblockstate;
-    }
+	@Override
+	public IBlockState getStateFromMeta(int meta) {
+		IBlockState iblockstate = this.getDefaultState();
+		if(!this.isDouble()) {
+			iblockstate = iblockstate.withProperty(HALF, (meta) == 0 ? EnumBlockHalf.BOTTOM : EnumBlockHalf.TOP);
+		}
+		return iblockstate;
+	}
 
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 0 : 1;
-    }
+	@Override
+	public int getMetaFromState(IBlockState state) {
+		return state.getValue(HALF) == EnumBlockHalf.BOTTOM ? 0 : 1;
+	}
 
-    @Override
-    protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, HALF);
-    }
+	@Override
+	protected BlockStateContainer createBlockState() {
+		return new BlockStateContainer(this, HALF);
+	}
 
-    @Override
-    public IProperty<?> getVariantProperty() {
-        return HALF;
-    }
+	@Override
+	public IProperty<?> getVariantProperty() {
+		return HALF;
+	}
 
-    @Override
-    public Comparable<?> getTypeForItem(ItemStack stack) {
-        return 0;
-    }
+	@Override
+	public Comparable<?> getTypeForItem(ItemStack stack) {
+		return 0;
+	}
 }
