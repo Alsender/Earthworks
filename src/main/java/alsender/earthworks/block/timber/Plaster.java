@@ -34,13 +34,14 @@ public class Plaster extends ModBlockFacing {
         this.ID = ID;
     }
 
-    @SideOnly(Side.CLIENT)
+    @Override
+	@SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
 
     @Override
-    public void addInformation(ItemStack stack, @Nullable World player, List list, ITooltipFlag bool) {
+    public void addInformation(ItemStack stack, @Nullable World player, List<String> list, ITooltipFlag bool) {
         list.add(toolTip);
     }
 

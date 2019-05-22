@@ -26,7 +26,8 @@ public class Earthworks {
 
     public static final CreativeTabs creativeTab = (new CreativeTabs("earthworks") {
 
-        public String getTabLabel() {
+        @Override
+		public String getTabLabel() {
             return "earthworks";
         }
         @Override

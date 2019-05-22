@@ -65,11 +65,13 @@ public class ModSlab extends BlockSlab {
         return null;
     }
 
-    public Comparable getTypeForItem(ItemStack stack) {
+    @Override
+	public Comparable getTypeForItem(ItemStack stack) {
         return 0;
     }
 
-    public boolean isDouble() {
+    @Override
+	public boolean isDouble() {
         return false;
     }
 

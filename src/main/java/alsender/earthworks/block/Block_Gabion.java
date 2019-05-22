@@ -18,16 +18,15 @@ import java.util.Random;
  */
 public class Block_Gabion extends ModBlock {
 
-    private Block block;
     private int IDNum;
 
     public Block_Gabion(IForgeRegistry<Block> registry, String name, int ID, Material material, SoundType soundType, Float hardness, Float resistance, Block block) {
         super(registry, name, material, soundType, hardness, resistance);
-        this.block = block;
         this.IDNum = ID;
     }
 
-    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+    @Override
+	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         Block block = world.getBlockState(pos).getBlock();
         if (player.isSneaking() && world.getBlockState(pos.down()).getMaterial().isReplaceable()) {
             if (world.getBlockState(pos).getBlock() == BlockRegistry.stair_gabion0 || world.getBlockState(pos).getBlock() == BlockRegistry.stair_gabion1 || world.getBlockState(pos).getBlock() == BlockRegistry.stair_gabion2) {
@@ -39,18 +38,21 @@ public class Block_Gabion extends ModBlock {
         return false;
     }
 
-    public void neighborChanged(IBlockState state, World world, BlockPos pos1, Block block, BlockPos pos2) {
+    @Override
+	public void neighborChanged(IBlockState state, World world, BlockPos pos1, Block block, BlockPos pos2) {
         if (world.isBlockPowered(pos1) || world.isBlockPowered(pos1.up())) {
             world.scheduleUpdate(pos1, this, 2);
         }
     }
 
-    public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
+    @Override
+	public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
         Block block = world.getBlockState(pos).getBlock();
         world.setBlockState(pos, switchGabion(block).getDefaultState());
     }
 
-    public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
+    @Override
+	public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
         Block block = world.getBlockState(pos).getBlock();
         if (world.getBlockState(pos.down()).getBlock() == BlockRegistry.block_gabion0 || world.getBlockState(pos.down()).getBlock() == BlockRegistry.block_gabion1 || world.getBlockState(pos.down()).getBlock() == BlockRegistry.block_gabion2) {
             world.setBlockState(pos, switchGabion(block).getDefaultState());

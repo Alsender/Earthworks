@@ -25,10 +25,6 @@ public class ShapelessReturnRecipeFactory implements IRecipeFactory {
 
     @Override
     public IRecipe parse(JsonContext context, JsonObject json) {
-        ShapelessOreRecipe recipe = ShapelessOreRecipe.factory(context, json);
-
-        String group = JsonUtils.getString(json, "group", "");
-
         NonNullList<Ingredient> ings = NonNullList.create();
         for (JsonElement ele : JsonUtils.getJsonArray(json, "ingredients"))
             ings.add(CraftingHelper.getIngredient(ele, context));

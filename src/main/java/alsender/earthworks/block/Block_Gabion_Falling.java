@@ -24,18 +24,21 @@ public class Block_Gabion_Falling extends ModBlock {
         this.block = block;
     }
 
-    public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
+    @Override
+	public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
         this.fall(world, pos, state);
         if (!world.getBlockState(pos.down()).getBlock().isAir(world.getBlockState(pos.down()), world, pos.down())) {
             world.setBlockState(pos, block.getDefaultState());
         }
     }
 
-    public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
+    @Override
+	public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
         world.scheduleUpdate(pos, this, 2);
     }
 
-    public void neighborChanged(IBlockState state, World world, BlockPos pos1, Block block, BlockPos pos2) {
+    @Override
+	public void neighborChanged(IBlockState state, World world, BlockPos pos1, Block block, BlockPos pos2) {
         world.scheduleUpdate(pos1, this, 2);
     }
 
