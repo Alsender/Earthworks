@@ -30,7 +30,7 @@ public class Earthworks {
             return "earthworks";
         }
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(BlockRegistry.block_wattle);
         }
 

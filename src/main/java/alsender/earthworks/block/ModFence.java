@@ -22,7 +22,7 @@ public class ModFence extends BlockFence {
         setHardness(2.0F);
         setResistance(3.0F);
 
-        setUnlocalizedName(Earthworks.mod_id + "." + name);
+        setTranslationKey(Earthworks.mod_id + "." + name);
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
         setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));

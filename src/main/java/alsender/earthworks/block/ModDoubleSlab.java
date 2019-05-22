@@ -34,7 +34,7 @@ public class ModDoubleSlab extends BlockSlab {
         String name = "double" + block.getRegistryName().toString().substring(11);
 
         this.setRegistryName(name);
-        this.setUnlocalizedName(Earthworks.mod_id + "." + name);
+        this.setTranslationKey(Earthworks.mod_id + "." + name);
         this.slab = block;
 
         registry.register(this);
@@ -58,7 +58,7 @@ public class ModDoubleSlab extends BlockSlab {
     }
 
     @Override
-    public String getUnlocalizedName(int meta) {
+    public String getTranslationKey(int meta) {
         return null;
     }
 

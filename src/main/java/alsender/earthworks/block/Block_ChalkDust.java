@@ -67,7 +67,7 @@ public class Block_ChalkDust extends Block {
         this.setHardness(0.1F);
         this.setResistance(0.0F);
 
-        this.setUnlocalizedName(Earthworks.mod_id + ".block_chalk_dust");
+        this.setTranslationKey(Earthworks.mod_id + ".block_chalk_dust");
         this.setRegistryName("block_chalk_dust");
         this.setCreativeTab(Earthworks.creativeTab);
 
