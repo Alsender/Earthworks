@@ -21,7 +21,8 @@
       "data": 0
     },
     {
-      "item": "minecraft:water_bucket"
+      "type": "earthworks:fluid",
+      "fluid": "water"
     },
     {
       "item": "minecraft:dirt",

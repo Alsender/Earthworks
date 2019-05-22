@@ -17,7 +17,8 @@
       "type": "forge:ore_dict", "ore": "pileDirt"
     },
     {
-      "item": "minecraft:water_bucket"
+      "type": "earthworks:fluid",
+      "fluid": "water"
     },
     {
       "type": "forge:ore_dict", "ore": "pileDirt"
