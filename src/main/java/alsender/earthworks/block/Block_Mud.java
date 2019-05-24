@@ -29,7 +29,8 @@ public class Block_Mud extends ModBlock {
         setCreativeTab(Earthworks.creativeTab);
     }
 
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess world, BlockPos pos) {
+    @Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess world, BlockPos pos) {
         return AABB;
     }
 
@@ -43,21 +44,24 @@ public class Block_Mud extends ModBlock {
         return false;
     }
 
-    public void neighborChanged(IBlockState state, World world, BlockPos pos, Block block, BlockPos fromPos) {
+    @Override
+	public void neighborChanged(IBlockState state, World world, BlockPos pos, Block block, BlockPos fromPos) {
         super.neighborChanged(state, world, pos, block, fromPos);
         if (world.getBlockState(pos.up()).getMaterial().isSolid()) {
             world.setBlockState(pos, BlockRegistry.block_mud_bottom.getDefaultState());
         }
     }
 
-    public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
+    @Override
+	public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
         super.onBlockAdded(world, pos, state);
         if (world.getBlockState(pos.up()).getMaterial().isSolid()) {
             world.setBlockState(pos, BlockRegistry.block_mud_bottom.getDefaultState());
         }
     }
 
-    @SideOnly(Side.CLIENT)
+    @Override
+	@SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }

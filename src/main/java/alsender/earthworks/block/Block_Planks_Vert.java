@@ -29,7 +29,7 @@ public class Block_Planks_Vert extends Block {
         this.setHardness(hardness);
         this.setResistance(resistance);
 
-        this.setUnlocalizedName(Earthworks.mod_id + "." + name);
+        this.setTranslationKey(Earthworks.mod_id + "." + name);
         this.setRegistryName(name);
         this.setCreativeTab(Earthworks.creativeTab);
         this.setDefaultState(this.blockState.getBaseState().withProperty(BlockPlanks.VARIANT, BlockPlanks.EnumType.OAK));

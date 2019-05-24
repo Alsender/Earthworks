@@ -16,7 +16,7 @@ public class ModItem extends Item {
     public ModItem(IForgeRegistry<Item> registry, String name) {
         setCreativeTab(Earthworks.creativeTab);
         setRegistryName("item_" + name);
-        setUnlocalizedName(Earthworks.mod_id + ".item_" + name);
+        setTranslationKey(Earthworks.mod_id + ".item_" + name);
         registry.register(this);
     }
 

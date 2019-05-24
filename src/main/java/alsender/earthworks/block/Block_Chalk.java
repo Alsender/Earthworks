@@ -20,15 +20,18 @@ public class Block_Chalk extends ModBlock {
         setCreativeTab(Earthworks.creativeTab);
     }
 
-    public Item getItemDropped(IBlockState state, Random random, int fortune) {
+    @Override
+	public Item getItemDropped(IBlockState state, Random random, int fortune) {
         return ItemRegistry.item_chalk;
     }
 
-    public int quantityDropped(Random random) {
+    @Override
+	public int quantityDropped(Random random) {
         return (3 + random.nextInt(2));
     }
 
-    public int quantityDroppedWithBonus(int fortune, Random random) {
+    @Override
+	public int quantityDroppedWithBonus(int fortune, Random random) {
         return quantityDropped(random) + random.nextInt(fortune + 1);
     }
 }

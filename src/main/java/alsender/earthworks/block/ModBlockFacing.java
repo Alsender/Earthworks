@@ -32,7 +32,7 @@ public class ModBlockFacing extends Block {
         setHardness(hardness);
         setResistance(resistance);
 
-        setUnlocalizedName(Earthworks.mod_id + "." + name);
+        setTranslationKey(Earthworks.mod_id + "." + name);
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
         this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
@@ -47,7 +47,7 @@ public class ModBlockFacing extends Block {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getFront(meta);
+        EnumFacing facing = EnumFacing.byIndex(meta);
 
         if(facing.getAxis()==EnumFacing.Axis.Y) {
             facing=EnumFacing.NORTH;
@@ -58,7 +58,7 @@ public class ModBlockFacing extends Block {
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return ((EnumFacing) state.getValue(FACING)).getIndex();
+        return state.getValue(FACING).getIndex();
     }
 
     @Override

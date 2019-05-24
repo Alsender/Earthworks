@@ -24,13 +24,11 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModItemTool extends Item {
 
     private Block block;
-    private BlockPos pos;
-    private EntityPlayer player;
-
+    
     public ModItemTool(IForgeRegistry<Item> registry, String name, int durability) {
         setCreativeTab(Earthworks.creativeTab);
         setRegistryName("tool_" + name);
-        setUnlocalizedName(Earthworks.mod_id + ".tool_" + name);
+        setTranslationKey(Earthworks.mod_id + ".tool_" + name);
         registry.register(this);
         this.setMaxDamage(durability);
         this.setMaxStackSize(1);
@@ -41,11 +39,10 @@ public class ModItemTool extends Item {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
 
-    public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing face, float hitX, float hitY, float hitZ) {
+    @Override
+	public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing face, float hitX, float hitY, float hitZ) {
         ItemStack itemstack = player.getHeldItem(hand);
         this.block = world.getBlockState(pos).getBlock();
-        this.pos = pos;
-        this.player = player;
         player.setActiveHand(hand);
         if (player.isSneaking()) {
             if (block instanceof Daub_Cob) {

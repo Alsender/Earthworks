@@ -23,7 +23,7 @@ public class ModRotatedPillar extends BlockRotatedPillar {
         setHardness(hardness);
         setResistance(resistance);
 
-        setUnlocalizedName(Earthworks.mod_id + "." + name);
+        setTranslationKey(Earthworks.mod_id + "." + name);
         setRegistryName(name);
         setCreativeTab(Earthworks.creativeTab);
 

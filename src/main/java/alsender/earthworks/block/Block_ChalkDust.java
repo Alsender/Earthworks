@@ -67,7 +67,7 @@ public class Block_ChalkDust extends Block {
         this.setHardness(0.1F);
         this.setResistance(0.0F);
 
-        this.setUnlocalizedName(Earthworks.mod_id + ".block_chalk_dust");
+        this.setTranslationKey(Earthworks.mod_id + ".block_chalk_dust");
         this.setRegistryName("block_chalk_dust");
         this.setCreativeTab(Earthworks.creativeTab);
 
@@ -81,7 +81,8 @@ public class Block_ChalkDust extends Block {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
 
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+    @Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return CHALK_DUST_AABB[getAABBIndex(state.getActualState(source, pos))];
     }
 
@@ -104,7 +105,8 @@ public class Block_ChalkDust extends Block {
         return i;
     }
 
-    public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
+    @Override
+	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
         state = state.withProperty(WEST, this.getAttachPosition(worldIn, pos, EnumFacing.WEST));
         state = state.withProperty(EAST, this.getAttachPosition(worldIn, pos, EnumFacing.EAST));
         state = state.withProperty(NORTH, this.getAttachPosition(worldIn, pos, EnumFacing.NORTH));
@@ -133,20 +135,24 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    @Nullable
+    @Override
+	@Nullable
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
         return NULL_AABB;
     }
 
-    public boolean isOpaqueCube(IBlockState state) {
+    @Override
+	public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
 
-    public boolean isFullCube(IBlockState state) {
+    @Override
+	public boolean isFullCube(IBlockState state) {
         return false;
     }
 
-    public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
+    @Override
+	public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
         return worldIn.getBlockState(pos.down()).isTopSolid() || worldIn.getBlockState(pos.down()).getBlock() == Blocks.GLOWSTONE;
     }
 
@@ -168,7 +174,8 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
+    @Override
+	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
         if (!worldIn.isRemote) {
             this.updateSurroundingChalk(worldIn, pos, state);
             for (EnumFacing enumfacing : EnumFacing.Plane.VERTICAL) {
@@ -188,7 +195,8 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
+    @Override
+	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
         super.breakBlock(worldIn, pos, state);
         if (!worldIn.isRemote) {
             for (EnumFacing enumfacing : EnumFacing.values()) {
@@ -210,7 +218,8 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
+    @Override
+	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
         if (!worldIn.isRemote) {
             if (this.canPlaceBlockAt(worldIn, pos)) {
                 this.updateSurroundingChalk(worldIn, pos, state);
@@ -221,7 +230,8 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+    @Override
+	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return ItemRegistry.item_chalk;
     }
 
@@ -238,19 +248,23 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
+    @Override
+	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
         return new ItemStack(ItemRegistry.item_chalk);
     }
 
-    public IBlockState getStateFromMeta(int meta) {
+    @Override
+	public IBlockState getStateFromMeta(int meta) {
         return this.getDefaultState();
     }
 
-    public int getMetaFromState(IBlockState state) {
+    @Override
+	public int getMetaFromState(IBlockState state) {
         return 0;
     }
 
-    public IBlockState withRotation(IBlockState state, Rotation rot) {
+    @Override
+	public IBlockState withRotation(IBlockState state, Rotation rot) {
         switch (rot) {
             case CLOCKWISE_180:
                 return state.withProperty(NORTH, state.getValue(SOUTH)).withProperty(EAST, state.getValue(WEST)).withProperty(SOUTH, state.getValue(NORTH)).withProperty(WEST, state.getValue(EAST));
@@ -263,7 +277,8 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
+    @Override
+	public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
         switch (mirrorIn) {
             case LEFT_RIGHT:
                 return state.withProperty(NORTH, state.getValue(SOUTH)).withProperty(SOUTH, state.getValue(NORTH));
@@ -274,7 +289,8 @@ public class Block_ChalkDust extends Block {
         }
     }
 
-    protected BlockStateContainer createBlockState() {
+    @Override
+	protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, new IProperty[] {NORTH, EAST, SOUTH, WEST});
     }
 
@@ -293,11 +309,13 @@ public class Block_ChalkDust extends Block {
             this.name = name;
         }
 
-        public String toString() {
+        @Override
+		public String toString() {
             return this.getName();
         }
 
-        public String getName() {
+        @Override
+		public String getName() {
             return this.name;
         }
     }

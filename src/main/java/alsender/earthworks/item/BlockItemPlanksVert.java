@@ -22,7 +22,7 @@ public class BlockItemPlanksVert extends ItemBlock {
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack stack) {
-        return super.getUnlocalizedName() + "." + (BlockPlanks.EnumType.byMetadata(stack.getMetadata())).toString();
+    public String getTranslationKey(ItemStack stack) {
+        return super.getTranslationKey() + "." + (BlockPlanks.EnumType.byMetadata(stack.getMetadata())).toString();
     }
 }

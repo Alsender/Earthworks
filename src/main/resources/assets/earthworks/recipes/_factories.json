@@ -1,4 +1,7 @@
 {
+  "ingredients": {
+    	"fluid": "alsender.earthworks.main.crafting.IngredientFactoryFluidStack"
+  },
   "recipes": {
     "shapeless_return": "alsender.earthworks.main.crafting.ShapelessReturnRecipeFactory"
   },
